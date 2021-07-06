@@ -1,6 +1,85 @@
-# Release notes - Version 2021.6.4
+# Release notes - Version 2021.6.6.2
 
-### Date: June 17, 2021
+### Date: July 1, 2021
+
+## Care
+
+- WEL-2607 Automation fails send SMS and email with error User doesn't exist
+- WEL-2539 Care: Encounters show the encounter owner instead of Care Team member
+- WEL-2512 \[Care -> Communication Center\] -> If any communication options is turned off in the Admin side then disable buttons like "New Email", "New SMS" etc in the Care side
+- WEL-2603 API: Implement Insights Permission model
+- WEL-2574 Care: Encounters - Disposition details can be unique per template
+- WEL-2557 Care: consolidate messaging template with search by lables
+- WEL-2650 Emails are not sent with attachments
+- WEL-2636 Home Screen: In Progress encounters are not showing the correct data
+- WEL-2627 Emails incorrectly categorized as unrecognized - relax restriction for email sensitivity upper/lower case
+- WEL-1969 Care: Insight icon replacement
+- WEL-2479 Care: Add Insight button if user has permissions - based of security policy
+- WEL-2478 Care: Add no permission screen for Insights - new screen will appear when navigation is made to url
+
+## Designer
+
+- WEL-2605 Designer: Creating new draft automatically marks some objects as changed
+- WEL-2575 Designer: Encounters - Disposition details can be unique per template
+- WEL-2561 Designer: automation postpone action
+- WEL-2550 Designer: configure template for the external communication
+- WEL-2462 Designer: Implement Insights Permission model - new model enabled care portal to have the right access to the right users
+- WEL-2604 Designer: Automation trigger: Encounter Disposition
+
+## Admin
+
+- WEL-2567 When a role for user is selected, the first role should be primary, if nothing is selected
+- WEL-2552 Admin: Security UI redesign - introduce a new section Security with enabled configuration for SSO and MFA and password strength
+- WEL-2581 Admin: postponed automation action viewer (in admin, find all future task, and optionally delete some/all)
+
+
+## General:
+Welkin released SSO and MFA support. SSO supported providers are Okta, Auth0, Azure and Google. MFA supported method is SMS.
+Navigate to Admin->Security section for further instructions.
+
+
+# Release notes - Version 2021.6.5.2
+
+### Date: June 25, 2021
+
+## Care
+
+- WEL-2586 Can't edit required disposition fields - Allows customers to use disposition in dataviews, regardless of required or not required fields
+- WEL-2522 Cannot create instant encounter: Insufficient priviledges for calendar
+- WEL-2564 Care: Relation therapy, add create/edit drawer - Transitioned Modal window to a standard drawer
+- WEL-2521 Assignment of duplicate SMS to a patient does not work
+- WEL-2480 Care: Layout title changes are reflected in the navigation but not in Layout header - Layout name is not reflected on layout header
+- WEL-2402 Care: If there is no action on the tab for a long time, a socket connection error occurs.
+- WEL-2297 Home Screen: Calendar event should take me to the encounter on the patient's profile - Calendar events widget allows one to navigate to either calendar event or to the encounter associated with it (based on care team membership)
+- WEL-2524 UX Calendar event colors on the home screen are hard to read with the black font
+- WEL-2486 Care: Marital Status drop down to Patient Profile - new optional field is introduced, to track marital status
+- WEL-2471 Care: Percent Field Type - field type percent will have a percent sign next to a number
+- WEL-2439 Encounter: Download CSV should download all records and not only what is on the page - allows one to download all encounters as one CSV file, no pagination is needed
+- WEL-2154 Care: If help page is not set - show a standard image for not configured
+
+## Designer
+
+- WEL-2515 Designer: trigger automation on create user, assign access to instance, role, permissions - new automation setup, allows webhook notifications on user changes
+- WEL-2492 Designer: Automation action: send SMS / email now
+- WEL-2556 Designer: message template labels - allows tagging messages with labels. Would be utilized for better organization and search in the care portal
+- WEL-2513 Designer: add pfa variable field in message template - part of the work to unify PFA and Regular templates into one
+- WEL-2485 Designer, Care: Unify PFA and Templates - unification of PFA and Message template into one solution. Will trigger UX changes on Comm Center
+- WEL-2532 Disable button 'Single Record' when we create Document Type
+- WEL-584 Designer: Percent Field Type \(special case of float\)
+
+## Admin
+
+- WEL-2569 Admin: User Field: "Acuity Scheduling Id" is validating as UUID \(and it shouldnt\)
+- WEL-2464 Admin: Integration: Comm center does not show phone numbers
+- WEL-2516 Admin: Auth Configurations - add ability to remove config (allows one to delete 2FA and SSO config)
+
+## System
+- WEL-2553 API: at least one authentication should be on.
+
+
+# Release notes - Version 2021.6.4.2
+
+### Date: June 18, 2021
 
 ## Care
 
@@ -27,8 +106,7 @@
 - WEL-2336 Care: Encounter: deleting calendar event in calendar, makes encounter disappear from UI
 - WEL-1704 Encounters: Rename "Active" encounters to "Open"
 - WEL-2324 Care: Encounter - broken assessment refrence - error case in discarded assessment use case
-- WEL-2441 Encounters: Patient birthdate should be presented as Date \(and not datetime\)
-
+- WEL-2424 Care: Cannot Cancel Encounter without getting error message
 
 ### Comms Center
 - WEL-2381 Comm Center: Inbound Unreconginzed SMS - Cannot assign SMS to a patient
@@ -46,6 +124,7 @@
 - WEL-2318 Welkonnect: Move call and voicemail recordings to S3 for secured storage
 - WEL-2382 Care: Chat eventSubType notification comes back without patient information 
 - WEL-2497 Care: Long email displays incorrectly, including emails with Attachments
+- WEL-2461 Care: User cannot modify draft email
 
 
 
@@ -53,6 +132,12 @@
 - WEL-2330 Care: Task Distribution Report 
 - WEL-2196 API: Task Distribution Report
 - WEL-2197 Insights Permissions: Create Permission Model for insights - infra preparation
+- WEL-2441 Encounters Report: Patient birthdate should be presented as Date, and not datetime
+- WEL-2511 Encounters Report: Handle null calendar fields on encounters report
+- WEL-2455 Encounters Report: Error blocks Encounters Insights from returning
+- WEL-2443 Encounters Report: Regions and Territories are not added correctly
+- WEL-2442 Encounters Report: Missing values from the User Profile
+- WEL-2440 Encounters Report: Download encounters report as CSV with all records
 
 ### Home Page
 
@@ -88,6 +173,12 @@
 - WEL-2296 Tasks: Sorting for Priority is not working as expected and intended
 - WEL-2288 Remove Search bar has no functionality in the document center
 - WEL-1905 Care: Display URL fields as hyperlinks in CDT objects
+- WEL-2510 API: Triggered event should use direct reference URL with ID to find an object.
+- WEL-2484 Automation: Improve Webhook Action
+- WEL-2514 API: trigger automation on create user, assign access to instance, role, permissions
+- WEL-2444 API: Calendar: Allow api client to fetch events that are cancelled
+- WEL-1013 Designer: Allow lists CDT to be displayed as radio button or check box lists
+
 
 We continue executing on 2FA and SSO, following items as preparation for rollout are released
 - WEL-2350 API: SSO integration with Azure AD and Google
@@ -109,6 +200,12 @@ We continue executing on 2FA and SSO, following items as preparation for rollout
 - WEL-1586 Designer: Formatting for read only text area
 - WEL-585 Designer: URL Field Type: add support for new field type URL across CDT
 - WEL-1150 CDT variables in assessments for reference: Use CDT values as a pre-populated field values for assessments
+- WEL-2494 Designer: Webhook payload config
+- WEL-2474 Designer: Add unrecognized welkonnect security policy
+- WEL-2352 Designer: automation: add trigger on patient create / update
+- WEL-1614 Designer: Automation to be triggered from CDT Update
+- WEL-1013 Designer: Allow lists CDT to be displayed as radio button or check box lists
+
 
 
 ## Admin
@@ -136,6 +233,8 @@ In addition, several other features/bug fixes were completed
 - WEL-1342 Admin: Add release notes page
 - WEL-1797 Admin: Text on Delete Instance
 - WEL-2450 Add phone tree result to audit
+- WEL-2433 Admin: add custom user attributes
+- WEL-2429 Admin: add checkbox on api client for read user atribute
 
 We continue executing on 2FA and SSO, following items as preparation for rollout are released
 - WEL-2369 Admin: Auth SSO settings
