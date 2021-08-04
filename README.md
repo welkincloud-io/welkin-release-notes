@@ -1,3 +1,80 @@
+# Release notes - Version 2021.7.10
+
+### Date: July 22, 2021
+
+## New Features Callout
+Enable configuration in designer to hide and show read-only questions on assessments in Care
+- WEL-2758 
+- WEL-2780 
+
+Ability to create HTML templates in Designer and render in Care, allowing 
+to send html styled emails to patients and support read only fields in html mode
+- WEL-2735 
+- WEL-2558 
+- WEL-2715
+
+Enable seemless integration for eRX with DrFirst
+- WEL-2458 
+
+Add new widget to Insights Communications to support Unrecognized Phone calls
+- WEL-2720 
+
+Ability to send notifications to Welkin users via SMS and Email
+- WEL-2645 
+- WEL-2732
+
+Extending Automation to support trigger based of different conditions
+Enabling Automation to trigger of Encounters create/open/finalized
+- WEL-2774 
+- WEL-2635 
+- WEL-2687
+
+Menu search in Designer
+- WEL-2827 
+
+Better UI in Admin to support different configurations and phone calls
+- WEL-2629 
+- WEL-2571 
+
+## Everything Else
+## Care
+- WEL-2781 Calendar: When changing the event date, can't see whole calendar
+- WEL-2854 Care -> Assessments: Direct links to assessments don't always work
+- WEL-2689 Terminate a running call to care team member if patient hangs up
+- WEL-2737 \[Care -> Home page\] Users cannot remove emails from "New & Unread Communications" section of home page
+- WEL-2699 Care: Home Page shows Loading... only if no In Progress Encounters are found
+- WEL-2849 Lorem Ipsum on production error page
+- WEL-2740 Care: Document Info isn't shown
+- WEL-2738 Care: Can't view attached PDFs in emails from clients/patients
+- WEL-2724 Document can't be deleted if document type record wasn't created
+- WEL-2712 Care: Encounters: Missing encounters. With Care team on/off doesn't display user's encounters where user is not on care team
+- WEL-2709 Notification: Phase change is not visualizing a notification
+- WEL-2696 Bug: Encounters, open encounter in user perspective
+- WEL-2695 Care: Fix secondary diagnosis display on Encounter Reports
+- WEL-2686 Care: Fix Calendar multiple user sidebar search to return queried users
+- WEL-2685 DOB is off by 1 day if it's after 2/29 in a leap year
+- WEL-2680 Care: Create and Save button enabled even though mandatory fields are blank
+- WEL-2679 Care: Field validation shows error but still allows user to save
+- WEL-2644 Data is mysteriously hidden if it's not included in the UI component's view form
+- WEL-2681 Care: Required questions in assessments are not noted
+- WEL-2678 Care: Open Calendar day from encounter
+
+## Designer
+- WEL-2751 Unable to trigger multiple automations from the same trigger
+- WEL-2733 Designer: add user notification configuration tab
+- WEL-2700 Designer: Change summary. Sidebar changes indicator
+- WEL-2745 Designer: unable to add phase
+- WEL-2584 Designer: Long names make the goal template unmanageable
+- WEL-2736 Designer: Messaging templates disable SMS and chat if template is html.
+
+## Admin
+- WEL-2806 Admin: fix Security UI issues
+- WEL-2884 Unknown error when update instance phones
+- WEL-2832 Admin: Release notes icon is using the wrong URL
+- WEL-2819 Admin: eRx 'enable button' enabled for all instances
+- WEL-2792 Admin: Data Audit doesn't include care team or primary team contact changes
+- WEL-2667 Admin: Security Audit: Turning MFA on/off does not register in the audit trail
+
 # Release notes - Version 2021.6.6.2
 
 ### Date: July 1, 2021
