@@ -1,3 +1,93 @@
+# Release notes - Version 2021.8.1
+
+### Date: August 09, 2021
+
+
+## New Features Callout
+
+Labs Integration with Health Gorilla. As announced earlier today, Welkin now has 
+support for Labs integration with our partnership with Health Gorilla. This 
+integration allows our customers to order labs and see the results from a patient 
+profile in Welkin
+- WEL-2876
+- WEL-2875 
+- WEL-2823
+
+New and Improved User interface for Communication Center. Based on customer feedback 
+we made several improvments on Communication Center setup in Admin and in Care. 
+It includes usability issues and prettier UI
+- WEL-2804 
+- WEL-2803 
+- WEL-2885
+- WEL-2902
+- WEL-2877
+- WEL-2826 
+- WEL-2825 
+- WEL-2824 
+- WEL-2815
+
+Formula Fields in CDT allows customers to created formulas based on other fields in CDT
+It can offer an alternative to scoring without using assessment, and enables other 
+computations as needed
+- WEL-2108 
+- WEL-2749 
+
+New Notifications User Interface Design. Based on customers feedback, we made it better
+- WEL-2807
+
+New Action Buttons and Layout for Communication Center offers new
+ways to configure access to communication center, by enabling prepacked layout (assign it to role) 
+or using new action bar button for quick "New Email", "New SMS", "New Chat" and "New Phone" features
+- WEL-2853
+- WEL-2851
+- WEL-2837
+
+## Everything Else
+## Care
+
+- WEL-3029 Care -> Calendar -> Get events not assigned to encounters
+- WEL-2881 Care -> Live Chat -> Search a message -> Invalid format for chat token Request Method: GET Code: 400
+- WEL-2880 Care -> Live Chat -> Send a message -> Unknown error, Method: POST Code: 500
+- WEL-2866 Care -> Home -> The "New & Unread Communications" block does not immediately display incoming emails
+- WEL-2684 Home page shows yesterday's encounters in the "Events Scheduled for Today" section
+- WEL-2830 Zoom link needs to be updated with /s/ instead of /j/
+- WEL-2576 API: Encounters - Cancelled calendar event details show remain as reference in Encounter
+- WEL-2544 Care: Encounters - Cancelled calendar event details show remain as reference in Encounter
+- WEL-2540 Care: Encounter: jump to encounter from calendar and home page
+- WEL-2956 BU: webhook inconsistent structure 'source name' field between user attribute and assessments web hooks
+- WEL-2918 Care -> Calendar -> Select Day View -> Create an event -> You need to refresh the page to see the created event
+- WEL-2862 Care -> Insights -> Territories -> Click on the territories chart to view detailed info -> Error 600, site doesn't response
+- WEL-2934 Care: Unable to view calendar event if user was deleted or admin removes user's access
+- WEL-2988 Care: My Calendar: Month view displays event at incorrect time
+- WEL-2978 Care: Data View - Hover over on long text is not readable
+- WEL-2976 Care -> Encounters -> Remove an encounter from the calendar -> Select Existing Event -> The selection of events should display only those events to which the action is applicable
+- WEL-2968 \[Care -> Calendar\] -> Click settings icon -> The site doesn't response
+- WEL-2958 Care: Assessment: Boolean and List with Radio buttons are not represented correctly
+- WEL-2796 GET users/\{ID\}/encounters endpoint missing encounter
+- WEL-2743 Insights: Task summary csv should include the completed tasks
+
+## Designer
+- WEL-2850 Designer: Version 2 user notification configuration
+- WEL-2779 API: add config condition for user notifications
+- WEL-2777 Designer: update UI to support improved automation version.
+- WEL-2776 API: Automation: new structure: triggers, action groups
+- WEL-2722 API: Automation: trigger on upcoming encounters
+- WEL-2932 Unable to build a chart based on Scored Form 
+- WEL-2915 API: Add "Complete date" variable for assessments
+- WEL-2993 Designer: Errors on creating a filter
+- WEL-2888 Designer: new permission to see unrecognized communications
+
+
+## Admin
+- WEL-2883 Admin -> Users -> View a user -> User Information block -> The fields Username, Email, Phone number are duplicated
+- WEL-2882 Admin: can't assign admin/auditSecurity accessess when invite User on copy
+- WEL-2874 UI -> Admin -> API clients -> View a client -> the datatime \+ user should be on the same card where instance access is
+- WEL-2482 Unable to clone users in Admin when adding new user
+- WEL-2841 On set password page need add hint rules for password
+- WEL-2810 User attributes: Request to add custom user attributes
+
+
+
 # Release notes - Version 2021.7.10
 
 ### Date: July 22, 2021
