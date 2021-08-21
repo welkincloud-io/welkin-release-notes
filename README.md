@@ -1,3 +1,87 @@
+# Release notes - Version 2021.8.5
+
+### Date: August 20, 2021
+
+
+## New Features Callout
+
+Custom User Attributes: Our customers are now empowered to define custom user attributes
+The feature, configurable from Admin, allows customers to define custom user fields (similar to patient CDT)
+that would be shown on User Profile in Care. With that, customers are able to tailor user information to their 
+business needs and processes.
+- WEL-3164 
+- WEL-3163 
+- WEL-3161 
+- WEL-2903 
+- WEL-2852 
+- WEL-2904 
+- WEL-2863 
+
+
+New Automation: Automation Triggers for Calendar events is now available. Allows our customers to use Welkin 
+powerful automation to be triggered of Calendar events (create, updated, deleted)
+- WEL-3103
+- WEL-3095
+- WEL-3041
+
+New Data Export formats: Allows our customer to export data in JSON format (API Clients only) for easy consumption 
+by different external systems
+- WEL-3094 
+- WEL-2914 
+- WEL-2913 
+- WEL-2910
+
+New Security Settings: Customers are now able to configure password requirements (in Admin).
+In addition, OneLogin and PingIdentity SSO providers were added to our supported list
+- WEL-2562 
+- WEL-2943
+
+Seats and Licenses: Welkin has introduced a seat model. This model will simplify understanding 
+how many seats are used by customers and will avoid uneccessary charges for invited but not active users
+The feature will require every active user or api client that is using the system to have a seat associated with them
+it will also indicate number of agreed environments and other integreations
+
+**Important**: To avoid any service disruptions,Welkin currently does not enforce 
+the feature. Please reach out to your CSM for further setup and timelines to enablement
+- WEL-3111 
+- WEL-3072 
+- WEL-3071 
+- WEL-2892 
+- WEL-2859 
+- WEL-2839 
+
+## Everything Else
+## Care
+- WEL-3158 Care\\Designer -> Automation -> during the mailing of a letter during automation html template is sent in an incorrect form
+- WEL-3149 Care: Communication Center -> Page overflow \(impossible to scroll down the page\), for long email and attachments
+- WEL-3115 Care: Insights -> Territories -> Patients Distribution -> Select None in the drop down lists -> "Something went wrong" page is shown
+- WEL-3089 Care: Encounters are off by -12 hours
+- WEL-3066 Care: Calendar -> View an event -> Event has incorrect time in the drawer
+- WEL-3065 Care: Calendar -> Unknown participant appears after event editing
+- WEL-3014 Care: Communication Center - Starring received email throws error
+- WEL-3010 Care: Communication Center - Display Users and Patients number before placing a call
+- WEL-2982 Care: Homepage: Clicking on a task on Homepage brings the user to the task list but does not open the task in question
+- WEL-2899 Care:  Calendar -> Some users are not able to create an event in the calendar
+- WEL-3092 Care: SMS notification should open SMS list
+- WEL-3080 Care: API: Send WEB Hook with object that triggered notification, e.g. appointment..
+- WEL-3026 Care: Mark drafts as failed when exception during sending
+- WEL-3063 Care: Calendar -> Create event -> Participants -> Users have access to the environment, but they are labeled "no access"
+- WEL-2980 Care: Homepage: Only able to click on Time and Event names to open in Calendar.  Not on name field
+- WEL-2951 Care: Reassigning unrecognized emails patients throws errors
+
+
+## Designer
+- WEL-3104 Designer: add webhook config in user notification
+- WEL-3004 Designer - Edit Security Policy - Patient Info Selection
+- WEL-2989 Designer: Disable bulk edit if edit operation is disabled on Data View
+- WEL-2930 Designer: New Variable to gen link to a task in notification template
+
+
+## Admin
+- WEL-3025 Show http response code when fire webhook in audit log.
+- WEL-3030 Automation Audit -> Add info about webhook call result
+
+
 # Release notes - Version 2021.8.1
 
 ### Date: August 09, 2021
