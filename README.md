@@ -1,3 +1,76 @@
+# Release notes - Version 2021.9.3
+
+### Date: August 20, 2021
+
+
+## New Features Callout
+New Automation: New Triggers and Actions for Encounters
+- WEL-1783 
+
+Programs and Phases: In this release, new UX and new Features for Programs, including:
+1. Transition History
+2. Order of Phases 
+3. New User interfaces in Designer and Care
+4. Support for multiple finishing phases in each program
+- WEL-3191 
+- WEL-3190 
+- WEL-3189 
+- WEL-3187 
+- WEL-3186 
+- WEL-3184 
+- WEL-3195 
+- WEL-2890 
+
+User Attributes: Support for Dictionaries on User Attributes
+- WEL-2924 
+- WEL-2923 
+
+eRx Integration: Enhancement to eRx integration: Out of the box Action Bar button and redirect improvement
+- WEL-3077 
+- WEL-3076 
+- WEL-2900 
+
+## Everything Else
+## Care
+- WEL-3287 Care: -> Create notification for Assessment Completes and Phase Changed -> User doesn't receive email, sms and sometimes notifications
+- WEL-3286 Care -> Notifications -> emails\\sms\\notifications come in an amount of 10
+- WEL-2672 Care: Data View - Not showing sort order correctly
+- WEL-3311 API Assessment Migration. Script to remove none existent phases in assessments.
+- WEL-3301 API: Add deleting program/phase cascading consistency consistency check \(delete / update\)
+- WEL-3242 Care: Automation Notifications for User and PoC do not work as expected
+- WEL-3213 Care -> Click on the profile icon -> Email is displayed incorrectly
+- WEL-3233 Tasks not showing up in "My Tasks" or "Home"
+- WEL-3231 Zoom action bar button doesn't work
+- WEL-3210 Care -> Text Reply - No "Send Button" is visible under low resolution
+- WEL-3198 Care -> Communication Center -> Emails -> View a letter with pdf -> It is not visible where to set the checkbox for selecting a document
+- WEL-3194 When a member profile is clicked in the appointment on Calendar, it takes you to the members eRx page in their profile, not their Summary.
+- WEL-3084 Data Type default values are not working for previous record
+- WEL-2984 Care: CommCenter - Sms description bottom text wrong
+- WEL-3169 Care: If comm center is not setup, updated UX page for better clarity
+- WEL-2877 Care: move cadence to another drawer
+- WEL-2729 Automation: Task not getting created on automation when assignee is not POC
+- WEL-3159 \[Care -> Communication Center\] -> Edit draft with html template -> Save -> Send -> Email comes with tags
+- WEL-2931 Care: variable to generate link to task in notification template
+
+## Designer
+- WEL-3274 Able to publish changes that actually broke the configuration
+- WEL-3249 Change action bar default button icon names
+- WEL-3168 Designer: New Icons for "New Email", "New SMS" and "New Phone" 
+- WEL-3276 Add types Automation Notifications for User
+- WEL-3037 Add consistency check for assessments
+- WEL-2770 Cannot add goals with shared/same task templates
+- WEL-3155 Designer: security policy to allow API clients access export APIs
+
+
+
+## Admin
+- WEL-3280 Admin shows a message that license exceeded without a reason
+- WEL-3105 Add domain validation for tenats
+- WEL-2974 Admin: Postponed Tasks show archived instances
+- WEL-3125 Error message on creating instances
+- WEL-3150 Admin: Security Settings Page: One menu out of context and title is off
+
+
 # Release notes - Version 2021.8.5
 
 ### Date: August 20, 2021
