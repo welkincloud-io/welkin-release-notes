@@ -1,6 +1,6 @@
 # Release notes - Version 2021.9.3
 
-### Date: August 20, 2021
+### Date: September 10, 2021
 
 
 ## New Features Callout
