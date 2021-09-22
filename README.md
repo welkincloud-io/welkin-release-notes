@@ -1,3 +1,74 @@
+# Release notes - Version 2021.9.4
+
+### Date: September 22, 2021
+
+
+## New Features Callout
+Editing HTML templates: When editing HTML template in Care, Rich text editor is now supported.
+The editor, will convert the message to HTML and will send it to the patient. At this point, only editing HTML 
+templates is available, composition will be released in subsequent releases
+- WEL-3068
+
+Timezones: Welkin reduced the list of timezones to a smaller and more manageable list of timezones.
+The goal is to simplify the lists and make it easier for our customers to use.
+```
+{ label: 'Atlantic', value: 'Atlantic/Bermuda' },
+{ label: 'Eastern', value: 'US/Eastern' },
+{ label: 'Central', value: 'US/Central' },
+{ label: 'Mountain', value: 'US/Mountain' },
+{ label: 'Pacific', value: 'US/Pacific' },
+{ label: 'Alaska', value: 'US/Alaska' },
+{ label: 'Aleutian', value: 'US/Aleutian' },
+{ label: 'Hawaii', value: 'US/Hawaii' },
+{ label: 'Western European', value: 'WET' },
+{ label: 'Central European', value: 'CET' },
+{ label: 'Eastern European', value: 'EET' }
+```
+- WEL-3309 
+- WEL-3048 
+
+Admin: New UX for Custom attributes, to make it user friendly
+- WEL-3212 
+
+
+## Everything Else
+## Care
+- WEL-3389 When creating a task with a comment, the server returns an error
+- WEL-3377 Unable to trigger automations with conditions
+- WEL-3354 Forms -> Creating a form with a condition to show next question, it is not displayed after answer on first one
+- WEL-3353 Improve emails sent via automation - using sender name instead of automation name, leaving empty subject when needed
+- WEL-3330 Inactive users can be assigned to care teams
+- WEL-3319 Care - Data Views: Formulas will not display the calculated value if all fields in calculation are not in the view
+- WEL-3317 Care - Live Chat Search for a message -> Open it -> Some messages are duplicated
+- WEL-3308 Care -> Insights -> User doesn't exist, Request Method: GET Code: 404
+- WEL-3296 Care: Program History: when more than 10 steps are in, the padding is off
+- WEL-3283 New Email/New SMS/New Phone Call/New Chat drawer can be opened, even if no config is enabled
+- WEL-3214 Care -> Insights -> Communication -> Unrecognized Emails\\Unrecognized SMS\\Unrecognized Calls -> Display new ones at the beginning of the list, not at the end
+- WEL-3211 Email automation isn't sending if there's an action delay
+- WEL-3165 Care -> My Profile -> Save profile with readonly attributes -> Error 400
+- WEL-3129 Comms center phone section does not display any information on the number that was called by the coach
+- WEL-3064 Care: Home screen showing unread communication user name as root
+- WEL-2894 Client email addresses are encoded with extra information
+- WEL-3227 API: Endpoint for formula validation
+
+## Designer
+- WEL-3288 rename Erx to eRx in designer and care UI
+- WEL-3252 Designer -> Layouts -> Select UI components with long names -> They are displayed not correctly
+- WEL-3302 Designer: Add deleting program/phase cascading consistency consistency check \(delete / update\)
+- WEL-3254 Designer: Draw digit \(or non-binary\) condition
+- WEL-3207 Designer: use formula values in charts
+- WEL-2948 API: Add possibility to use condition with digit gathering for phone tree
+
+## Admin
+- WEL-3351 userAttributes field renamed to customUserAttributes: restored backward compatibility in addition to new service
+- WEL-3304 API Clients -> Incorrect view of the page with long text fields and after minimizing a page
+- WEL-3293 Bulk Error message breaks off in a middle of a word, when bulk assigning seats and licenses
+- WEL-3128 Admin: API Client: Bulk update screen jumps
+- WEL-3314 Add User Attributes query params - to support new UI capabilities for Users View
+- WEL-3295 Data Audit: Programs and Phases are not part of Data Audit
+- WEL-3294 Admin: Update help text for Seats and Licenses
+- WEL-3093 API: Only API client should have access to data export API
+
 # Release notes - Version 2021.9.3
 
 ### Date: September 10, 2021
