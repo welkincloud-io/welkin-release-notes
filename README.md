@@ -1,3 +1,51 @@
+# Release notes - Version 2021.10.1
+
+### Date: October 03, 2021
+
+## New Features Callout
+Designer: Webhook: Add a list of standard headers to support webhook integration
+- WEL-3393 
+
+Care: Comm Center: Rich text editor is now supported on New Email. Similar to HTML Template in designer
+the email created in rich text format will be converted to html (in a closest possible style) and sent out to the patients
+- WEL-3442 
+
+## Everything Else
+## Care
+- WEL-3495 Email user notification doesn't use subject specified in the template
+- WEL-3484 Display of date date/time in message templates
+- WEL-3399 Users can't access our programs page
+- WEL-3501 Care -> Communication center -> SMS -> Correct information message and character limitation - UX improvement
+- WEL-3458 API: Phone Tree: Add action for call redirection
+- WEL-3426 API: Phone Tree: Add condition for coach's working hours checking
+- WEL-3472 Care Portal Tasks UI - Added a scroller for large list of tasks templates
+- WEL-3414 Patient Program is not correctly loading
+- WEL-3400 Care: Programs: Start a program 'Not in Phase' -> 500 error
+- WEL-3395 Care: Assessments: Incorrect number of assessments is displayed
+- WEL-3316 Care - Comm Center: -> SMS -> Add as starred Scheduled SMS -> Date and time is changed to current
+- WEL-3237 Security: Prevent HTML injection @ comment section
+- WEL-3305 Care: Comm Center: Mark sms as 'failed' if we get error from SMS provider
+- WEL-3291 Comm Center: Manually created draft emails should default to "No Priority"
+
+
+## Designer
+- WEL-3402 Designer: Older configuration is causing issues within program and phases - cannot create draft in certain conditions
+- WEL-3403 Designer: The custom field setting for value type is not being inherited when used on the data type field
+- WEL-3384 \[Designer- Automation\] Set 'Condition Check type' as default ' After Trigger'
+- WEL-3005 Designer - Create Layout - Added indicator that Layout components are required - UX Improvement
+- WEL-2996 Designer: Create Data View - Required fields to be indicated - UX improvement
+
+
+## Admin
+- WEL-3410 Admin -> Security Settings -> Turn on Two-Factor Authentication -> 500 error
+
+## Important Callout
+- WEL-3430 Care: Calendar -> Working Hours: fix order of days of week 
+We recently discovered that in some cases there is a disparity of working hours. Some users experienced 1 day shift in working hours
+This was recently fixed in the release but may cause some disruption
+
+**We ask all our users that use Work Hours feature to review their work hours for correctness and update if necessary**
+
 # Release notes - Version 2021.9.4
 
 ### Date: September 22, 2021
