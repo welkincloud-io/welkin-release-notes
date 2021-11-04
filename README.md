@@ -1,3 +1,155 @@
+# Release notes - Version 2021.11.5
+
+### Date: November 05 2021
+
+
+## New Features Callout
+
+### New Encounters and Calendars UI
+
+This feature is a result of customer feedback that we recieved over last quarter. It features a redesigned Encounters UI, Events UI, API, filters and other 
+capabilities.
+
+Some of the new capabilities include:
+- Synchronization of calendar events and encounters, allowing seemless integration between the two
+- Different types of events for leave and team meetings vs encounters, including all day events
+- Redesigned and improved UI
+- Ability to schedule events and encounters for other users
+- Improved filters and search
+- Persisted history of all the changes to ensure accurate data representation with improved audit log
+- Improved navigation between calendar and encounter
+
+
+### Profiles
+In the new release, Welkin supports a concept of Profile. Profile is a new core entity, that can be defined and configured in the designer and can be used
+to relate to patients. Typical use cases of profiles include representation of Family Members, Hospitals, Physicians that provide support to the patients but 
+not necessarily have direct access to Welkin platform.
+
+With this powerfull features, customers can manage multiple lists of profiles, associate profile records with patients (using our flexieble CDT model) and fully customize the experience
+
+Profile records can participate in the Assessments as well, as a response to a question. 
+As usual, profiles will require a security policy configuration
+
+This is the first release of Profiles and there would be subsequent releases with enhaced functionalities in the near future
+
+### Assessments: Using conditions to hide and show required questions 
+
+Welkin Platform offers two levels of required fields. CDT level will ensure data consistency and is enforced through the API. Another level
+is an assessment level. With that feature release, required questions can be validated in the UI on the assessment level, and as a result can participate in 
+conditional show/hide functionality. In order for the feature to function properly, the underlying CDT cannot have required fields and the validation will only work in
+the assessments user interface
+- WEL-3693 
+- WEL-3516 
+- WEL-3514 
+
+### Assessments: Using CDT variables in the assessments questions.
+
+This feature allows one to use values from a CDT in order to form questions in the Assessments. 
+Using Welkin variable builder, one can refer to values previously
+collected in order to present dynamically created question. 
+Welkin will also persist the questions with resolved values (values to the moment of finalized questions) in order
+to maintain integrity for presentation of the values over time
+- WEL-3362 
+- WEL-3359 
+- WEL-3358 
+- WEL-3357 
+- WEL-3360 
+
+### Assessments: Addition of Contains operator 
+
+This feature enhances Welkin's list of supported operators, and allows one to use Contains for multi select lists for condition evaluation in the assessments
+- WEL-3505 
+- WEL-3257 
+- WEL-3486 
+- WEL-3259 
+- WEL-3258 
+- WEL-3256 
+
+### Assessments: Scoring of fractions
+
+Another improvement in Assessments mechanism, we allow scoring of fractions within our built in it scoring mechanisms
+- WEL-3594 
+- WEL-1742 
+
+### New Automation
+
+This release includes a new user interface in Automation UI in Designer. It offers a simpler and more 
+intuitive way to configure automation.
+This feature was based of customer feedback and was built in collaboration with many of our customers. Feel free to reach out for more suggestions on improvements
+- WEL-3677 
+- WEL-3675 
+- WEL-3534 
+- WEL-3490 
+- WEL-3689 
+- WEL-3449 
+
+### Message Templates improvements
+Now, you can use Encounter Variables within the message template (sms/email/chat) messages.
+The variables, will resolve in runtime, similar to the currently available variables
+- WEL-3427 
+- WEL-3209 
+
+
+### Phone Tree
+Phone tree capabilities now include Users language (Primary and Secondary languages in the User Attributes), honoring the working hours system and a signal while the call is being connected
+
+- WEL-3498 
+- WEL-3493 
+- WEL-3615 
+- WEL-3620 
+- WEL-3666 
+
+
+### Care UX Updates
+Clicking on Tasks and Programs will open a drawer (similar to assessments and CDT) and will offer similar UX interaction for consistency
+- WEL-3597 
+- WEL-3595 
+
+
+## Everything Else
+## Care
+- WEL-3586 Export API: Patient - matched JSON response to include care team
+- WEL-3496 Fixed: Clicking on new email notifications doesn't open the new email
+- WEL-3452 Draft Emails - Set up communication and automation to send email but no draft in comm center
+- WEL-3451 Care -> Communication Center -> Emails: Reassignment emails with attachments causes and error
+- WEL-3555 Remove wifi symbol next to patient name in My Patients
+- WEL-3529 Can't attach files to emails sent from Welkin
+- WEL-3700 Care -> Calendar: View an event with a lot of info on a monitor with small resolution -> No scroll, impossible to manage an event
+- WEL-3687 Care -> Comm Center: Filtering email templates by label is case sensitive
+- WEL-3637 Care: Tasks -> Bulk Edit -> Something went wrong
+- WEL-3612 Care - Calendar: Select Month view ->Montly calendar selector to show a correct month
+- WEL-3540 Fixed: Use local time instead of "Started Date" for Notes & Assessments in encounters is in UTC
+- WEL-3517 Care -> Communication Canter -> New SMS -> Correct counter view and highlight the counter and the text of the note in red
+- WEL-3453 Updated usability for Forms/Assessments Links that are formed using variables in read only text
+- WEL-3333 Calendar is moving appts to one day prior to the date requested
+- WEL-3691 Care -> Assessments: Impossible to Finalize a form if it has required fields with types boolean, integer and float
+- WEL-3539 Fixed UI components on the insights page if there's overflow of data
+- WEL-3518 Members no longer receiving push notifications with in app messaging
+- WEL-3776 Assessment: Multi-select list is not showing the conditional question in a multi list scenario
+- WEL-3278 PFA: Frame Notification mechanism when PFA completed - allows one to catch an event of PFA completed
+
+## Designer
+- WEL-3681 Errors in Form with OR conditions using Equals operator
+
+
+
+## Admin
+- WEL-3568 SSO settings: Resolved issue with Google SSO login flow and updated the instructions
+- WEL-3544 Admin: Cannot assign env to api client
+- WEL-3523 UI: Label is now being shown instead of the value
+- WEL-3511 Admin: Click on "Plus sign" in Automation Audit does not work
+- WEL-3455 Admin - Users / Care - Patients -> Lists must be sorted by Full Name
+- WEL-3435 Admin: Include custom user fields in bulk update
+- WEL-3686 Admin: Postponed Tasks - fixed and issue with opening the page under certain conditions
+- WEL-3743 Admin: Fixed sort order of users after bulk update
+
+
+## Important Callout
+
+Designer will start enforcing Regions/Territories consistency checks. It will prevent one from deleting territories if there are patients assigned to them
+- WEL-3448 
+- WEL-3166 
+
 # Release notes - Version 2021.10.1
 
 ### Date: October 03, 2021
