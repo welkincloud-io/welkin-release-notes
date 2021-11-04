@@ -1,7 +1,6 @@
 # Release notes - Version 2021.11.5
 
-### Date: November 05 2021
-
+### Date: November 05, 2021
 
 ## New Features Callout
 
