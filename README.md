@@ -1,3 +1,42 @@
+# Release notes - Version 2021.11.8
+
+### Date: November 10, 2021
+
+## New Features Callout
+Home Page: Missed recognized calls, will now appear in New and Unread Communications widget on the home page
+- WEL-3858 
+- WEL-3740
+
+## Everything Else
+
+## Care
+- WEL-3861 Assessment completing 500 error - The error manifested in assessment with pre-populated values from the variables
+- WEL-3800 Care: Cannot fill the assessment with CDT field - Profiles reference
+- WEL-3831 Profiles, updating CDT record throws 400
+- WEL-3483 Care: Patient Edit: Territories need to be displayed in alphabetical order
+- WEL-3836 Cannot finalize assessment - the issue appeared for assessments with read only fields
+- WEL-3840 Unable to send DocuSign docs via email - default configuration is missing 
+- WEL-3839 Recognized SMS not routing to patient profiles; arriving in "unrecognized" - for incorrectly loaded phone numbers
+- WEL-3837 Care: Bug: Encounter details section - Overflow of visual components
+- WEL-3857 Care -> Encounters: The page does not fit on the screen regardless of the screen size
+- WEL-3855 Unable to archive notifications
+- WEL-3848 Encounter button is not showing words when resolution not 100%
+- WEL-3805 Change the type of input for Rich Text editor for Spellcheck working
+- WEL-3635 Email replies don't maintain their formatting
+
+## Designer
+- WEL-3818 Designer -> Message Templates -> Copy a message template instead of starting from scratch
+
+## Admin
+N/A
+
+## Known issues
+Some customers may experience an issue with docusign integration. Two known issues right now:
+1. Signed document is not visible in Welkin
+2. Document cannot be sent out
+
+Both are being investigated at this point
+
 # Release notes - Version 2021.11.5
 
 ### Date: November 05, 2021
