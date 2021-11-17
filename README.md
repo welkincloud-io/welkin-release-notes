@@ -1,3 +1,37 @@
+### Date: November 17, 2021
+
+## New Features Callout
+- WEL-3804 Add rich text editor when selecting template without HTML
+- WEL-2939 Admin: Manage deleted users
+
+
+## Everything Else
+
+## Care
+- WEL-3901 Encounter dates are inconsistent
+- WEL-3896 "Add Field" button not accessible after adding a few fields
+- WEL-3874 Error when trying to complete the assessment
+- WEL-3870 DocuSign document error when uploading to Welkin 
+- WEL-3846 Communication Center (SMS) Templates with many symbols (that exceeds the allowed SMS limit) -> Impossible to edit the sms
+- WEL-3812 Encounters and Events: Cannot create any event that ends at 12am
+- WEL-3783 Task Creation: Inactive users should not be displayed at list of Assignee
+- WEL-3747 Cannot edit encounters on other user's calendar from Calendar
+- WEL-3735 Notifications: Red icon goes away after opening Notifications drawer
+- WEL-3547 Calendar(Working hours) Schedule of days is saved with an offset of one day
+- WEL-3218 Patients Side section is not highlighted when navigating to a specific patient
+
+
+## Designer
+N/A
+
+## Admin
+N/A
+
+
+
+
+
+
 # Release notes - Version 2021.11.8
 
 ### Date: November 10, 2021
