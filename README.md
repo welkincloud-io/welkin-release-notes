@@ -1,6 +1,6 @@
 # Release notes - Version 2021.11.10
 
-### Date: November 17, 2021
+### Date: November 17, 2021 
 
 ## New Features Callout
 - WEL-3804 Add rich text editor when selecting template without HTML
