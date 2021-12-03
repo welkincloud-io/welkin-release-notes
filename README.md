@@ -305,7 +305,7 @@ Admin: New UX for Custom attributes, to make it user friendly
 - WEL-3212 
 
 
-## Everything Else
+## Everything Else 
 ## Care
 - WEL-3389 When creating a task with a comment, the server returns an error
 - WEL-3377 Unable to trigger automations with conditions
