@@ -1,3 +1,64 @@
+# Release notes - Version 2021.12.2
+### Date: December 3, 2021
+
+## New Features Callout
+- WEL-3952 Display, Edit, Search by patient's MRN field
+- WEL-3711 MMS - Ability to add SMS attachment similar to email.
+- WEL-3371 New User Menu for Unrecognized Communications with notifications
+- WEL-3624 Recurring triggers in Automation 
+
+## Everything Else
+
+## Care
+- WEL-3966 Encounters: Show the 'Updated' date for Planned encounters if created date is not equal to updated date
+- WEL-3954 Notifications: Counter for unread notifications is not changed for 'Task updated' action
+- WEL-3953 Pagination overflows the dropdown-menu
+- WEL-3592 Task: Patient name is not displayed in the notification for the Task
+- WEL-3814 Align content title and "Create" button
+- WEL-3799 Disable regions not related to user region when creating a patient
+- WEL-3936 Profiles: The height of Menu should be static
+- WEL-3934 Programs: Finished programs move down the list, latest added, display on top
+- WEL-3932 Programs: Add Program name to the alert for Updating program and Add alert at the same style for Program adding
+- WEL-3931 Programs: If phase has no description - show 'No Description' at popover
+- WEL-3844 Validate phone numbers after resaving a patient
+- WEL-3980 Reply to email from inbox: Sent status of email is displayed at Inbox
+- WEL-3905 Body of incoming emails in html format
+- WEL-3898 Text of message for what user has been replied is not formatted
+- WEL-3827 Welkin Export to include Programs
+- WEL-2954 Communication Center: Formatting of HTML in email signatures is removed from threads
+- WEL-3807 Profiles: Order in Designer for preview can dictate order in Care preview 
+- WEL-4007 Implement pagination in calendar insights
+- WEL-3940 Tasks are currently not allowing users to select an "Assignee name" that is not themselves
+- WEL-3925 Care: Notifications -> Time of email is incorrect at list of emails
+- WEL-3863 UI doesn't allow user to view entire dropdown for certain Program phases dropdowns
+- WEL-3841 Data audit doesn't show target name for changes to the PATIENT_PROGRAM object
+- WEL-3216 Graphs not graphing the data points
+- WEL-3843 Assessments: Take an assessment with text area fields type -> Text is displayed with a delay
+- WEL-3759 Calendar picker -> Select time range and not apply changes -> Open calendar -> Selected value is highlighted
+- WEL-3704 Calendar -> Day view shows incorrect Working Hours
+- WEL-3660 Date is not showing on Homepage for Encounters
+- WEL-3513 Click on unread email notification going to "Sent" box instead of "Inbox"
+- WEL-3960 PFA : CDTs are not populating in Assessment Read-only fields.
+- WEL-3876 Notification: Red Icon on notification bell is not showing for missed recognized calls
+- WEL-3976 Assessment is throwing a 500 error when finalizing
+- WEL-3963 CDT permissions disappeared from policy
+- WEL-3979 Issues with formula fields in profiles
+- WEL-2783 Template variable for pre-populated values is not working
+
+## Designer
+- WEL-3938 Conditions in Forms: If CDT has Value Type = Integer or Float then condition doesn't display the value
+
+## Admin
+- WEL-3950 Filter by license seat does not work for unassigned
+- WEL-3744 Search in Security Audit does not work
+- WEL-3872 Show phone ID for using it in API
+- WEL-4017 Automation Audit -> Add sorting by date : newest on the top
+
+## Known issues
+N/A
+
+
+
 # Release notes - Version 2021.11.10
 
 ### Date: November 17, 2021 
