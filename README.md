@@ -1,3 +1,58 @@
+# Release notes - Version 2021.12.4
+
+### Date: December 8, 2021
+
+## New Features Callout
+Designer: Add default button for "New Encounter" to the action bar.
+New action bar button allows instant creation of encounter from any patient layout as a convenience method
+- WEL-3924 
+
+Docusign Integration: Send documents for signature using SMS.
+In this release, customers that enabled SMS delivery on their docusign account, can now send from welkin documents for signature using SMS.
+The sms will be delivered directly from docusign and can be opened and signed on mobile device.
+New SMS configuration option is now available in the designer for docusign templates
+- WEL-3883 
+- WEL-3882 
+- WEL-3878 
+
+API Client: with Other Team Member Events permission, api client can modify the host of the event to a different user
+- WEL-3697
+
+
+## Everything Else
+
+## Care
+- WEL-4025 Commcenter: Receiving emails don't work when patient send email to several users at the same time. Displays TO/CC list of all emails that patient used for sending email to welkin, including multiple users support
+- WEL-4019 Care: Assessments - validation errors disappear when you make changes to another field
+- WEL-3899 API: add search and pagination to request for getting patients in all tenants
+- WEL-4036 Saved data in Profiles does not appear in edit pane from list view page
+- WEL-4031 Care: move ids to body in the request /\{\{tenant\}\}/\{\{instance\}\}/reports/patients - Fix to support reports dataset being too large
+- WEL-4021 Care: Export Data -> Update programs export with new columns
+- WEL-4018 Care: View Encounter -> Edit encounter disposition -> Incorrect displaying of calendar
+- WEL-4000 Notification for Unrecognized communications does not work in the All view in the notification area
+- WEL-3997 Filters for Unrecognized communications do not work by computing values in correctly
+- WEL-3993 Unable to finalize assessment if required boolean field is present
+- WEL-3984 Formulas in fields not displaying correctly
+- WEL-3949 Error when loading list of patients for program phase in insights - fixed report too large
+- WEL-3785 Care: Tasks drawer: update to the UI to conform to new UI specs
+- WEL-3611 Encounters and Calendar Insights pages are not loading any data - fixed the report
+- WEL-4011 BUG: Care: Spelling, encounter status "CANCELED" -> "CANCELLED"
+
+
+## Designer
+- WEL-4024 Designer: Remove the ability to make boolean fields required in assessments
+
+
+## Admin
+- WEL-3845 Admin Performance improvement: Slow performance on request admin/audit-data and admin/patients for over 50,000 patient typeahead
+
+
+## Known issues
+
+N/A
+
+
+
 # Release notes - Version 2021.12.2
 ### Date: December 3, 2021
 
