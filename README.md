@@ -1,3 +1,30 @@
+# Release notes - Version 2021.12.5
+
+### Date: December 10, 2021
+
+## Care
+- WEL-4049 Profiles added through an Assessment do not appear on the profile detail or in the patient CDT
+- WEL-4048 Improve error message when trying to send Docusign using SMS/Email for a patient that is missing SMS or Email in their profile
+- WEL-4047 Care -> Unrecognized Communications -> Home page -> the area with the patient info in the line is not clickable
+- WEL-4046 Care -> Insights -> Export Data : fixed 500 error that appears in certain cases
+- WEL-4037 Patients associated with a profile do not appear on the profile detail
+- WEL-4035 Error on export Voice calls - Fixed errors on exporting voice calls for missing enum
+- WEL-4026 Care -> Communications Center -> ''Select Files to Attach'' pop up : fixed UI to include scroll for smaller resolutions
+- WEL-3964 Assessments: Template created for an assessment but getting an error when trying to view.
+- WEL-3934 Care - Programs: Finished programs move to the down of list, latest added - display on the top
+- WEL-3755 Care - Encounters: Add assessment and click on it to open -> Endless loading
+- WEL-3955 Care: Improve "Add Assessment to Encounter" UI according to the new mockups
+
+## Designer
+- WEL-4005 Designer -> CDT -> Min length and Max length must not be negative
+
+## Admin
+N/A
+
+## Known issues
+N/A
+
+
 # Release notes - Version 2021.12.4
 
 ### Date: December 8, 2021
