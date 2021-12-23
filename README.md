@@ -1,3 +1,69 @@
+# Release notes - Version 2021.12.11
+
+### Date: December 23, 2021
+
+## New Features Callout
+**Expiration dates configurable on PFA: WEL-3981**
+
+With this feature release, customers can configure expiration dates for Patient Facing Assessments.
+1. Navigate to Admin -> Security Settings -> General 
+2. Select any number of days between 2 and 30 for PFA link to be valid
+
+**Configurable User Navigation Menu: WEL-4023**
+
+With this release, Welkin is enhancing role level customization. For each role, customers will now 
+be able to configure User Navigation Menu (left green bar in Care) by assigning menu items for 
+specific roles and removing items for roles that they are not relevant for. 
+For example, customers can completely hide Tasks or Home page, if their implementation does 
+not need such items for certain or all roles
+
+**New Roles UI in Designer: WEL-4022**
+
+New User Interface for Roles in the designer. With that release, each role will display in a read 
+only mode all the security policies that are attached to it and will display what User Navigation 
+Menu items are available for each role
+
+**New Security Policy UI in Designer: WEL-3825**
+
+New User Interface for Security Policies in the designer.To further simplify working with security 
+policies, new user interface is introduced. 
+At this point, its UX improvement without any fundamental functional changes. 
+New user interface is part of a new pattern of interfaces that our team continues to work on,
+to make Designer as intuitive as possible.
+
+**New layouts UI in Designer: WEL-4081**
+
+New User Interface for Layouts in the designer, will make it easier for customers to visualize 
+how components will be placed on the layouts.
+
+## Everything Else
+
+## Care
+- WEL-4061 Email/SMS templates should be organized by Alphabet order
+- WEL-4032 Comm Center emails: Accurately display all addresses from 'TO' field
+- WEL-4056 Incoming phone numbers are not being identified as belonging to recognized patients
+- WEL-3847 Custom date encounter views is not working for dates prior to November 1
+- WEL-4053 Encounters: Viewing encounters on calendar will display original users calendar + 
+encounter assignee calendar
+- WEL-4113 User Notifications for Voice Call Missed Call operational
+- WEL-4003 Notifications for assessment completion should go to care team only
+- WEL-4096 Communication Center ->Unrecognized Communications: Message text is right justified
+- WEL-4094 Ability to delete old drafts in communication center
+- WEL-4093 Communications Center: ''Select Files to Attach'' UI improvements 
+
+
+## Designer
+- WEL-4057 User Notifications. Disable email / sms template dropdowns if not checked
+- WEL-4118 "Not Equal To" Conditional logic option is not operational under certain conditions
+
+## Admin
+- WEL-4073 Data Audit/Security Audit -> Search doesn't work by part of name, only Full name
+- WEL-3978 Security Audit -> Improve functional filters work
+
+## Known issues
+N/A
+
+
 # Release notes - Version 2021.12.5
 
 ### Date: December 10, 2021
