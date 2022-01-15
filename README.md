@@ -1,3 +1,39 @@
+# Release notes - Version 2021.1.1
+
+### Date: January 14, 2021
+
+## Care
+- WEL-4166 Unrecognized calls were set to 'false' when for recordings
+- WEL-4162 No notifications to Care team about missed calls if patient hangs up after dial tone (recognized\unrecognized)
+- WEL-4127 Resolved 400 error triggered on Assessment completion
+- WEL-4106 Error in how events appear when viewing a team member's calendar
+- WEL-4095 Unrecognized Communications -> Email\SMS -> Display presence of attached files in the table and on the Assign SMS drawer
+- WEL-3853 Search bar does not allow pasting phone numbers and does not allow using area code + phone number
+- WEL-3727 Encounters Report: Some fields were missing data
+- WEL-4164 PFA link after its expiration date -> hide "#1 Aws Jwt Token has expired" error
+- WEL-3847 Custom date encounter views is not working for dates prior to November 1
+- WEL-3732 Clicking the phone number in Encounter takes user to Call Screen
+- WEL-3665 Working Hours is now represented in calendar for Sunday for different view types
+- WEL-4134 Encounter: Changed comments field type from text field to text area for longer comments
+- WEL-4183 Tasks -> Change some info -> Save button is inactive; Change status -> error is displayed
+
+## Designer
+- WEL-4131 Resolved getting blank screen when updating a role
+- WEL-4098 Assessment: "readOnly" field names are duplicated
+
+## Admin
+- WEL-4156 Logs -> Add more info: tenant and instance name
+- WEL-4138 Exclude welkinhealth.com email domain from seat/license count
+- WEL-4149 Automation -> If action group is deleted in the automation then automation event in logs should have correct status 'automation not found'
+- WEL-4058 Admin: Display username user name field as read only. Backend doesn't allow user to edit it.
+
+## API
+- WEL-3826 Add info about user activity to API responses
+
+## Known issues
+- WEL-4216 Encounters Filters 'Today', 'This week' and 'This month' show all encounters
+
+
 # Release notes - Version 2021.12.11
 
 ### Date: December 23, 2021
@@ -50,7 +86,6 @@ encounter assignee calendar
 - WEL-4096 Communication Center ->Unrecognized Communications: Message text is right justified
 - WEL-4094 Ability to delete old drafts in communication center
 - WEL-4093 Communications Center: ''Select Files to Attach'' UI improvements 
-
 
 ## Designer
 - WEL-4057 User Notifications. Disable email / sms template dropdowns if not checked
