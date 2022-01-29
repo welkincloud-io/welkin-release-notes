@@ -1,4 +1,87 @@
-# Release notes - Version 2021.1.1
+# Release notes - Version 2022.1.8
+
+### Date: January 28, 2022
+
+## New Features Callout
+
+**Patient Edit: New Fields - WEL-4186**
+
+In this release, several new features were added to patient edit and patient summary fields
+1. Secondary Phone
+2. Secondary Email
+3. Patient Summary enhanced view
+
+Welkin customers can now add secondary phone and secondary email to each patient profile
+In addition, Comm center will allow sending messages, emails and performing phone calls to both primary
+and secondary fields. Welkin will also consider secondary fields when performing a match on incoming communications
+
+**Calendar Suggestions: WEL-3833**
+
+Several improvements were made to the calendar, to help scheduling meetings/encounters
+1. Ability to create multiple meetings at once 
+2. Indicate when a meeting is being scheduled on a conflict
+3. Indicate when a meeting is being scheduled outside of work hours
+4. Show timezones for scheduling an event
+5. Updated styling to match general guidelines
+
+**Automation: WEL-4209**
+
+Few additions to Welkin automation. We continue investing into reducing notification fatigue. Customers can now tailor notifications by different methods
+to execution of important automation, and reduce overall notifications in Welkin to reduce stress on providers
+With this release, customers can add new actions to automation:
+1. SMS to Users - Allows Welkin users to be notified when important automation has been executed using SMS
+2. Email to Users - Allows Welkin users to be notified when important automation has been executed using Email
+Both features support free text or Email/SMS templates
+3. Support multiple Roles notification 
+4. Custom notification - Notification with custom text on important events 
+5. Create Email draft - the draft can now be created without priority and will allow users to customize it in Care and send manually
+6. Create SMS draft --the draft can now be created without priority and will allow users to customize it in Care and send manually
+
+**Analytics:**
+
+Customers that use Sisense analytics, can now launch Sisense using out of the box Action Button.
+Note: Sisense setup and reports must be done prior and separately. Talk to your CSM about a demo
+
+**Encounters:**
+
+Few improvements to Encounters in this release:
+1. Color picker - is now part of the Encounter template. Allows Welkin customers to select color coding by default. Can be changed in Care later by the Users
+2. Instructions field - is not located more conveniently on the page
+3. Encounters view on Patient profile now support "All Time" filter, that is also a default and will show all Patients encounters
+4. Encounters can be created from Patient profile using new Action Bar button, with prepopulated patient - makes it easier create on the fly encounter without extra navigation
+
+**Communication Center:**
+1. New file types are now supported by the communication center. Customer can send/receive emails with DOC and DOCX files as attachments
+2. SMS Dialog mode is introduced. In addition to table view, customers can now see SMS conversation in a traditional conversation mode, similar to chat
+
+## Care
+- WEL-4263 Fixed bulk update Tasks
+- WEL-4233 Fixed bug in Global search to reduce irrelevant records
+- WEL-4227 Fixed bug in Unrecognized Communication -> SMS throwing back to Root Page
+- WEL-4167 Fixed issue with creating multiple new assessments at the same time
+- WEL-4028 Updated a text for JWT token error to user friendly
+- WEL-4231 Fixed bug on assessment API returning phone in a wrong format
+- WEL-4285 Fixed Data Exports - under certain conditions data export as CSV failed
+- WEL-3864 Insights: Fixed Totals on Calendar Utilization 
+- WEL-3491 Fixed: Date variables in a message template now resolve to Patients timezone
+- WEL-4192 Fixed: Unable to update encounter records via API since CDT can no longer be found
+
+
+## Designer
+- WEL-4201 Improved performance of publishing a draft in Designer
+- WEL-4292 Newly added: Message templates now support encounter disposition fields
+
+
+## Admin
+- WEL-4171 Admin: Data Audit - added new types for Communication and Calendar
+
+
+## Known issues
+There are several known issues, that would be fixed in next releases:
+1. Custom  Notifications: Text is not displayed correctly in Care
+2. SMS Dialog: issue with rendering attachments, inaccurate initials of the sender are present, refresh button does not function correctly
+
+# Release notes - Version 2022.1.1
 
 ### Date: January 14, 2021
 
