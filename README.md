@@ -1,3 +1,56 @@
+# Release notes - Version 2022.2.1
+
+### Date: February 4, 2022
+
+## New Features Callout
+
+**Unrecognized Communications: WEL-4175**
+
+In this release, unrecognized communication will show if the call has an associated call recording. Welkin users would be able
+to listen to the recording before deciding to attach a call
+
+**Patient Model: WEL-4175**
+
+With the latest updates to patient model, MRN is now displayed in global search (if not empty)
+and the secondary email field is now available to our customers. 
+Customers can now use secondary email to communicate to a patient and it's also included in matching unrecognized communications
+
+**Automation: WEL-4137**
+
+New events are now supported by automation. Our customers can now configure automation on incoming SMS and Email.
+That opens a new set of use cases such as generating custom notification, invoking webhooks or sending users sms or email when patient email arrives.
+
+We thank our customers that worked with us in defining such use cases!
+
+**Assessments: WEL-4273**
+
+New functionality is added to conditions on assessments. Our customers can now set visibility on forms using values from arbitrary CDT.
+With the release, customers can capture information in a CDT and build a dependency in subsequent forms as a result
+
+## Care
+- WEL-4339 Fixed: Display encounters in chronological order for "All Time" view
+- WEL-4328 Fixed: SMS Dialog: Incoming JPG does not render
+- WEL-4327 Fixed: SMS Dialog: Display correct initials for multi care team users 
+- WEL-4325 Fixed: SMS Dialog: Refresh button does not work
+- WEL-4323 Fixed: Display tooltip for email with attachment that has a long names
+- WEL-4321 Fixed: Email reply now supports adding attachments in reply mode
+- WEL-3491 Fixed: Message template to resolved datetime variables in patients timezone
+- WEL-4349 Fixed: Calendar display to present correctly 12pm vs 12am
+- WEL-4354 Updated: content of "Created By' column in My Tasks view will show logical name of automation instead of technical name
+- WEL-4276 Updated: Calendar Encounter view with UI styles to match the styling theme
+- WEL-4356 Update: menu text "My Patients" to "Patients"
+
+
+## Designer
+- WEL-4343 Designer: Update UI label and icon when publishing configuration clearly indicate success of published screen
+
+## Admin
+N/A
+
+## Known issues
+N/A
+
+
 # Release notes - Version 2022.1.8
 
 ### Date: January 28, 2022
