@@ -1,3 +1,84 @@
+# Release notes - Version 2022.2.5
+
+### Date: February 23, 2022
+
+## New Features Callout
+
+**Patient List: WEL-3630**
+
+Patients view has been updated to better UX experience. Filters, columns are now aligned to the new mockups and new structure of UX
+Search, filters have new UX control, defaults to current logged in member
+This is a first update to patients list, in the next releases we will be introducing a new My Patients view, that is tailored for Care team members
+with a predefined filter set
+
+**Configurable Patient View: WEL-4344**
+
+With this release, Patient View (on a patient profile, above Action Bar) is now a configurable feature.
+
+Navigate to the Top Info menu in the Designer, pick and choose what fields are visible. Note: All the fields would be available in the profile
+however non visible fields would be hidden under "More Info"
+
+**Automation Targets: WEL-4221**
+
+Two new features
+1. In this release, we allow automation to go beyond the care team, to "All users with role". This automation, allows for cross functional workflow, that can
+unlock new organizational processes.
+For example, one can create automation with a trigger on Assessment Completed and route notification to a role "Scheduling Assistant" that is not necessarily
+present on the care team
+2. Automation triggers now offer more details, by allowing one to use Phase Started and Phase Ended events. This offers more granularity in configuring 
+different use cases that need to happen when a patient enters a phase and a patient exists a phase.
+Good example is to send a Welcome email when a patient entered the Eligible phase in a program, or Congratulations SMS when a Patient has completed Graduated phase.
+
+
+## Care
+- WEL-4545 Fixed: Comm Center: Send a draft: After sending an email, 5xx error would be presented and email remains in draft, despite being sent
+- WEL-4522 Fixed: Patient facing assessment on a mobile device is not optimal for scrollers
+- WEL-4521 Fixed: Assessment input error on mobile with Date CDT types
+- WEL-4217 Fixed: Relationship therapy throws 5xx error under specific load type
+- WEL-4481 Fixed: Encounters -> Create an encounter :Search does not bring a full list of patients, despite them being in the right territory
+- WEL-3829 Fixed: Removing attachments and resaving drafts strips out HTML format
+- WEL-4230 Fixed: In some cases, assessment API would store phone and date in invalid format (as formatted text vs spec). That is now fixed
+- WEL-4388 Fixed: Comm Center -> If the patient primary email/phone is missing and only secondary email/phone is configured, emails/sms are not sent
+- WEL-4377 Fixed: My Calendar: View an encounter: Incorrect event icon is used for different delivery types
+- WEL-4319 Fixed: Outdated cache is causing issues viewing clients' Assessments tabs
+- WEL-4379 Updated: Comm Center: UX and layout issues to improve the experience
+- WEL-4150 Updated: Patient facing assessments now support profile links
+- WEL-4433 Updated: Task List: Created By column will now display a name of automation disposition group, if task is created by one
+- WEL-4434 Updated: When Automation Task is created, the "initials icon" is misleading
+- WEL-4207 Updated: Display of Encounter date date/time in message templates. Previously used ISO format is now updated to human readable. More improvements to be done in that area in the future, to support both formats as variables
+- WEL-4080 Updated: Better error handling of Docusign errors. Propagating Docusign error codes to Welkin to produce more meaningful indication of what went wrong
+
+
+## Designer
+- WEL-4401 Fixed: Labels on Program Phases on the relations are not deletable
+- WEL-4400 Fixed: Numbers in change summary are not aligned correctly, for any 3 digit revision
+- WEL-3962 Fixed: Version history : Diff : Improved performance of a diff element 
+- WEL-4385 Fixed: Custom Notifications: Title of the action group is now used as title of notification and automation. Appropriate tool tip has been added
+- WEL-4219 Fixed: Email templates do match what is created in Designer. When rich text is being copied to designer rich text editor, it is now stripped 
+of custom fonts, and needs to be styled in place. That removes a friction of custom font that is not installed on recipient machine and changes the 
+look and feel of an email
+- WEL-4519 Updated: Terminology and labels in Automation were updated, new UI hints are added to improve readability of different actions and targets
+- WEL-4431 Updated: UI tooltip on using form fields vs external to the form cdt fields with instructions
+
+## Admin
+- WEL-4288 New: Filter Inactive Users: allow filtering based of User Status (Active, Inactive)
+
+## Known Issues
+1. Automation: When using Task or Notification as an action, and selecting a specific Role, the first user in that role in a care team is being chosen for assignment,
+contrary to the original intent, of selecting a random user in that role
+2. Automation Target: Triggering an event on a patient without a care team is failing. It going to be fixed in a next release
+3. Patient List: minor UX issues 
+4. Patient Top Info: minor UX issues
+
+## Deprecation Notice
+To simplify automation, we removed "Encounter Deposition Created Event" as a trigger in Automation, since its a single record CDT and that event is managed by the system
+
+## Special Note
+With the upcoming release, we are making a non-impactful change to use a dedicated webhook per tenant/environment, for the comm center.
+The change will make it easier for us to monitor failures and introducing a prep infra to consume new events (clicked and delivered) for email messages
+
+
+
 # Release notes - Version 2022.2.1
 
 ### Date: February 4, 2022
