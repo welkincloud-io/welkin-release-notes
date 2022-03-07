@@ -1,3 +1,52 @@
+# Release notes - Version 2022.3.2
+
+### Date: March 5, 2022
+
+## New Features Callout
+
+
+**Export API: WEL-4440**
+This release introduces additions to Export API for Assessment Records, Encounters, Encounter dispositions and comments.
+It also adds to Export policies in Designer
+Please review updated api docs at https://developers.welkinhealth.com/#export
+
+**Automation Targets: WEL-4562**
+With this release, customers can disable automation in Designer, without deleting it. Its useful in cases of debugging your Welkin
+configuration, also when you want to temporarily stop automation during data loads or similar activity
+
+## Care
+- WEL-4612 Fixed: Patient Short Info: Minor UX updates for Gender and Marital status fields
+- WEL-4606 Fixed: Patient Short Info: PoC is not reflected correctly on update
+- WEL-4565 Fixed: Patient Short Info: UI issues:More Info vs Less Info and invisible label on full configuration
+- WEL-4482 Fixed: utomation: When using Task or Notification as an action, and selecting a specific Role, the first user in that role in a care team is being chosen for assignment,
+contrary to the original intent, of selecting a random user in that role
+- WEL-4595 Fixed: Automation is not firing for patient without care team with SMS/Email as trigger 
+- WEL-4547 Fixed: Automation Target: Triggering an event on a patient without a care team is failing
+- WEL-4594 Fixed: Comm Center: Sent email/sms does not display the email address
+- WEL-4561 Fixed: SMS Dialog: second sms cannot be send
+- WEL-4589 Fixed: Encounter: Changing the time of an Encounter from Encounter view is not changing time
+- WEL-4588 Fixed: Encounter History Count does not match the number of history items displayed
+- WEL-4587 Fixed: Navigating to Comms Center when an Encounter-Assessment is open removes all recorded answers from view
+- WEL-4553 Fixed: Wrong date format in messages
+- WEL-4550 Fixed: Phone Number is not formatted correctly
+- WEL-4526 Fixed: Notifications keep being delivered to disabled users
+- WEL-4384 Fixed: Calendar Automation: Encounter which is created by automation has green color in the calendar, it should have template color
+- WEL-4593 Updated: Email drop down takes separate line to support multiple email addresses
+- WEL-4497 Updated: Search Bar UX. Clicking outside of search dropdown closes it
+- WEL-4473 Updated: Patients -> Filters -> Select current user as a care member by default; add alphabetical sorting to the filters
+- WEL-4432 Updated: Region and Territory: system name is used instead of the title
+- WEL-4366 Updated: SMS Dialog markup for Care Team Member
+- WEL-4316 Updated: Use of scroll across the application
+
+## Designer
+- WEL-4472 Version History -> Compare -> Select previous version -> Something went wrong 404 - Failed loading under certain conditions
+
+
+## Admin
+- WEL-4396 Data Audit is taking a long time to load
+- WEL-4393 API: Automation Audit Log Improvement: add condition check results and vars values at the time of postponed automation checks conditions.
+
+
 # Release notes - Version 2022.2.5
 
 ### Date: February 23, 2022
