@@ -1,3 +1,143 @@
+# Release notes - Version 2022.3.6
+
+### Date: March 25, 2022
+
+## New Features Callout
+
+**New Tasks Layout and Updates to Task List - WEL-4579**
+
+In this release, we upgraded Tasks functionality to support new use cases and new UI. 
+1. A new default Task layout is now available in Designer. Customers can add Tasks to patient view, 
+similar to other default layouts. This layout will offer a filtered version to all tasks for this patient and filter capabilities, by Assignee, Dates and other fields
+2. New filters are introduced, including ability to filter tasks by certain template (or by Custom Task)
+3. User tasks view will now offer a view to see tasks of any users, with a preset default to the current logged in User. It will allow one 
+to locate tasks for assignees that may no longer be with the company or need help reassigning the tasks
+4. Convenient "Clear All" button removes all filters
+5. Sorting by clicking on column name in the Task List is now available. The sort will perform a sort within each section (Todo, In Progress and Completed),
+and will allow users to see each section independently without intermixing different statuses
+
+Updates to Task drawer
+
+6. UI changes - added Updated by field and moved both Created and Updated fields to the top of the drawer
+7. When a new task is created without a patient, updating it from the drawer will allow one to assign 
+the patient. Similar to the past behavior, once patient is assigned, they cannot be changed
+8. "Save & Clone" button has been added to replace the checkbox. Convenient for customers who create many tasks for different patient at the same time.
+The behavior was updated as well, clicking on Save & Clone will preserve all data in the tasks, besides a Patient and Comments, allow fast creation of 
+similar tasks for all the patients
+
+
+**Automation - New Triggers, Conditions - WEL-4579**
+
+This release contains a new batch of different automation triggers and conditions, allowing our customers to automate even more use cases
+
+New Triggers
+1. Task is completed (new set of all triggers for tasks is available, to represent each state)
+2. Point of contact changed
+3. Care Team updated
+4. Encounter Updated 
+
+New Conditions:
+
+5. On SMS receive, perform a text match (case sensitive and insensitive options are available)
+6. Condition to check if patient is in Territory or Region
+7. Condition to check for Text and Text Area fields being Null or NotNull
+
+Couple of sample use cases that can be used by our customers:
+1. On sms receive, look up for keyword and generate task, notification or email to the user to take some action
+2. On task complete (of certain template) generate a new task (of a different template) - allows one to chain tasks, one after another
+3. When executing some action, customers can check if a patient is in a certain Territory or in certain Program, allowing applying a different types of automation 
+from the same trigger based on different location of program assignment
+
+
+**Change User's Email - WEL-4710**
+
+This is to address one of the customer's requests to change the user's email address. Once email address is updated, the system will send notification to
+the old email address (informing of update), trigger password reset to the new address and inform tenant owner of such a change
+
+**Terminology Panel - WEL-4417**
+
+With this release, we start allowing our customers to modify some core concepts in Welkin UI, to match customers own terminology.
+The most popular use case, about 50% or our customers do not actually use the word Patient, but something else.
+With the release, the word patient can be replaced with a different term.
+To use that feature, override default terminology in Designer (or create a brand new one) and have users use it, from their Profile page by choosing display language
+
+Note: This is an experimental feature, completely based on our customers requests, currently in Alpha. 
+Please reach out with any feedback or wish list about this feature. We will only know how well it fits your need based on the feedback
+
+**Webhook Management**
+
+In order to improve Webhook management a bit, we are splitting webhook functionality into two different areas.
+1. Webhooks are still created in the designer, however one can only provide name and title
+2. Once deployed, webhooks can be found in Admin under Integrations -> Webhooks.
+
+The webhooks in Admin would be Inactive by default, and would have to be supplied with URL (other parameters can be added as well) before activation
+
+Note: Designer UI has been disabled and to provide these values, is now read only, and all current values have been migrated. 
+In the next releases, we will clean up the designer UI as well
+
+
+**Granular Email Status - WEL-4424**
+
+In this release, we added a new feature that will propagate detail email status back to Care
+
+New email statuses will support, Opened, Clicked and Failed.
+
+There are some restrictions on how Opened and Clicked can work, depending on the end user(patient) email server (can be fully blocked), specific user setup
+and the sender domain,but in general, if the email was Opened by the patient the status will become Open, if the email contains a link and the link was clicked, 
+the status will be Clicked, and Failure will be presented if we cannot deliver the email.
+Combined, under reasonable circumstances, should provide our customers with enough visibility into each and every email that is being sent from Welkin
+
+
+**Profiles - New Data View structures - WEL-4357**
+
+With the Profiles features being heavily used in Welkin, we have updated Data Views in the designer, to support profiles but also offer more reach 
+functionality.
+Generally speaking, fields can be placed in different layouts in in different rows, they can be combined to show one or more profile fields and will allow
+profiles to be hyperlinked from the CDT view.
+The UX in designer was completely updated not only to support this functionality but also to comply with our latest styling guide
+
+
+## Care
+- WEL-4772 Fixed: Care: Encounter ->  Error: User doesn't exist
+- WEL-4766 Fixed: Comm Center: view of emails is cut off - cannot see full email content.
+- WEL-4733 Fixed: Comm Center On the pages Communication Center and Unrecognized communications the system shows the browser timezone not user's one
+- WEL-4698 Fixed: Assessments page showing "No data" for clients after adding a new assessment to an encounter
+- WEL-4608 Fixed: Phone Number is not displayed in short SMS view
+- WEL-3864 Fixed: Totals on Calendar Utilization insights do not add up
+- WEL-4722 Fixed: Data layouts are hard to access, and aren't shown - scrolling is needed for lower resolution machines
+- WEL-4680 Fixed: Not all notifications are being listed - Add lazy load to the list of notifications
+- WEL-4546 Fixed: Unrecognized comms show up in notification bell but not in inbox \(Home or Comms\)
+- WEL-4570 Fixed: Unable to set working hours from 11:30pm-12am
+- WEL-4569 Fixed: Prepopulated Assessment data not saving on Finalize
+- WEL-4503 Fixed: New Calendar Event: Participants not showing in search results
+- WEL-4708 Fixed: Unable to save encounter disposition containing pre populated data
+- WEL-4629 Fixed: Patients cannot be sorted into alphabetical order
+- WEL-4684 Fixed: Missing Updated Date and Created Date in the Encounters UI
+- WEL-4610 Fixed: Phone Calls: Secondary phone is not available for selection in a drop down for a new call
+- WEL-4607 Fixed: Patient short info: Order of the address fields is incorrect
+- WEL-4549 Fixed: Filter for programs does not work correctly, includes Finished programs
+- WEL-4478 Updated: Comm Center: Add possibility to choose primary/secondary phone email for email/sms drafts
+- WEL-4775 Updated: Updating assessment answer via API - Send an error in response if request fields sent in upper case
+- WEL-4626 Updated: Improvement UI to Patient List
+
+
+## Designer
+- WEL-4631 Designer: Automation: When navigating the table, title of Action Group does not refresh
+- WEL-4721 Update rich text editor attachment styles
+- WEL-4639 Designer: Add export policy for Tasks
+
+## Admin
+- WEL-4630 Admin: Updating user does not update "Last Updated At" without page refresh
+
+
+Known Issues:
+- WEL-4812: Home Page tasks widget displays all tasks without filter taking any effect
+- WEL-4778: Tasks created by automation do not display accurate icon and name
+- WEL-4802: Creating new tasks from Patient task layout does not persist the patient
+- WEL-4803: Some styling and UI issues on Change Email address functionality
+- WEL-4811: UI Updates to Admin Webhooks to match our design style better
+
+
 # Release notes - Version 2022.3.2
 
 ### Date: March 5, 2022
