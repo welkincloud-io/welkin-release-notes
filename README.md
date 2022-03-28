@@ -2,7 +2,6 @@
 
 ### Date: March 28, 2022
 
-
 ## Care
 - WEL-4812: Home Page tasks widget displays all tasks without filter taking any effect
 - WEL-4802: Creating new tasks from Patient task layout does not persist the patient
