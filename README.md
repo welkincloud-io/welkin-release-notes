@@ -1,3 +1,23 @@
+# Release notes - Version 2022.3.7
+
+### Date: March 28, 2022
+
+
+## Care
+- WEL-4812: Home Page tasks widget displays all tasks without filter taking any effect
+- WEL-4802: Creating new tasks from Patient task layout does not persist the patient
+
+## Designer
+N/A
+
+## Admin
+N/A
+
+## Known Issues:
+- WEL-4778: Tasks created by automation do not display accurate icon and name
+- WEL-4803: Some styling and UI issues on Change Email address functionality
+- WEL-4811: UI Updates to Admin Webhooks to match our design style better
+
 # Release notes - Version 2022.3.6
 
 ### Date: March 25, 2022
