@@ -1,3 +1,31 @@
+# Release notes - Version 2022.4.1
+
+### Date: April 01, 2022
+
+
+## Care
+- WEL-4807 Fixed: Tasks counter is not updated when a new task is created
+- WEL-4824 Fixed: SMS to secondary number is sent to primary number
+- WEL-4778 Fixed: Tasks created by automation do not display accurate icon and name
+- WEL-4808 Updated: Refresh button was added to Patient List 
+- WEL-4781 Updated: Clear filters button was added to Patient List for fast filter reset
+- WEL-4808 Updated: Refresh button was added to Tasks List 
+
+## Designer
+N/A
+
+## Admin
+- WEL-4818 Fixed: Cannot create custom header in webhook setup
+- WEL-4846 Fixed: Clicking on Test Webhook - Success message does not show up
+- WEL-4811 Updated: Admin Webhooks UI updates
+- WEL-4804 Updated: Improved email text for change user address notification
+- WEL-4827 Updated: Phone tree log now has a dedicated page in Admin. Customers can find phone tree execution 
+in that log and understand the path that call has taken until reached final destination
+
+## Known Issues:
+- WEL-4803: Some styling and UI issues on Change Email address functionality
+- WEL-4811: UI Updates to Admin Webhooks to match our design style better
+
 # Release notes - Version 2022.3.7
 
 ### Date: March 28, 2022
