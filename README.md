@@ -1,3 +1,44 @@
+# Release notes - Version 2022.4.2
+
+### Date: April 08, 2022
+
+## New Features Callout
+
+**New User interface for file upload in Comm center - WEL-3707**
+
+Upload attachments user interface in comm center was replaced with a new UI.
+The new UI is easier to use, including detailed preview and ability to select documents and upload attachments
+within same seamless interaction
+
+
+
+## Care
+- WEL-4868 Fixed: Enable replying to received email that does not have a subject field in it
+- WEL-4860 Fixed: Under some conditions, assessment not loading until clicked on for 2nd time.
+- WEL-4811 Fixed: UI Updates to Admin Webhooks to match our design style better
+- WEL-4845 Fixed: Under purple color on Home Screen widgets, calendar event does not display patient name in a readable form
+- WEL-4831 Fixed: Unable to listen to call recordings on iPad
+- WEL-4762 Fixed: Updating encounter without eventStatus fields, breaks it and does not allow further status updates
+- WEL-4792 Fixed: Automaton: Condition to test for null email field is not working 
+- WEL-4767 Updated: List of patients -> User is not displayed as inactive
+- WEL-3685 Updated: Allow removal of care team in bulk update patients in the Patient List
+
+
+## Designer
+N/A
+
+## Admin
+- WEL-4852 Fixed: Spelling mistake in User Profile
+- WEL-4819 Fixed: success message on webhooks throws confusing message
+- WEL-4703 Fixed: copying users with invalid territories makes the user corrupt and not work as expected
+- WEL-4863 Updated: notification email text on user's email change event
+- WEL-4805 Updated: Edit user's email drawer
+
+
+## Known Issues:
+- WEL-4803: Some styling and UI issues on Change Email address functionality
+
+
 # Release notes - Version 2022.4.1
 
 ### Date: April 01, 2022
