@@ -1,3 +1,55 @@
+# Release notes - Version 2022.4.5.2
+
+### Date: April 20, 2022
+
+## Minor Improvements Callout
+
+- WEL-4907 Login experience will accept tenant name in any case sensitivity (upper or lower) to reduce friction that some users experience while typing the tenant name
+
+- WEL-4054 New Patient level variables were added to Assessment Template to support more functionality on generating PDF based of assessment results
+
+- WEL-4901 Three new values were added to Patient Languages (Vietnamese, Japanese, Other)
+Customers can now use them to match better with users. Reminder, that user languages is a configurable attribute in Admin -> User Attributes section
+
+- WEL-4856 New field for Recurring Automation - Customers can now use a different algorithm to schedule recurring automation, either from the “deploy” time or using cdt level attribute on a patient to control start time
+
+
+## Care
+- WEL-4886 Fixed: Read only fields are duplicating in Assessment view on CDT entry
+- WEL-4855 Fixed: Navigating to other layouts when an Assessment is open removes all recorded answers from view
+- WEL-4902 Fixed: Patient search doesn't work within profile
+- WEL-4870 Fixed: Unexpected format in cdt fields (array vs single values) on list type fields
+- WEL-4633 Fixed: Comm Center: Email Reply with attachments hides the original email
+- WEL-4874 Fixed: Comm Center -> Emails -> Reply to the secondary email -> Reply opens for the primary email
+- WEL-4940 Fixed: Comm Center -> Emails ->Incoming emails do not shown attached files
+- WEL-4768 Updated: Allow API client to update care teams that contain inactive users
+- WEL-4844 Updated: Encounters: API Client is now allowed to update encounter host
+```
+{
+  "currentScheduledAppointment": {
+         "hostId": "User UUID"
+  }
+}
+```
+
+
+## Designer
+- WEL-4898 Fixed: Encounter disposition -> Change the display type -> Save changes -> Changes are not displayed, but saved
+- WEL-4747 Fixed: Designer changes to CDT removes answers from assessment
+
+
+## Admin
+- WEL-4908 Fixed: Copy a user -> Enter an email -> Invite button is not active
+- WEL-4896 Fixed: Unable to remove User phone number in Admin
+- WEL-4861 Fixed: Changing user email removes 2FA setting for the same user
+- WEL-4803 Updated: Some styling and UI issues on Change Email address functionality
+- WEL-4811 Updated:Webhooks UI improvements
+
+
+## Known Issues:
+N/A
+
+
 # Release notes - Version 2022.4.2
 
 ### Date: April 08, 2022
