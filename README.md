@@ -1,3 +1,119 @@
+# Release notes - Version 2022.5.3
+
+### Date: May 15, 2022
+
+## New Features Callout
+
+**Delete Patient - Right to be forgotten - WEL-4871**
+
+Starting with this release, Welkin allows patient deletion. This feature is meant to support compliance use cases of right to be forgotten.
+In order to enable it, please enable "delete" permission on a patient in Designer.
+The option is only available from the patient list menu (not available in patient profile view nor by API)
+
+
+**Comm Center - Email Draft Improvements - WEL-4077**
+
+Several changes are coming out with the release of this feature. 
+
+- New Folder: Drafts - allows users to see all the draft emails, schedule them or discard them
+- New Folder: Starred - allows users to see all starred emails across Inbox, Sent, Scheduled and Drafts
+Note: Starred functionality also exists in Messages and Calls separately
+
+Scheduling drafts can be based on chosen date/time or based on cadence that is set with the patient
+
+**User Provisioning - WEL-4944**
+
+In order to help our customers onboard users programatically, we are making user provision api available to api clients.
+There are certain limitations to the feature, due to the sensitive nature of user provisioning using api.
+
+- Users are onboarded in an inactive state. Activation and License assignment will need to happen manually from Admin
+- Password reset emails will go out to the users once they are activated
+- Certain setting required to be set on API clients in order to support that level of access (in Admin)
+  - User Provision - this flag enables user provisioning using api client
+  - User Regions - this flag enables regions and territories management using api client
+  - User Attributes - this flag enables api client to manipulate values of user attributes
+
+**Profiles: New Data Views - WEL-4083**
+
+This release adds more flexibility to the profiles configuration. 
+- Profile data views are now capable of showing profile fields as either separate columns or concatenated into one column
+- Hyperlink navigation to the profile from the dataview is now available as well
+- Setting up profile field values as referenceable or copied to CDT is now available (by Reference vs by Value options)
+
+**Patient List Improvements - WEL-4978**
+
+Further improvements to Patient List is adding to usability of the widget
+- Majority of the columns (except of Program, Phase and Care Members) are now enabled for click to sort
+- New filter to find patients without Program is added
+- New filter to find patients without Region or Territory is added
+
+**Encounters Delivery Method - WEL-4386**
+
+In this release, encounter delivery method can be set in the Designer on encounter template. Once set, it would be 
+shown in Care and will be utilized in Automation. Delivery method can be updated at any time in Care, if set incorrectly
+
+
+**Phone Tree Log improvements - WEL-4968 and WEL-4834**
+
+Few improvements to phone tree feature in this release
+- Notifications for missed calls. It is now possible to enable missed call notification in the designer, that will let 
+user know if they missed a specific call from a recognized patient
+- Improvements to Phone Audit log in Admin. With this release, there is a brand new dedicated UI for call log, to indicate
+the route that the call has taken and steps performed, to help understand why phone calls arrive to certain users instead of other users
+- New setting on User Profile in Admin, that controls if User can take a part in a phone tree. Using this setting allows some customers to 
+opt in/out users from participating in a phone tree for any reason
+
+**Autocomplete Program - WEL-4913**
+
+Minor but useful feature was added to programs, allowing customers to indicate "Autocomplete" on a Final Phase in a program.
+If that flag is set, moving patient to final phase will also complete the program and set it to Finish
+
+**Error and Info messages UX- WEL-4758**
+
+Improved UX of error and info messages across Care, Admin and Designer applications
+
+
+## Care
+- WEL-4953 Fixed: Errors when submitting a form from patient facing link
+- WEL-4932 Fixed: Removing phone from user profile reflects only after clear cache
+- WEL-4980 Fixed: Unable to update patient/client's care team, under certain conditions the field value is not set correctly
+- WEL-4029 Fixed: 'Add' button is inactive on Create CDT Drawer, when default value was preconfigured in Designer
+- WEL-5058 Fixed: Changing filter from Care Team to My Only on encounters breaks pagination
+- WEL-5026 Fixed: Added more space to display large amount of Territories in User Profile 
+- WEL-4950 Fixed: Encounter Patch API throws 500 Error when eventStatus is not set
+- WEL-4351 Fixed: Planned and In Progress encounters are not always appearing at the top of a client's encounters page
+- WEL-4215 Fixed: Improved performance of the request GET /users/\{userId\}/encounters; withCareTeam=false
+- WEL-4993 Fixed: Care Member search bar does not show up in Patients page
+
+- WEL-4895 Updated: Increased column size for assessment name to accommodate long names
+
+- WEL-4998 Updated: Comm Center -> New Call -> The placeholder of the 'To' field has [object Object] value
+- WEL-4963 Updated: Encounters -> Design -> Canceled encounters don't have the red background
+- WEL-3685 Updated: Enable bulk remove Care Team members
+- WEL-4448 Updated: Care: See image preview before sending email
+
+
+## Designer
+
+- WEL-4991 Fixed: When a field is modified or deleted and had a previous condition associated with it, form cannot be saved unless condition is removed
+- WEL-4981 Fixed: Hyperlinking with system variables is broken in Designer, last curly bracket is removed
+- WEL-4911 Updated: Remove disabled fields from Webhook Designer
+
+
+
+## Admin
+- WEL-5028 Fixed: Data Audit - it doesn't show a patients in Object Type=Calendar, Event Subtype=CALENDAR\_EVENT\_DELETED
+- WEL-4498 Fixed: Error on copying an existing user's profile errors if there are territories/permission that no longer exist in Designer.
+- WEL-4943 Updated: Email style for changing root user
+
+
+## Known Issues:
+- WEL-5008 Saved draft does not display email attachments
+- WEL-4878 Minor UI issues with email drafts
+- WEL-5088 Issues bulk activating users created using api
+- WEL-5093 After user activation, updating user custom attributes does not work for hidden and read only attributes
+
+
 # Release notes - Version 2022.4.5.2
 
 ### Date: April 20, 2022
