@@ -1,3 +1,28 @@
+# Release notes - Version 2022.5.4
+
+### Date: May 17, 2022
+
+
+## Care
+
+- WEL-5098 Fixed: Unable to select secondary number from drop down in comm center
+- WEL-5078 Fixed: Patients -> Filter 'Care Team' -> Only 20-40 results displayed at a time
+
+
+## Designer
+
+N/A
+
+## Admin
+- WEL-5088 Fixed: Issues with bulk activating users created using api
+- WEL-5102 Updated: Added more information about webhooks in the Data Audit section
+
+## Known Issues:
+- WEL-5008 Saved draft does not display email attachments
+- WEL-4878 Minor UI issues with email drafts
+- WEL-5093 After user activation, updating user custom attributes does not work for hidden and read only attributes
+
+
 # Release notes - Version 2022.5.3
 
 ### Date: May 15, 2022
