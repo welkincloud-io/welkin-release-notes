@@ -1,3 +1,37 @@
+# Release notes - Version 2022.5.6
+
+### Date: May 28, 2022
+
+## New Features Callout
+
+**Attachments in Message Templates - WEL-4449**
+
+With this release, customers can add attachments to messages in the Designer.
+Once attachment is added, it will appear during message composition, and can be removed if needed
+
+## Care
+- WEL-5013 Fixed: Opening email drafts does not display attachments 
+- WEL-5121 Fixed: Export API shows `hasNext` as `false` even when more records exist
+- WEL-5120 Fixed: Transient error on send SMS, throws 500
+- WEL-5099 Fixed: Clicking on in progress Assessment in the Encounters bring a "start assessment" drawer instead of actual assessment under certain conditions
+- WEL-5043 Fixed: Physician profile became not searchable after being updated
+- WEL-5077 Updated: Call not registering in Comms Center, if patient hangup prior to phone tree execution completed
+- WEL-5072 Updated: Filter for patients that have completed programs is not working correctly, by displaying inactive programs
+
+## Designer
+
+N/A
+
+## Admin
+
+- WEL-5138 Fixed: Inviting users didn't properly honor Allowed to Receive Phone Calls flag
+
+
+## Known Issues:
+- WEL-4878 Minor UI issues with email drafts
+- WEL-5093 After user activation, updating user custom attributes does not work for hidden and read only attributes
+
+
 # Release notes - Version 2022.5.4
 
 ### Date: May 17, 2022
