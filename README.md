@@ -1,3 +1,151 @@
+# Release notes - Version 2022.6.6
+
+### Date: June 24, 2022
+
+## New Features Callout
+
+**Patient Facing Assessments (PFA), Folders and Branding - WEL-4452**
+
+This feature was based on customer feedback, and we encourage you to provide more feedback on how can we improve it
+
+In the new release, Welkin upgraded its PFA capabilities. 
+Assessments can now be organized into PFA Folders. Each folder can be sent to a patient using message template and 
+allows the patient to fill multiple assessments within the folder.
+
+Each Assessment within the folder, can support multiple statuses, to reflect better patient interactions. Statuses are visible in Care 
+on the patient assessment layout:
+
+1. New - indicates that assessment has been sent but the patient hasn't answered any questions yet
+2. In Progress - indicates that patient has started working on assessment but hasn't completed it yet (same state as previously existed)
+3. Submitted - indicates that patient has completed working on assessment
+4. Expired - this is a special status, indicating that assessment link has expired and cannot be worked on by the patient anymore
+5. Completed - this is the final state, no more changes are possible at this point (same state as previously existed)
+
+What is the difference between Submitted and Completed?
+
+When assessment is in status Submitted, it allows one that has enough permissions to review and Complete it. It is useful to do so
+when a patient doesn't answer questions, or wants to change the answers while talking to a Welkin user.
+
+Completed on the other hand, is a final state that triggers copy to custom data types associated with the assessment
+
+Branding:
+
+PFA folder now supports branding. In the Designer, our users can customize color scheme, logo, and favicon. The goal is to 
+allow our customers to modify PFA to look and feel in native colors vs welkin color scheme
+
+In addition, customers can use Welcome and Conclusion pages (optionally) for providing patients with additional instructions and
+thank you notes, or extra customization for other needs
+
+In the subsequent releases, we will include several UI/UX improvements, updates to Security Policies on Assessments and automation improvements
+
+**Custom Patient Profile WEL-5032**
+
+This release contains a fundamental improvement for Patient Profile. Our customers can now add fields directly to patients
+in addition to existing methods of adding fields to the CDT. 
+
+In addition, Top Info section has more configuration options and changed behavior, by allowing you to specify number of visible fields 
+vs showing everything
+
+The benefits of choosing this modeling tactics, will allow customers to define their Patient Create / Edit screens in addition to 
+defining Patient List columns (to be released soon).
+
+Of course, similarly to our previous recommendations, we suggest discussing modeling with Welkin Implementation team, since its typically
+affecting how your API and Data will work and will look like
+
+
+
+**International DateTime - WEL-5051**
+
+In order to better support datetime across time zones (and in support of our international customers) the team developed datetime component that operates
+based on the user locale. Locale can be set up in Admin or Care, and will dictate how date and time are displayed
+
+**International Phone Number - WEL-5052**
+
+In this release, Welkin has started adding support for international phone numbers. Customers can start adding phone numbers for patients outside the US
+
+This is an opportunistic feature, meaning that we add support to a new country by requests and as of today, only the USA and Singapore were added to the support list. 
+Please let us know if more countries are needed
+
+
+**Designer JSON Viewer - WEL-5205**
+
+To improve performance and memory footprint of designer, we had to make some modifications to JSON viewerL
+
+1. The viewer is hidden by default and presents itself on a button click (CDT View, top right)
+2. Viewer is read only and does not refresh automatically - a button is added for that
+
+We resolved the limitation of List field (changing order of values in a list field, that previously was only possible to do in the JSON viewer)
+and it's now possible to do that in our UI
+
+Note: The future of JSON viewer depends on our customers, if that feature is something that you like, please let us know.
+
+**Notification UX - WEL-4332**
+
+We implemented changes to Notification UX (drawer) in Care, to support archiving of one notification at a time (vs bulk).
+This means that single archive button will only archive one notification and archive all will act on all
+The option of "archive all older than current" that previously existed, was now removed
+
+**International - WhatsApp support - WEL-4814**
+
+To support our International customers, we have added support to whatsapp. Customers can start WhatsApp conversations, send 
+and receive messages, attachments and use templates 
+
+
+Note: This feature requires configuration on Welkin side and not available out of the box to anyone, due to nature of such chat integration
+If you are interested in trying it out and eligible from compliance perspective, please reach out to your CSM
+
+**Phone Capabilities - WEL-5071**
+
+Each phone number in Welkin, has a list of associated capabilities. Using that list, customers can tag a phone number (Voice, SMS, MMS). Once tagged,
+Comm Center will help users understand that SMS cannot be sent to a number that does not have such capability for example, and will help our customers
+to increase success rate of different communication channels
+
+Note: Some UX changes and improvements to Comm Center, are going to be released in next releases
+
+**Automation - WEL-5134**
+
+Two improvements in this release:
+1. Encounter creation action now includes ability to specify Care team (Point of Contact or Role) to better target correct audience
+2. New Condition on Patient to test for Care Team (or Point of Contact) - to help identify situations when patients have no active care team members
+or point of contact
+
+
+## Care
+- WEL-5210 Fixed: Unrecognized calls show up in notification bell but not in unrecognized comms section
+- WEL-5199 Fixed: Calls are going unrecognized that shouldn't be
+- WEL-5165 Fixed: Assessments - Radio buttons selections do not save in Safari
+- WEL-5151 Fixed: Care -> Commcenter -> Emails -> There is a behavior where you can add more files than allowed by validation
+- WEL-5145 Fixed: Received a notification for "Team Missed Call" Despite the call being answered.
+- WEL-5139 Fixed: Date of Birth search is not functional in global search
+- WEL-5133 Fixed: Searching for numbers returns all clients, regardless of permissions
+- WEL-5128 Fixed: Trouble Generating PDF Documents from Assessments under certain conditions when DateTime are not populated and N/A is used
+- WEL-4676 Fixed: Assessment's pre-populated template variable field always showing TRUE, even when FALSE
+- WEL-5323 Fixed: API - Unable to update Assessment status using the API
+- WEL-5322 Fixed: Primary Contact can't be changed
+- WEL-5319 Fixed Cannot select/unselect call recording
+- WEL-5130 Updated: Care: Add refresh buttons to update content of email / sms / calls pages
+
+
+
+## Designer
+- WEL-5149 Fixed: Message Templates: Incorrect view of the validation message
+- WEL-5148 Updated: Inconsistency in notifying that the size of attached files in the Designer in message templates is limited to 50 mb, and on the Care portal to 25 mb
+
+
+## Admin
+- WEL-5156 Fixed: Admin -> Postponed tasks -> Select 100 elements to display -> CORS error
+- WEL-5152 Fixed: Copy a user with Allowed To Receive Calls = false flag is ignored
+- WEL-5132 Fixed: Admin -> Security Settings -> Deactivate SSO -> "Login with ..." button is still visible
+- WEL-5036 Fixed: Data Audit: Trigger an automation that creates an encounter → Data Audit -> The record doesn’t have Actor value
+- WEL-5092 Updated Security Audit: When changing root user, no visible security audit event is generated
+- WEL-5091 Updated: New text for change user email
+
+
+## Known Issues:
+- WEL-5093 After user activation, updating user custom attributes does not work for hidden and read only attributes
+- There are few issues on the home page, that more information included in the widget than what expected (completed encounters, unrecognized calls). we are actively working on this issue
+- There is an issue with calendar, throwing random errors. The team is working on that
+
 # Release notes - Version 2022.5.6
 
 ### Date: May 28, 2022
