@@ -33,58 +33,25 @@ Separated CREATE permissions into two permissions: create encounter and change e
 
 ## New Features Callout
 
-**Desired spec for WhatsApp integration (to mostly parallel Chat/SMS functionality):**
-
-Patients can initiate conversation with Care team via WhatsApp, to appear in Comms Center
-Care team can respond or initiate a new conversation with Patient through Comms Center
-Template responses are available to use
-Search, Filter,
-Ability to receive images via WhatApp, and save to documents
-Ability to send images via WhatsApp
-Care team has access to conversation history
-Notifications of new WhatsApp messages
-Missed WhatsApp messages appear on Homepage under missed communications for care team
-Security rules on who can access WhatsApp and communicate with patient
-Notifications on receipt of new WhatsApp messages (ideally can be configured in automations)
-WhatsApp message templates
-Ability to enable/disable in Integrations/Communications
-Audit Logs(?)
-
-**Patient Facing Assessments (PFA) Backend: Implement new assessments list WEL-4934**
-
-It is necessary to update the page of the list of assessments in accordance with the design. The functionality also needs to be reviewed and supplemented on the front-end side as well as on the back-end side.
- 
- 
 ## Care
-WEL-5384 Fixed: Instances of 500 Error in Encounters, home page
-WEL-5350 Fixed: Assessments Status Filter shows status name starting from capital letter.
-WEL-5342 Care -> Communication Center -> change field "attachments: [ ]" to "attachment: "string""
-WEL-5330 Unknown errors in Calendar
-WEL-5316 Fixed: Frontend -> Care -> Patients -> New\Edit -> Remove spaces at the end of fields when saving a patient (to prevent problems with search)
-WEL-5198 Care: DOB filter
-WEL-5171 Encounter times shown in UTC on Encounters index page
-WEL-5384 Care -> Encounters -> View encounters, home page -> Error 500. 
-WEL-5350 Care Portal -> Assessments -> Filter by Status: The name of status should starts from capital letter
-WEL-5342 Care -> Communication Center -> change field "attachments: [ ]" to "attachment: "string""
-WEL-5330 Unknown errors in Calendar
-WEL-5316 Frontend -> Care -> Patients -> New\Edit -> Remove spaces at the end of fields when saving a patient (to prevent problems with search)
-WEL-5198 Care: DOB filter
-WEL-5171 Encounter times shown in UTC on Encounters index page
+- WEL-5384 Fixed: Instances of 500 Error in Encounters, home page
+- WEL-5350 Fixed: Assessments Status Filter shows status name starting from capital letter.
+- WEL-5342 Care -> Communication Center -> change field "attachments: [ ]" to "attachment: "string""
+- WEL-5330 Unknown errors in Calendar
+- WEL-5316 Fixed: Frontend -> Care -> Patients -> New\Edit -> Remove spaces at the end of fields when saving a patient (to prevent problems with search)
+- WEL-5198 Care: DOB filter
+- WEL-5171 Encounter times shown in UTC on Encounters index page
+- WEL-5384 Care -> Encounters -> View encounters, home page -> Error 500. 
+- WEL-5350 Care Portal -> Assessments -> Filter by Status: The name of status should starts from capital letter
+- WEL-5342 Care -> Communication Center -> change field "attachments: [ ]" to "attachment: "string""
+- WEL-5330 Unknown errors message in Calendar
+- WEL-5316 Frontend -> Care -> Patients -> New\Edit -> Remove spaces at the end of fields when saving a patient (to prevent problems with search)
+- WEL-5198 DOB filter in patient search
+- WEL-5171 Encounter times shown in UTC on Encounters index page
  
  
 ## Admin
-WEL-5348 Admin Portal -> Integrations -  Incorrect settings validation
-Bugs
-WEL-5384 Care -> Encounters -> View encounters, home page -> Error 500. 
-WEL-5369 CSTool - Unable to add international number for Voice
-WEL-5350 Care Portal -> Assessments -> Filter by Status: The name of status should starts from capital letter
-WEL-5348 Admin Portal -> Integrations -  Incorrect settings validation
-WEL-5342 Care -> Communication Center -> change field "attachments: [ ]" to "attachment: "string""
-WEL-5330 Unknown errors in Calendar
-WEL-5316 Frontend -> Care -> Patients -> New\Edit -> Remove spaces at the end of fields when saving a patient (to prevent problems with search)
-WEL-5198 Care: DOB filter
-WEL-5171 Encounter times shown in UTC on Encounters index page
-
+- WEL-5348 Admin Portal -> Integrations -  Incorrect settings validation
 
 
 # Release notes - Version 2022.6.6
