@@ -1,3 +1,32 @@
+# Release notes: Version 2022.7.2.2
+
+### Date : July 29th, 2022
+
+## This is a hotfix release and it addresses critical bugs in encounters, policies & assessments.
+
+
+## Care
+- WEL-5558	Unable to restrict date changes to Encounters. Removing the "update" permission in Designer still allowed a user to click on an Encounter link and edit. This has been resolved, so the update permission is now required to make any changes to date/time of encounter.
+- WEL-5536 	Changing the primary team contact throws a 500 error. Primary contact can now be changed without issue. 
+- WEL-5555	Unable to delete patients.  Errors were generated when attempting to delete patients, preventing patient deletion.  Resolved.
+- WEL-5559	User license field does not reliably persist data.  Accessing the user license field sometimes did not display the information.  Resolved.
+- WEL-5535	Encounter disposition pre-defined fields throws a 500 error. The error is no longer displayed when working with Encounter Depositions with pre-filled fields.
+- WEL-5562	Disable 'Add' button for assessments if the ‘’Update’’ policy is not set.  Update is required to be enabled for a user to add an assessment.
+
+
+## Designer
+- WEL-5534	Create encounter permissions required to add a note to an existing encounter. 
+We have moved the ability to add a new assessment to an encounter from 'Create' to 'Update' policy. If the 'Update' policy is not selected - a user will see disabled '+' button for adding new assessments. If the 'Update' policy is selected - a user will have the ability to add a new assessment to an encounter.
+- WEL-5557	Toggling encounters into planned status tied to create settings. 
+We have separated the 'Create' policy to two policies: 'Create encounter' and 'Move to Planned'. It allows the ability to create encounters, but blocks an ability to move an encounter from any status to 'Planned' back and vice versa.
+
+With this change, we will make a migration to keep policies which have been set previously. If encounter permissions had the 'Create' policy, we have migrated it to 'Create encounter' and 'Move to Planned’ policy. If encounter had no 'Create' policy we have not selected 'Create encounter' or 'Move to Planned' policies.  Please update your permissions post release as appropriate.
+
+
+## API
+- WEL-5545	Encounters - Unable to restrict date changes to EncountersAPI
+Separated CREATE permissions into two permissions: create encounter and change encounter status to PLANNED.  Please update your API permissions in Designer post release as appropriate.
+
 # Release notes - Version 2022.7.1
 
 ### Date: July 8th, 2022
