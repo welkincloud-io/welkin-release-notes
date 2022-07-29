@@ -23,7 +23,7 @@ We have separated the 'Create' policy to two policies: 'Create encounter' and 'M
 With this change, we will make a migration to keep policies which have been set previously. If encounter permissions had the 'Create' policy, we have migrated it to 'Create encounter' and 'Move to Planned’ policy. If encounter had no 'Create' policy we have not selected 'Create encounter' or 'Move to Planned' policies.  Please update your permissions post release as appropriate.
 
 
-## API
+## APIs
 - WEL-5545	Encounters - Unable to restrict date changes to EncountersAPI
 Separated CREATE permissions into two permissions: create encounter and change encounter status to PLANNED.  Please update your API permissions in Designer post release as appropriate.
 
