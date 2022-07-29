@@ -31,8 +31,6 @@ Separated CREATE permissions into two permissions: create encounter and change e
 
 ### Date: July 8th, 2022
 
-## New Features Callout
-
 ## Care
 - WEL-5384 Fixed: Instances of 500 Error in Encounters, home page
 - WEL-5350 Fixed: Assessments Status Filter shows status name starting from capital letter.
