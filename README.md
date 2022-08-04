@@ -5,14 +5,15 @@
 ## This is hotfix
 
 ## Care Portal.
-- WEL-5584 - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened. 
-- WEL-5569 - Editing of past encounters causes endless page loading error. We fixed an issue that caused an endless page loading error when a user was trying to edit an encounter that has its date in the past.
-- WEL-5402 - WhatsApp’s comms module not syncing in real time. We fixed a problem, when multiple care team members were chatting with the same patient at the same time, messages from care team members were not getting reflected in the WhatsApp’s comms module in real time. Prior to the release, a page refresh was needed to see it.
-- WEL-5338. Encounters created during outage can’t be accessed via UI or API. We released a fix for several encounters that were created during a system outage and couldn't be accessed via UI or API.  
-- WEL-5557 - Unable to move encounter into "Planned" status, despite enabled "Move to Planned" permissions. We fixed an issue that did not allow moving an encounter into “Planned” status despite having “Move to Planned” permission enabled. 
-- WEL-5478 - "DT not found" error was displayed while completing an assessment. With the release, we fixed an error that prevented completing an assessment when the configuration had been changed in the Designer Portal after its start.
-- WEL-5504 - "DT not found" error is displayed while searching a patient on the Encounters tab of another patient. In the release, we fixed the “DT not found error” that was displayed in case of using global search to find a patient on the Encounters tab of another patient profile. 
-- WEL-5512 - "Save as Draft" button on Dialog tab is leading to sending of text messages. We fixed a problem where a text message was sent to a recipient immediately, instead of just saved as a draft, after clicking the corresponding button on the Dialog tab in the Care Portal. 
+- WEL-5584 (WS-1243) - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened in the Care Portal.
+- WEL-5569 (WS-1244) - Editing of past encounters causes endless page loading error. We fixed an issue that caused an endless page loading error when a user was trying to edit an encounter that has its date in the past.
+- WEL-5402 (WS-1097) - WhatsApp’s comms module not syncing in real time. We fixed a problem, when multiple care team members were chatting with the same patient at the same time, messages from care team members were not getting reflected in the WhatsApp’s comms module in real time. Prior to the release, a page refresh was needed to see it.
+- WEL-5338 (WS-1080). Encounters created during outage can’t be accessed via UI or API. We released a fix for several encounters that were created during a system outage and couldn't be accessed via UI or API.  
+- WEL-5557 (WS-1250) - Unable to move encounter into "Planned" status, despite enabled "Move to Planned" permissions. We fixed an issue that did not allow moving an encounter into “Planned” status despite having “Move to Planned” permission enabled. 
+- WEL-5478 (WS-1131) - "DT not found" error was displayed while completing an assessment. With the release, we fixed an error that prevented completing an assessment when the configuration had been changed in the Designer Portal after its start.
+- WEL-5504 (WS-1170) - "DT not found" error is displayed while searching a patient on the Encounters tab of another patient. In the release, we fixed the “DT not found error” that was displayed in case of using global search to find a patient on the Encounters tab of another patient profile. 
+- WEL-5512 (WS-1193) - "Save as Draft" button on Dialog tab is leading to sending of text messages. We fixed a problem where a text message was sent to a recipient immediately, instead of just saved as a draft, after clicking the corresponding button on the Dialog tab in the Care Portal. 
+
 
 ## API
 - WEL-5595 - Performance improvements for internal API calls. With the release, we improved the performance of internal API calls related to getting information about users and environments for the Admin Portal and getting information about logged-in user’s environments for Care and Designer Portals.
