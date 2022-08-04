@@ -2,6 +2,10 @@
 
 ### Date : Aug 4th, 2022
 
+## This is hotfix
+Performance improvements for internal API calls
+With the release, we improved the performance of internal API calls related to getting information about users and environments for the Admin Portal and getting information about logged-in user’s environments for Care and Designer Portals
+
 ## Care Portal.
 - WEL-5584 - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened. 
 - WEL-5569 - Editing of past encounters causes endless page loading error. We fixed an issue that caused an endless page loading error when a user was trying to edit an encounter that has its date in the past.
