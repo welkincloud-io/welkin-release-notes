@@ -2,8 +2,6 @@
 
 ### Date : Aug 4th, 2022
 
-## This is hotfix and it 
-
 ## Care Portal.
 - WEL-5584 - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened in the 
 - WEL-5569 - Editing of past encounters causes endless page loading error. We fixed an issue that caused an endless page loading error when a user was trying to edit an encounter that has its date in the past.
