@@ -3,7 +3,7 @@
 ### Date : Aug 4th, 2022
 
 ## Care Portal.
-- WEL-5584 - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened in the 
+- WEL-5584 - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened. 
 - WEL-5569 - Editing of past encounters causes endless page loading error. We fixed an issue that caused an endless page loading error when a user was trying to edit an encounter that has its date in the past.
 - WEL-5402 - WhatsApp’s comms module not syncing in real time. We fixed a problem, when multiple care team members were chatting with the same patient at the same time, messages from care team members were not getting reflected in the WhatsApp’s comms module in real time. Prior to the release, a page refresh was needed to see it.
 - WEL-5338. Encounters created during outage can’t be accessed via UI or API. We released a fix for several encounters that were created during a system outage and couldn't be accessed via UI or API.  
