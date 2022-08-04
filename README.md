@@ -15,7 +15,7 @@
 - WEL-5512 - "Save as Draft" button on Dialog tab is leading to sending of text messages. We fixed a problem where a text message was sent to a recipient immediately, instead of just saved as a draft, after clicking the corresponding button on the Dialog tab in the Care Portal. 
 
 ## API
-WEL-5595 - Performance improvements for internal API calls. With the release, we improved the performance of internal API calls related to getting information about users and environments for the Admin Portal and getting information about logged-in user’s environments for Care and Designer Portals.
+- WEL-5595 - Performance improvements for internal API calls. With the release, we improved the performance of internal API calls related to getting information about users and environments for the Admin Portal and getting information about logged-in user’s environments for Care and Designer Portals.
 
 
 # Release notes: Version 2022.7.2.2
