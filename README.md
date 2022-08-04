@@ -3,8 +3,6 @@
 ### Date : Aug 4th, 2022
 
 ## This is hotfix
-Performance improvements for internal API calls
-With the release, we improved the performance of internal API calls related to getting information about users and environments for the Admin Portal and getting information about logged-in user’s environments for Care and Designer Portals
 
 ## Care Portal.
 - WEL-5584 - Assessment ID not accessible. We put a fix in place to address an issue that was reported by a customer that a specific Assessment ID could not be opened. 
