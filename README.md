@@ -1,4 +1,4 @@
-# Release notes: Version 2022.7.2.2 
+# Release notes: Version 2022.7.2.3 
 
 ### Date : Aug 4th, 2022
 
