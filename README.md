@@ -5,23 +5,23 @@
 ### Please note that the list is not final and is subject to change.
 
 ## New Functionality
-WEL-4849 – Customizable Patients table for Care Portal. With the new release, it’s now possible to customize the layout of the Patients table according to the needs of your organization by adding, removing and renaming columns in Designer.
-WEL-4849 – Calendar week view for multiple users. In the release, we enhanced the week view in Welkin Calendar by adding support for a view of multiple users, similar to a single day view. The calendar will automatically assign a unique color for every added user to easier distinguish their events in the UI.
-WELL-5572 – Configure zip code format. We added the possibility to configure zip code format in Designer, such as setting length, and whether it should be numeric or string. If numeric format is chosen, it’s expected to receive integer value through API.
-WEL-5510 – Add “Assessment created” trigger to Automations. It’s now possible to trigger an automation based on the creation of an Assessment.  For example, you can generate a task N days after creation, or any of the other automation actions.
+- WEL-4849 – Customizable Patients table for Care Portal. With the new release, it’s now possible to customize the layout of the Patients table according to the needs of your organization by adding, removing and renaming columns in Designer.
+- WEL-4849 – Calendar week view for multiple users. In the release, we enhanced the week view in Welkin Calendar by adding support for a view of multiple users, similar to a single day view. The calendar will automatically assign a unique color for every added user to easier distinguish their events in the UI.
+- WELL-5572 – Configure zip code format. We added the possibility to configure zip code format in Designer, such as setting length, and whether it should be numeric or string. If numeric format is chosen, it’s expected to receive integer value through API.
+- WEL-5510 – Add “Assessment created” trigger to Automations. It’s now possible to trigger an automation based on the creation of an Assessment.  For example, you can generate a task N days after creation, or any of the other automation actions.
 
 ## Improvements and bug fixes
-WEL-5498 (WS-1137) – Unnecessary questions were displayed for an assessment. Fix in place to address an issue when some unnecessary questions were displayed in the assessment and disappeared only after page reload.
-WEL-5538 (WS-1201) – “Configuration with this name was not found” error when viewing patients. Fixed an issue when there was no configuration created for the Communication tab on Integrations page in the Admin Portal, and a configuration error was displayed on the Care Portal when viewing a patient.
-WEL-4507 – Encounters: "My Only" naming convention is not grammatically correct. We changed “My Only” filtering option for encounters to “My Encounters” and “Care Team to “All Team Encounters”.
-WEL-5301 – Changes of phone/email are not saved for drafts. Fixed an issue where a change of primary phone number or email address was not saved for draft messages. 
-WEL-5368 (WS-1047) – Unable to search for Care Team Member users when editing a patient. New release addressed an issue when a “no results” message was returned for a Care Team Member search while editing a patient.  The bug was only observed for Care Team Members who didn’t have any territory assigned to them. 
-WEL-5430 (WS-949) – Not possible to search for assessments which have more than one word in their name. Fixed a problem where it was not possible to search for an assessment / note which had more than one word in its name.
-WEL-5438 – Prevent concurrent requests of Data Export. In the new release, we limited the possibility for multiple users to create concurrent requests of Data Export on the Insights page as it could cause degradation of overall system performance. Now, users will see a message that someone has already requested a data export, and it's either being generated or already available for download.
+- WEL-5498 (WS-1137) – Unnecessary questions were displayed for an assessment. Fix in place to address an issue when some unnecessary questions were displayed in the assessment and disappeared only after page reload.
+- WEL-5538 (WS-1201) – “Configuration with this name was not found” error when viewing patients. Fixed an issue when there was no configuration created for the Communication tab on Integrations page in the Admin Portal, and a configuration error was displayed on the Care Portal when viewing a patient.
+- WEL-4507 – Encounters: "My Only" naming convention is not grammatically correct. We changed “My Only” filtering option for encounters to “My Encounters” and “Care Team to “All Team Encounters”.
+- WEL-5301 – Changes of phone/email are not saved for drafts. Fixed an issue where a change of primary phone number or email address was not saved for draft messages. 
+- WEL-5368 (WS-1047) – Unable to search for Care Team Member users when editing a patient. New release addressed an issue when a “no results” message was returned for a Care Team Member search while editing a patient.  The bug was only observed for Care Team Members who didn’t have any territory assigned to them. 
+- WEL-5430 (WS-949) – Not possible to search for assessments which have more than one word in their name. Fixed a problem where it was not possible to search for an assessment / note which had more than one word in its name.
+- WEL-5438 – Prevent concurrent requests of Data Export. In the new release, we limited the possibility for multiple users to create concurrent requests of Data Export on the Insights page as it could cause degradation of overall system performance. Now, users will see a message that someone has already requested a data export, and it's either being generated or already available for download.
 Please note that the engineering team is still working on improving export stability and export functionality is not available for use yet.
-WEL-5588 – Remove patient ID filter from admin Sisense reports. We removed the patient ID filter from the Sisense admin report so that it should show data from all patients and not filter to a specific patient ID.
-WEL-5253 – No indication that message failed to be delivered in WhatsApp. We added a UI indication for messages that were sent through WhatsApp and failed to be delivered, e.g., because of invalid phone number.
-WEL-4878  – UI improvements for Email Communication Center. Added a number of minor UI improvements for the Email tab in the Communication Center page, including pagination, column sorting, and renamed some statuses. Also updated an interface of Scheduler Drawer, where you have to schedule an item to draft to edit it.
+- WEL-5588 – Remove patient ID filter from admin Sisense reports. We removed the patient ID filter from the Sisense admin report so that it should show data from all patients and not filter to a specific patient ID.
+- WEL-5253 – No indication that message failed to be delivered in WhatsApp. We added a UI indication for messages that were sent through WhatsApp and failed to be delivered, e.g., because of invalid phone number.
+- WEL-4878  – UI improvements for Email Communication Center. Added a number of minor UI improvements for the Email tab in the Communication Center page, including pagination, column sorting, and renamed some statuses. Also updated an interface of Scheduler Drawer, where you have to schedule an item to draft to edit it.
 
 
 # Release notes: Version 2022.7.2.3 
