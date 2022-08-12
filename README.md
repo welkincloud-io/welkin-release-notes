@@ -2,7 +2,7 @@
 
 ### Release Date : Aug 20th, 2022
 
-### Please note that the list is not final and is subject to change.
+#### _Please note that the list is not final and is subject to change._
 
 ## New Functionality
 - WEL-4849 – Customizable Patients table for Care Portal. With the new release, it’s now possible to customize the layout of the Patients table according to the needs of your organization by adding, removing and renaming columns in Designer.
