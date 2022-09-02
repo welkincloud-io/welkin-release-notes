@@ -11,10 +11,8 @@
 - WEL-5713 (WS-1442 & WS-WS-1431) – Assessments are unlinked from an encounter after completion. Fixed an issue when assessments were “disappearing” from the encounters in which they were created, and it was only possible to find those assessments in the Assessments view.
 - WEL-5402 (WS-1097) – Encounter’s “Updated At” was incorrect. Issue was fixed for the specific encounter displaying incorrect “Updated At” date. 
 -WEL-5667 (WS-1388) – Unable to modify encounter details after status change. Fixed the issue when “Calendar event isn’t modifiable” error was displayed while editing an encounter in either  ‘Planned’ or ‘In progress’ statuses after being ‘Canceled’.
-WEL-5402 (WS-1097) – Encounter’s “Updated At” was incorrect. Issue was fixed for encounters displaying incorrect “Updated At” date. 
 
 ## International
-- WEL-5402 (WS-1097) – WhatsApp is only enabled for some roles/policies. Addressed a problem when a user in Admin has a role as primary that does not have WhatsApp permissions, and they will not get a live-feed of the messages, regardless of whether they are logged in as that role or not.
 - WEL-5687 (WS-1419) – Users didn’t get new messages in WhatsApp module if they don’t share region/territory with a patient. Addressed the issue where users were not getting new messages until the page is refreshed if their region/territory were different from a patient.
 
 
