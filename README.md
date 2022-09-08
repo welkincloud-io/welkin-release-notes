@@ -1,3 +1,11 @@
+# Hotfix Release notes: Version 2022.7.3.3
+
+### Release Date : Sep 8, 2022
+
+## Improvements and bug fixes
+- WEL-5746 (WS-1449, WS-1427) – Migration for calendar events created in an unreadable color scheme. Fix covers all calendar events that are created via API and appear in an unreadable color scheme (light gray events with white text).
+
+
 # Hotfix Release notes: Version 2022.7.3.1
 
 ### Release Date : Sep 1, 2022
