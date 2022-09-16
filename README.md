@@ -1,3 +1,28 @@
+# Upcoming Release notes: Version 2022.7.3.4
+
+### Release Date : Sep 23, 2022 (Tentative)
+
+### Please note that the list is not final and is subject to change.
+
+## New Functionality
+- WEL-5514, WEL-5776, WEL-5638 – Support of auto-update for emails and SMS in Comms Center. All inbound and outbound notifications sent via email and SMS will be displayed in Comm Center in real-time without a need to reload the page. Also, Email and SMS notification statuses were updated and unified. 
+- WEL-5680 (WS-1322) – Adjustable session timeouts. With the new release, user session configuration was added on the Security tab in Admin Portal. It’s now possible to adjust duration when users need to re-authenticate (default value is 30 days) and when a user’s session must be terminated because of inactivity in Care portal (default value is 30 days).
+- WEL-5706 (WS-1323) – Rework of Welkin Login Screen for SSO customers. Users with SSO configured for their organization will now see an updated Welkin login screen with sign in SSO as a primary action and login with email and password as secondary.
+
+
+## Improvements and bug fixes
+- WEL-5724 – Images are not displayed for completed assessments. Improved functionality that was introduced in Release 2022.7.3.1 and allows uploading images for questions and texts for assessments. Now, it will be possible to view uploaded images for completed assessments.
+- WEL-5836 – Comm center stops receiving real-time notifications in one hour. Addressed a problem when Comm center stops receiving notifications (Email, SMS, and WhatsApp in real-time after expiration of refresh token (in one hour). 
+- WEL-5164 (WS-1334, WS-1178) – Issue with rendering of patient profile fields in PDF. Fix in place to address unwanted characters being displayed for patient profiles fields when converted to PDF format.
+- WEL-5753 (WS-1397) – Single-record CDT is disappearing from the UI. Fixed a problem with a specific CDT not saving data after editing on UI when it was created more than one time.
+- WEL-5738 (WS-1448) – All day events might not have start and end time spanning the whole day. Fixed issue when All Day event shows incorrect time in attribute, e.g. 9am-10am instead of 12am-11:59pm.
+- WEL-5821 (WS-1524) – PFA link redirects to login screen instead of assessment. Fixed an issue when a patient was redirected to Welkin login screen instead of an assessment when following the PFA link. The issue was reproduced when PFA folder name contains words 'Welcome’ or ‘Conclusion’.
+
+
+## International
+- WEL-5757 – WhatsApp. Failed messages will be displayed as delivered to other users in a group chat. Fixed an issue when notification sent by a user and failed to be delivered will be displayed as delivered for the rest users in a group chat.
+
+
 # Hotfix Release notes: Version 2022.7.3.3
 
 ### Release Date : Sep 8, 2022
