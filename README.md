@@ -1,3 +1,56 @@
+# Release notes: Version 2022.8.1
+
+### Release Date : Oct 27, 2022 – 1:00 AM PST
+
+### Please note that this list is not final and is subject to change.
+
+## New Functionality
+- WEL-5297 – Custom Data Fields in Patient Profile. With the new release, it’s possible in Designer to create new custom Data Fields for Patient Profiles. Once a custom Data Field is created, it can be added to the Patient Data View as a field to be displayed on the Patients Profile, Add and Edit Patient interfaces on Patient Profile. Please note that in order for a custom Data Field to be displayed in the Care portal, it’s required to set a corresponding security policy.
+
+- WEL-5298 – Grid view options on Patient Data View. In Designer, it’s now possible to select one of multiple grid view options for Add and Edit Patient interfaces in the Care portal.
+
+- WEL-5464 – Patient Profile security policy. New Patient Profile tab is added to Security Policy configuration where it’s possible to review permissions for default fields and set Create, Ready, Read Masked, Update and Delete permissions for custom patient profile field individually. 
+
+- WEL-5701 – Automation for Chat messages. It’s now possible to create an automation in Designer to send a template message to a patient in Live Chat. It’s required to have a notification template with a Message Type of “Chat” and select Chat Patient as a triggering action of an automation.
+- WEL-5385 – Resize of Assessment Drawer. To make filling out assessments more convenient, an Assessment Drawer can be expanded by dragging an edge of the drawer or pressing the expand button in the top right corner of the drawer. It can be set back to its normal size by pressing the collapse button.
+- WEL-5668 – Sticky filters on UI (Encounters and Patients). With the release, Welkin will remember filter settings on Encounters and Patients pages. Users can update their  settings or navigate away to work with other parts of the application.  Once they go back, filter settings will be persistent. Please note that after log out, filter settings will be restored to the default. 
+
+## Improvements and bug fixes
+- WEL-5683 – New Phone Tree UI. Visual representation of Phone Trees have slightly improved in Designer by changing colors and adding labels.  The selected Phone Tree is now highlighted.
+- WEL-5601 – Zoom ID in Encounter Message Templates belongs to the primary contact, not the user on the Encounter. A new variable {{ENCOUTNER.*.careTeamMemberZoomId}} has been added to the Message Templates to surface the Zoom ID that corresponds to the participant on the Encounter (regardless of whether that user is the primary point of contact for the patient).
+- WEL-5645 – Previously, after documents were signed the system did not automatically refresh the page. With this improvement, documents that are completed and signed via DocuSign will automatically appear in the Documents page. This eliminates the need to refresh the page.
+- WEL-5500 – Improved interface of Insights export. Slightly improved the UX/UI of request export interface on Insights page.
+- WEL-5640 – Unify pagination and search across the Comm Center. Improved pagination and search functionality on Emails and SMS tabs of Comm Center to look and work in the same way.
+- WEL-5985 – Export patients API doesn't contain info about Programs. Fixed the issue when Programs were always returned as empty in URL/export/PATIENT API response.
+- WEL-5842 (WS-1543, WS-1625) – “Assessment record for patient is already started” error when assigning it to encounter. Fixed the issue when it was not possible to assign in progress assessment to an encounter while the encounter already contains an assessment.
+- WEL-5528 – Issue with format of Date/Time fields in template-generated PDFs. Fixed format for date and time fields in template-generated PDFs that should now correspond to what is displayed on UI.
+- WEL-5618 – Exploring Document Formatting in template-generated PDFs. Support of  “Courier New” font has been added to template-generated PDFs
+- WEL-5619 – File Name change in template-generated PDFs. File name for in template-generated PDFs is updated for the following format: [patientName]-[assessmentTitle]-[finalizedDate].pdf 
+- WEL-5546 – Can't null out phone field without NULLing out primaryPhoneCapabilities field. Fix for a scenario where it was not possible to erase phone number without erasing  primaryPhoneCapabilities field. Now both fields can be modified/erased independently. 
+- WEL-5605 (WS-1336) – Filters not pulling in full list of users with the attribute(s). Fixed an issue where filters were not pulling all admin users by license state accurately.
+- WEL-5674 (WS-1399) – Text message reminders going out to primary phone only. Fixed an issue where text message reminders would only be sent to primary phone number even if it was voice only. Now primary phone will be used to deliver text message if it’s SMS, otherwise system check SMS capabilities of secondary phone. 
+- WEL-5744 (WS-1422) – Some downloaded files appear as no extension. Fixed a problem when zip files that contain “.” in its name were downloaded without an extension and were not recognized by OS.  
+- WEL-5786 (WS-1547, WS-1493) – Export from Insights page is empty. Fixed an issue where data export from Insights would return an empty zip file. 
+- WEL-5948 (WS-1650) – The calendar shows ‘invalid date’ instead of the day of the month on tables. Fixed the issue for tablet devices where the calendar displayed “invalid date” instead of the days of the month.  
+- WEL-5603 (WS-1184) – Encounter PATCH doesn't update startDateTime without passing an endDateTime. Fix to return parse error instead of a success for a scenario where startDateTime has passed without passing an endDateTime for Encounter PATCH endpoint.
+- WEL-5274 – Messaging and PDF template display CDT data element, not label. Fixed the issue where a value of CDT record was displayed instead of the label if CDT was used in messaging or PDF template.
+- WEL-5934 – Secure emails change status only after page reload. With the release, secure emails sent in Comm Center will be reflected on the page automatically without a need to refresh the page.
+- WEL-5871 – It’s required to click Next button twice, if the form in PFA have more than one section. Fixed the issue when it was required to click Next button twice to open the next section. 
+- WEL-5870 (WS-1563) – Unable to Add Care Team Members When Manually Creating Patients. Fixed the issue when it was not possible to create a patient with assigned care team member and who does not have defined territories and regions 
+- WEL-5755 (WS-1529, WS-1576) – 'New' button is not clickable when adding profiles in assessment. Fixed the issue when it was not possible to add a new profile in assessments. 
+- WEL-5737 (WS-1456) – From time to time, an unknown error with status code 500 occurs on deleting CDTs. Fixed floating issue when system throws an unknown error with status code 500 occurs if deleting objects of the CDTs.
+- WEL-5711 (WS-1238) – Disable possibility to enter a new value into question with predefined dictionary. With the release, the save button will be inactive in assessment if the user entered a new value into a question with predefined dictionary. 
+- WEL-5705 (WS-1453, WS-1436) – Sometimes conditional questions are shown regardless of condition. Fixed the issue when conditional questions within an assessment were shown to a user regardless of false condition. 
+ 
+## International (WhatsApp)
+- WEL-5632 – Ability to resend a message. A resend option will be displayed on click on a message that failed to be sent to a patient. 
+- WEL-5581 – Ability to send attachment without text message. It’s now possible to upload and send an attachment without entering a caption for it.
+- WEL-5820 – WhatsApp phone number cannot be used for phone calls. With the release, it’s possible to make calls and send messages using the phone number that is conferred for WhatsApp.
+- WEL-5549 – Add permission "WHATSAPP_NONE_CARE_TEAM". Added a new permission that allows users that are members of Care Team to read messages from patients.
+- WEL-5657 – Choosing WhatsApp capability on secondary phone, message sent on primary. Fixed an issue where messages were sent to the primary phone, when WhatsApp capabilities were set to secondary phone.
+
+
+
 # Upcoming Release notes: Version 2022.7.3.4
 
 ### Release Date : Sep 23, 2022
