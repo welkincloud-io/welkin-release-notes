@@ -1,6 +1,6 @@
 # Upcoming Release notes: Version 2022.7.3.4
 
-### Release Date : Sep 23, 2022 (Tentative)
+### Release Date : Sep 23, 2022
 
 ### Please note that the list is not final and is subject to change.
 
