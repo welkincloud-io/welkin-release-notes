@@ -1,3 +1,11 @@
+# Hotfix Release notes: Version 2022.8.2.1
+
+### Release Date : Nov 14, 2022 – 1:00 AM PST
+
+## Bug fixes
+WEL-6097 (WS-1741, WS-1743, WS-1772, WS-1782) - This hotfix release fixed an issue that was blocking the successful completion of assessments. The problem arose with checkbox and radiobutton fields. The fields did not save the selected value, and therefore the data was not saved or it was impossible to complete the assessment, with required fields.
+
+
 # Release notes: Version 2022.8.1
 
 ### Release Date : Oct 27, 2022 – 1:00 AM PST
