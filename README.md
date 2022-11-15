@@ -1,3 +1,39 @@
+# Release notes: Version 2022.9.1
+
+### Release Date : Nov 17, 2022 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+WEL-5927 - Add access_code field to Patient Profile. A new field access_code has been added to the Patient Profile in the Designer. The new access code field can be used to generate unique values ​​similarly to the MRN field. 
+The field is configured similarly to other fields, it has user-set length attributes, only numbers, only letters, and so on. If the length is not set, it will default to 6 characters. At this moment the configuration of Mask Symbol, Start position, End position is not supported by access_code field.
+The field is also available in the Patient Data View page on the View (Fields), Add Form, Edit Form tabs. The field can’t be added to the Top Info section.
+WEL-5904 - Access_code can be used in templates and sent via email or SMS. To be able to use the access code field in templates for sending letters and SMS, the variable {{PATIENT_ACCESS_CODE}} has been added to Message Templates in the Designer. 
+WEL-5869 - Access_code is searchable via API and UI. The access code field can be used to search for patients on the Care portal user interface, as well as through the API.
+WEL-5909 - Generate value for access_code field. New action types have been added to automation: Generate MRN and Generate Access Code. With these types, you can generate unique values for the appropriate fields for the patient profile. If fields are disabled on the Patient Profile in the Designer (OFF) then Generate MRN and Generate Access Code options are disabled for selection. If the MRN and Access Code fields are already used in automations and the user disables them in the patient profile in the Designer and tries to save, then a consistency check error message will be displayed. If the MRN and Access Code fields are already filled in, then they will NOT be overwritten when the automation is triggered again. Fields will be generated only if the fields are null.
+WEL-6011 - Setting assessment variables in template header and footer. With the release, variables added to headers and footers of assessment templates will be converted to assessment values when the PDF is generated.
+WEL-6012 - Assessment complete variables in assessment template. When creating an assessment, on the Template tab, new variables were added to reflect a person who completed the assessment
+{{FORM_COMPLETER_ID}}
+{{FORM_COMPLETER_EMAIL}}
+{{FORM_COMPLETER_PHONE}}
+{{FORM_COMPLETER_FIRST_NAME}}
+{{FORM_COMPLETER_LAST_NAME}}
+{{FORM_COMPLETER_ACUITY_ID}}
+{{FORM_COMPLETER_ZOOM_ID}}
+If the form was completed by the user, then the variables will be replaced with the user's data in the PDF file. If the assessment was completed by the patient, then the patient's data will be displayed (this situation is possible if the PFA link was sent to the patient, and the form being filled out had the autocomplete setting).
+Please keep in mind that the {{FORM_COMPLETER_ACUITY_ID}} and {{FORM_COMPLETER_ZOOM_ID}} values ​​can only be set by the user and cannot be filled in for the patient.
+WEL-5917, WEL-6005 - Sticky filters on UI (Assessments, Task, Calendar). Filters on the pages of Assessments, Tasks, and on Calendar will be remembered and will not be reset when switching to other pages of the application. You can use the “Clear All” button to clear the filters.
+For the Calendar, sticky filters are the display of the calendar (day, week, etc.), as well as the added calendars of other users.
+After logout, the filters will reset to their default.
+
+## Improvements and bug fixes
+
+WEL-5938 (WS-883) - Issue with DocuSign in-person signing. Fixed the issue, when after the signature process in DocuSign, the page redirects to an error screen if in-person signing is selected.
+WEL-6000 (WS-1694) - Multiple Working Hours Do Not Appear In the Day View of the Calendar. Fixed the issue when a user sets up multiple blocks of working hours in the Calendar. The blocks can be seen in the Week and Work Week views of the Calendar, but only one block of the working hours appeared in the Day view. 
+WEL-5988 (WS-1681) - Unknown Error when Exporting Assessment as PDF. Fixed the issue where an “unknown error” was displayed when trying to export the specific assessment as a PDF (using a template).
+WEL-6076 (WS-1755) - Permanent phone fields are required in UI, but not in Designer. Fixed the issue with Primary and Secondary phone fields in patient profile shown as required in the Care portal, although these fields are not set to be required in Designer. 
+WEL-6053 (WS-1736) - Unable to scroll in global search. Fixed the issue with global search when it was not possible to scroll through the search results and the list reached the bottom of the screen.
+WEL-5920 (WS-1622) - Not possible to open the 2nd page of the Unrecognized Communication. Fixed the issue where the system did not open the 2nd page of the Unrecognized Communication and takes the user back to the 1st page.
+
 # Hotfix Release notes: Version 2022.8.2.1
 
 ### Release Date : Nov 14, 2022 – 1:00 AM PST
