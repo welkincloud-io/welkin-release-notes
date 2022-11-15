@@ -1,6 +1,6 @@
 # Release notes: Version 2022.9.1
 
-### Release Date : Nov 17, 2022 – 1:00 AM PST (tentative)
+### Release Date : Nov 18, 2022 – 1:00 AM PST (tentative)
 
 ## New Functionality
 
