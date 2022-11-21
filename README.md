@@ -1,6 +1,16 @@
+# Hotfix Release notes: Version 2022.9.1.1
+
+### Release Date : Nov 22, 2022 – 1:00 AM PST (tentative)
+
+## Improvements and bug fixes
+
+WEL-6177 (WS-1781) - New setting "Prevent updating an assessment (from an encounter) if it's in progress and assigned to the different encounter".
+It’s now possible to configure on organization level whether users can add an assessment record to an encounter if there is already an In Progress record for a patient with the same assessment template originated in another encounter.
+If the setting is enabled, users will see an error message that will prevent them from seeing and updating an assessment record until there will be no In Progress record with the same assessment template. Otherwise, users will see an In Progress assessment record with the possibility to update it in a context of previous encounter or reassign it to the current one. Please note that the setting can be changed by Welkin support team. 
+
 # Release notes: Version 2022.9.1
 
-### Release Date : Nov 18, 2022 – 1:00 AM PST (tentative)
+### Release Date : Nov 18, 2022 – 1:00 AM PST
 
 ## New Functionality
 
@@ -33,6 +43,9 @@ After logout, the filters will reset to their default.
 - WEL-6076 (WS-1755) - Permanent phone fields are required in UI, but not in Designer. Fixed the issue with Primary and Secondary phone fields in patient profile shown as required in the Care portal, although these fields are not set to be required in Designer. 
 - WEL-6053 (WS-1736) - Unable to scroll in global search. Fixed the issue with global search when it was not possible to scroll through the search results and the list reached the bottom of the screen.
 - WEL-5920 (WS-1622) - Not possible to open the 2nd page of the Unrecognized Communication. Fixed the issue where the system did not open the 2nd page of the Unrecognized Communication and takes the user back to the 1st page.
+- WEL-6100 (WS-1734) - Forms on iOS Safari not auto sized. Fixed autoresizing issue for PFA links, the content automatically sizes to fit the browser page.
+- WEL-6079 (WS-1779, WS-1759, WS-1816) - Invalid behavior of assessments in encounters. Fixed a bug that one assessment record could be assigned to several encounters at the same time. At the moment there can be a connection one specific assessment one encounter.
+
 
 # Hotfix Release notes: Version 2022.8.2.1
 
