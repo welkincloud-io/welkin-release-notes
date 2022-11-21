@@ -4,7 +4,7 @@
 
 ## Improvements and bug fixes
 
-WEL-6177 (WS-1781) - New setting "Prevent updating an assessment (from an encounter) if it's in progress and assigned to the different encounter".
+- WEL-6177 (WS-1781) - New setting "Prevent updating an assessment (from an encounter) if it's in progress and assigned to the different encounter".
 It’s now possible to configure on organization level whether users can add an assessment record to an encounter if there is already an In Progress record for a patient with the same assessment template originated in another encounter.
 If the setting is enabled, users will see an error message that will prevent them from seeing and updating an assessment record until there will be no In Progress record with the same assessment template. Otherwise, users will see an In Progress assessment record with the possibility to update it in a context of previous encounter or reassign it to the current one. Please note that the setting can be changed by Welkin support team. 
 
