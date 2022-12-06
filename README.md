@@ -1,3 +1,22 @@
+### Release Date : Dec 8, 2022 – 1:00 AM PST (tentative)
+
+## New Functionality
+WEL-6010 - Pre-set "From" phone number for a specific patient. New functionality has been added for more convenient communication with patients via SMS. Users can select a default phone for each patient from which SMS will be sent to this patient. This setting is located on the commcenter page under the gear icon, Default Phone. 
+WEL-5643 - Docusign integration: show multiple documents in the same envelope during template preview. Added the ability to view all files contained in a docusign template in the Care Portal under Docusign Document.
+
+## Improvements and bug fixes
+
+WEL-6028 (WS-1710) - Unknown error in assessments. An error that occurred when trying to submit an assessment has been fixed.
+WEL-6236 - (WS-1839) - Users are not able to login to Welkin. Fixed an issue where users could not go through the organization entry page and login.
+WEL-6076 (WS-1755) - Permanent phone fields are required in UI, but not in Designer. Corrected the text of the validation message that is displayed if the user deletes the patient's phone number but leaves the phone's capabilities.
+WEL-6191 (WS-1807, WS-1821) - Ongoing "network error" issues despite strong internet connection. Fixed an issue with displaying an error when navigating through the portal.
+WEL-5918 (WS-1617) - Communication tab under patient profile has phone icon not showing correctly. Fixed icon for displaying Not Answer incoming call in the commcenter.
+WEL-5826 (WS-1523) - Attachments not appearing in Template Message. Fixed an issue where files were not added to SMS when selecting an SMS template with attachments.
+WEL-5947 (WS-1651) - Email not found error. Fixed an error that occurred if the user was on the patient's page, but opened a new incoming letter from another patient using the notification block.
+WEL-5986 (WS-1679) - Template Message Carryover. Fixed an issue where the SMS template text was copied from the SMS creation drawer to the text field of the SMS dialog.
+
+
+
 
 # Hotfix Release notes: Version 2022.9.1.1
 
