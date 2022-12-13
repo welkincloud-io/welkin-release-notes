@@ -1,4 +1,4 @@
-### Release Date : Dec 8, 2022 – 1:00 AM PST (tentative)
+### Release Date : Dec 11, 2022 – 11:00 PM PST
 
 ## New Functionality
 - WEL-6010 - Pre-set "From" phone number for a specific patient. New functionality has been added for more convenient communication with patients via SMS. Users can select a default phone for each patient from which SMS will be sent to this patient. This setting is located on the commcenter page under the gear icon, Default Phone. 
