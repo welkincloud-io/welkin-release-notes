@@ -20,6 +20,8 @@ WEL-6229 – Attachments should be viewable in the Sent folder in the Emails. Ad
 - WEL-5912 (WS-1678) – Encounter creation showing an incorrect summary of calendar events status. Fixed the issue of displaying incorrect count and presentation of items that are already in the calendar when scheduling an encounter.
 - WEL-6026 (WS-1706) – "Working Hours" are wrong for clinicians with different time zones. Fixed the issue when Working Hours of another user were not converted automatically to a timezone of the current user. 
 - WEL-6302 (WS-1877) – If a user goes to any page other than Page 1 of a client's Assessments page, they are unable to return to Page 1. The problem with pagination on the list of assessments has been fixed.
+- WEL-6272 - Deprecated the "userAttributes" section in favor of the new "customUserAttributes". When working with users (creating, editing, getting) through the API, please note that "userAttributes" is no longer supported, but "customUserAttributes" is supported instead. When creating a user with "userAttributes" it will be ignored, there will be no error in the console. Please make changes if you have used this option.
+
 
 
 
