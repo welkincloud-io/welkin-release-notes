@@ -1,12 +1,12 @@
 # Release notes: Version 2022.11.1
 
-### Release Date : Dec 19, 2022 – 1:00 AM PST (tentative)
+### Release Date : Dec 22, 2022 – 1:00 AM PST
 
 ## New Functionality
 
 - WEL-6088 – URL shortening and Patient Verification for PFAs. After the release, URLs for PFAs will be generated in a new format which should be more convenient for SMS as it uses fewer characters, e.g. https://wh1.io/49a47f.
-Another new feature has been added to authorize the patient when opening the PFA URL. The "Require Authorization" checkbox has been added to the PFA Folder in the Designer Portal. If the setting is enabled, then the patient will need to enter their First Name, Last Name, and Date of Birth to open the PFA folder with assessments. The setting is disabled by default and it’s recommended to enable it for all questionnaires that may contant PHI/PII data in it. 
-Please note: The 'Require Authorization' setting can only be used for the PFA folders and is not available for individual PFAs. PFA folders are the preferred method to send assessments to a patient and individual PFAs will eventually be phased out. More information about transitioning to PFA folders will be provided in the future.
+   - Another new feature has been added to authorize the patient when opening the PFA URL. The "Require Authorization" checkbox has been added to the PFA Folder in the Designer Portal. If the setting is enabled, then the patient will need to enter their First Name, Last Name, and Date of Birth to open the PFA folder with assessments. The setting is disabled by default and it’s recommended to enable it for all questionnaires that may contant PHI/PII data in it. 
+   - Please note: The 'Require Authorization' setting can only be used for the PFA folders and is not available for individual PFAs. PFA folders are the preferred method to send assessments to a patient and individual PFAs will eventually be phased out. More information about transitioning to PFA folders will be provided in the future.
     
 - WEL-6199 – Displaying friendly names of patient numbers in the communication center. It’s now possible to add labels for primary and secondary patient phone numbers. Two new fields (phone_label and secondary_phone_label), have been added to the Patient Profile section in the Designer Portal. It’s possible to add it to
 Patient Profile
