@@ -1,3 +1,21 @@
+# Release notes: Version 2023.12.1
+
+### Release Date : Jan 16, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- WEL-6084 - Displaying "From" phone number labels in the Сommunication center. With the release, it will be possible to add a label for the From phone field in the communication center for SMS and calls. 
+This function is not available directly. In order to set labels for phones, you need to create a support ticket indicating which label to specify for which phone number.
+
+## Improvements and bug fixes
+
+- WEL-6314 - Redundant screen for SSO login experience. The redundant screen, which requires users to enter their credentials while autorizing through Google SSO , will no longer be displayed.
+- WEL-5976 (WS-1994) - Template variable in assessment not pulling in populated CDT information. Fixed problem with filling in information for fields.
+- WEL-6206 (WS-1899), (WS-1928) - Issue When Putting In Birth Date. Fixed the problem of entering the date of birth of the patient when using the keyboard.
+- WEL-6380 (WS-1945) - Incorrect display in the calendar of an event that lasts 10 minutes. Fixed display of a ten-minute event in the calendar (event size reduced).
+
+
+
 # Release notes: Version 2022.11.1
 
 ### Release Date : Dec 22, 2022 – 1:00 AM PST
