@@ -5,7 +5,7 @@
 ## New Functionality
 
 - WEL-6084 - Displaying "From" phone number labels in the Сommunication center. With the release, it will be possible to add a label for the From phone field in the communication center for SMS and calls. 
-This function is not available directly. In order to set labels for phones, you need to create a support ticket indicating which label to specify for which phone number.
+This function is not available directly. In order to set labels for phones, you need to create a support ticket (JSM ticket type = work request) indicating which label to specify for which phone number.
 
 ## Improvements and bug fixes
 
