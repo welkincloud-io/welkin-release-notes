@@ -1,6 +1,6 @@
 # Release notes: Version 2023.12.1
 
-### Release Date : Jan 16, 2023 – 1:00 AM PST (tentative)
+### Release Date : Jan 17, 2023 – 1:00 AM PST (tentative)
 
 ## New Functionality
 
