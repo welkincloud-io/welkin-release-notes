@@ -8,7 +8,7 @@
 
 ## Improvements and bug fixes
 
-- WEL-6491 (WS-1943, WS-1948, WS-2100) - Adding unique identifiers for notifications to prevent duplicates. A unique identifier hidden from users will be added to every notification in the Care portal to prevent duplicate messages. Extended call logs have also been added. 
+- WEL-6491 (WS-1943, WS-2039, WS-2100) - Adding unique identifiers for notifications to prevent duplicates. A unique identifier hidden from users will be added to every notification in the Care portal to prevent duplicate messages. Extended call logs have also been added. 
 - WEL-5646 (WS-1489) - User seeing error message "Territories of user and patient are not matched". Fixed the problem of filtering records to which the user does not have access.
 - WEL-5891 (WS-1592) - Calls not showing up on schedule under encounters but show up on calendar view. Fixed an issue with displaying encounters related to the user's timezone.
 - WEL-6434 (WS-2015) - "Terminate after inactivity" setting not saving time frame if <1 day. Fixed an issue where it was not possible to save 0 days in the settings in the Admin portal.
