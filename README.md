@@ -1,3 +1,18 @@
+# Release notes: Version 2023.14.1
+
+### Release Date :  Feb 13, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+WEL-6502 - Support of AUS and UAE phone numbers. With the release it’s now possible to enter Australian (+61 x xxxx xxxx) and United Arab Emirates (+971 x xxx xxxx) phone formats for users and patients.
+
+## Improvements and bug fixes
+- WEL-6113 (WS-1708) - On/off toggle appearing for custom data type. The issue has been fixed where custom fields that have a similar name to the default profile fields were showing on/off toggles.
+- WEL-6439 - The problem of displaying working hours in the calendar. The issue of incorrect display of working hours for users with significant time zone differences has been resolved.
+- WEL-6575 - There is no validation message for the Date and Date/Time fields in the patient profile. The problem of missing validation messages for required date or datetime fields in the patient profile has been fixed.
+
+
+
+
 # Release notes: Version 2023.13.1
 
 ### Release Date :  Jan 30, 2023 – 1:00 AM PST (tentative)
