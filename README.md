@@ -1,3 +1,22 @@
+# Release notes: Version 2023.15.1
+
+### Release Date :  Feb 27, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-6503 - User locale support for Australia (AUS) and the United Arab Emirates (UAE). With the release, it is now possible to select the Australian or United Arab Emirates locale for the user. When setting the locale for the user, the dates and times are displayed in the format of the selected country in the Care portal (Australia AUS → day-month-year format, 12-hour time format; UAE → day-month-year format, 12-hour time format), as well as placeholders for the field phone (Primary Phone and Secondary Phone in the patient profile). The locale can be set when creating or editing a user in the Admin Portal, as well as in "My Profile" on the Care Portal.
+- WEL-6585 - Time zones for Australia and the United Arab Emirates. With the release, it is now possible to select the Australian or United Arab Emirates time zones for the user and patient. The time zone can be set when creating or editing a user in the Admin Portal, as well as in the "My Profile" section of the Care Portal. For a patient, the time zone is set in the patient profile. 
+- WEL-6577 - Add timestamp to encounter history log. On the view of the encounter, a timestamp has been added to all History blocks (Details block, Notes and Ratings block, View Meeting Location block, Comments block).
+
+## Improvements and bug fixes
+- WEL-6686 (WS-1078) - An incorrect version of a template is used to generate PDF for assessments there were completed prior to 11/24/2022. After the release, the system will utilize the template version that was current at the time the assessment was completed to generate a PDF.
+- WEL-5614 (WS-1757, WS-1756) - Users are being kicked out multiple times per day with JWT token errors. Fixed an issue with users being logged out by reworking the authorization logic and changing the approach for updating tokens in the application.
+- WEL-6001 (WS-1669) - Time shift for recurring events in the calendar. The problem of time shift for recurring events due to daylight savings time has been fixed.
+- WEL-6613 (WS-2067) - Production notifications are appearing in Stage. Addressed the problem when notifications from a different environment were being displayed to users under specific circumstances.
+WEL-6712 (WS-2170) - API Create Assessment Record. An error that prevented retrieval of assessment information by ID through the client API has been fixed.
+- WEL-6767, WEL-6768 (WS-2219) - Phone number entry validation. The validation process for phone number entries has been enhanced to allow only phone numbers with valid extensions to be stored in the system. Furthermore, the validation message will now specify that the phone number must be entered in international format and include a (+) symbol when entering details in the Care portal and PFA links.
+- WEL-6771 (WS-2229) - International phone number + Automation Condition. A problem that prevented triggering of an automation when a phone number was included in the triggering condition has been resolved.
+
+
 # Release notes: Version 2023.14.1
 
 ### Release Date :  Feb 13, 2023 – 1:00 AM PST (tentative)
