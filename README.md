@@ -1,3 +1,36 @@
+# Release notes: Version 2023.16.1
+
+### Release Date:  March 13, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-6372 - Option to control the frequency of wait message repetition in the Phone Tree. A new setting has been introduced to the Phone Tree configuration which allows a Welkin Admin user to control whether a wait message should be played multiple times until the final action is taken, or only once.
+- WEL-6598 - "Busy" status for phone calls in Comm Center. The system now includes a "Busy" status, which is displayed when a phone call to a patient is attempted, but a busy signal is received. The status is now available in the Comm Center within the Care Portal, Audit Logs, and API responses.. 
+- WEL-6619 - Trigger automation for new document upload. A new trigger criteria has been added to Automations.  This allows an action to be triggered when documents are uploaded via the Care web interface. API, or when a new document is created from an attachment in the Comm Center.
+- WEL-6704 - Select All option for Territories field in user configuration. An option to "Select All" has been added when editing "Accesses, Policies, Roles, Territories" for a user in the Admin portal.
+- WEL-6805 - Expand the list of supported Patient Profile variables. The system now includes new general variables that can be utilized in Assessments, PFA folders, Message Templates and Action Bar for custom buttons: 
+{{PATIENT_PRIMARY_LANGUAGE}}
+{{PATIENT_CITY}}
+{{PATIENT_STATE}}
+{{PATIENT_ZIP}}
+{{PATIENT_COUNTRY}}
+{{PATIENT_ADDRESS_LINE_1}}
+{{PATIENT_ADDRESS_LINE_2}}
+- WEL-6740 (WS-2191) - Support of Primary Team Contact variables in PFA folders. PFA folders now have the capability to utilize variables that can display information about a patient’s Primary Team Contact, such as their name, phone number, or email, on the Welcome and Conclusion pages.
+- WEL-6622 (WS-2114) - Expose Export Patient Programs API. The Export Patient Programs API is now part of Welkin's Public API collection and is accessible for use by API clients if “Program” security policy is active in the Export Data section.
+{{url}}/{{tenantName}}/{{instanceName}}/export/PATIENT_PROGRAM
+
+
+## Improvements and bug fixes
+- WEL-6676 (WS-2164) - Altered time data when typing in the time field. The problem of the system changing time data entered via the keyboard in an incomplete format e.g. without AM/PM has been resolved.
+- WEL-4300 (WS-523, WS-565) - "Today's date" variable is showing the wrong date. The Date/Time field is now tied to the time zone of the user who is filling in the assessment. If it's a PFA, then the field value is linked to the patient's time zone, which is configured in their profile. If neither the user nor the patient has a time zone specified in their profile, then UTC is used. For the Date field, it is dependent on the time zone of the user filling it in. In the case of PFAs, the date value is recorded when the link is sent, taking into account the user's time zone. If a time zone is not set in the user’s profile, then UTC is used. When submitting a PFA through an automation, the UTC value is used.
+- WEL-6027 (WS-1709) - Assessment drawer resizing is not limited to browser width. UI improvement that prevents a user from expanding the drawer to greater than the width of the browser screen.
+- WEL-6504 (WS-2042) - Not possible to create a task for a patient that is assigned to a deleted care team member. The problem of being unable to create a task for a patient whose assigned care team member had been removed from the system has been resolved.
+- WEL-6719 (WS-2190) - Calculated scores return a NULL value via Export API. The issue where score values were not being returned by the Export API has been resolved.
+- WEL-6700 (WS-2176) - Copying user profiles in Admin does not carry-over regions/territories. An issue has been resolved in the Admin portal where regions and territories were not being carried over when user profiles were copied.
+
+
+
+
 # Release notes: Version 2023.15.1
 
 ### Release Date :  Feb 27, 2023 – 1:00 AM PST (tentative)
