@@ -8,12 +8,12 @@
 - WEL-6619 - Trigger automation for new document upload. A new trigger criteria has been added to Automations.  This allows an action to be triggered when documents are uploaded via the Care web interface. API, or when a new document is created from an attachment in the Comm Center.
 - WEL-6704 - Select All option for Territories field in user configuration. An option to "Select All" has been added when editing "Accesses, Policies, Roles, Territories" for a user in the Admin portal.
 - WEL-6805 - Expand the list of supported Patient Profile variables. The system now includes new general variables that can be utilized in Assessments, PFA folders, Message Templates and Action Bar for custom buttons.  These variables include:
-- {{PATIENT_CITY}}
-- {{PATIENT_STATE}}
-- {{PATIENT_ZIP}}
-- {{PATIENT_COUNTRY}}
-- {{PATIENT_ADDRESS_LINE_1}}
-- {{PATIENT_ADDRESS_LINE_2}}
+{{PATIENT_CITY}}
+{{PATIENT_STATE}}
+{{PATIENT_ZIP}}
+{{PATIENT_COUNTRY}}
+{{PATIENT_ADDRESS_LINE_1}}
+{{PATIENT_ADDRESS_LINE_2}}
 - WEL-6740 (WS-2191) - Support of Primary Team Contact variables in PFA folders. PFA folders now have the capability to utilize variables that can display information about a patient’s Primary Team Contact, such as their name, phone number, or email, on the Welcome and Conclusion pages.
 - WEL-6622 (WS-2114) - Expose Export Patient Programs API. The Export Patient Programs API is now part of Welkin's Public API collection and is accessible for use by API clients if “Program” security policy is active in the Export Data section.
 {{url}}/{{tenantName}}/{{instanceName}}/export/PATIENT_PROGRAM
