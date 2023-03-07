@@ -7,7 +7,7 @@
 - WEL-6598 - "Busy" status for phone calls in Comm Center. The system now includes a "Busy" status, which is displayed when a phone call to a patient is attempted, but a busy signal is received. The status is now available in the Comm Center within the Care Portal, Audit Logs, and API responses. 
 - WEL-6619 - Trigger automation for new document upload. A new trigger criteria has been added to Automations.  This allows an action to be triggered when documents are uploaded via the Care web interface. API, or when a new document is created from an attachment in the Comm Center.
 - WEL-6704 - Select All option for Territories field in user configuration. An option to "Select All" has been added when editing "Accesses, Policies, Roles, Territories" for a user in the Admin portal.
-- WEL-6805 - Expand the list of supported Patient Profile variables. The system now includes new general variables that can be utilized in Assessments, PFA folders, Message Templates and Action Bar for custom buttons.  These variables include:
+- WEL-6805 - Expand the list of supported Patient Profile variables. The system now includes new general variables that can be utilized in Assessments, PFA folders, Message Templates and Action Bar for custom buttons.
 {{PATIENT_CITY}}
 {{PATIENT_STATE}}
 {{PATIENT_ZIP}}
