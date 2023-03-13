@@ -26,7 +26,7 @@
 - WEL-6504 (WS-2042) - Not possible to create a task for a patient that is assigned to a deleted care team member. The problem of being unable to create a task for a patient whose assigned care team member had been removed from the system has been resolved.
 - WEL-6719 (WS-2190) - Calculated scores return a NULL value via Export API. The issue where score values were not being returned by the Export API has been resolved.
 - WEL-6700 (WS-2176) - Copying user profiles in Admin does not carry-over regions/territories. An issue has been resolved in the Admin portal where regions and territories were not being carried over when user profiles were copied.
-- WEL-6699 - "Press 1 to connect to patient' Phone Tree message is repeated three times. The optional message for phone tree is now repeated three times instead of being played only once. If the message is played thrice and the user doesn't press 1 to confirm a connection, the call will be disconnected in 5 seconds.
+- WEL-6699 - "Press 1 to connect to patient" Phone Tree message is repeated three times. The optional message for phone tree is now repeated three times instead of being played only once. If the message is played thrice and the user doesn't press 1 to confirm a connection, the call will be disconnected in 5 seconds.
 
 
 
