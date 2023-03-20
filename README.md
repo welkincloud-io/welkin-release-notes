@@ -1,3 +1,23 @@
+# Release notes: Version 2023.17.1
+
+### Release Date:  March 27, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+WEL-6870 (WS-1766) - Adding custom patient profile field data to Data export and Sisense. Custom patient fields can now be exported to the patients.csv file and viewed in Sisense with the latest update.
+
+
+## Improvements and bug fixes
+- WEL-6720 (WS-1676) - Forms on mobile - scroll to the top. With this release, the behavior in PFA assessments has been improved, after a patient goes to the next page, the new page is automatically scrolled to the top of the page. The user will see the first question on the new page instead of having to manually scroll to the top.
+- WEL-6845 (WS-2292) - Form dropdown scrolling for mobile. Improved behavior for the dropdown fields in PFA assessments on mobile devices. The ability to search for values, by typing, was removed on mobile devices, because the keyboard's appearance made it difficult to see the last values in the list.
+- WEL-5998 (WS-2041) - Boolean field in Patient Fields does not display correctly in Patient Data View. Fixed the problem of displaying Boolean values in the patient table in the Care portal.
+- WEL-6721 (WS-2191) - PFA Branding and Data Type Display issues. Fixed the problem with the logo displaying incorrectly in svg format for the PFA assessments.
+- WEL-6746 (WS-2214) - Tasks Bug - can't find team members. Resolved an issue in the user filter where users were unchecked when using search in a field.
+- WEL-6777 (WS-2230, WS-2280) - Secure emails are stuck in the "sending" state. Fixed issue displaying the correct status for secure emails.
+- WEL-6797 (WS-2238, WS-2348) - Search by profile field with more than 2000 records. Fixed search problem in profile fields when filling out assessments with more than 2000 entries.
+- WEL-6853 (WS-2296) - Time zone issue in Account Created On field in patient summary view. Fixed an issue where the “Created at” field was displayed in the UTC time zone instead of the user's timezone.
+
+
+
 # Release notes: Version 2023.16.1
 
 ### Release Date:  March 13, 2023 – 1:00 AM PST (tentative)
