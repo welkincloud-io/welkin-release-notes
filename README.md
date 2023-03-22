@@ -2,10 +2,6 @@
 
 ### Release Date:  March 27, 2023 – 1:00 AM PST (tentative)
 
-## New Functionality
-WEL-6870 (WS-1766) - Adding custom patient profile field data to Data export and Sisense. Custom patient fields can now be exported to the patients.csv file and viewed in Sisense with the latest update.
-
-
 ## Improvements and bug fixes
 - WEL-6720 (WS-1676) - Forms on mobile - scroll to the top. With this release, the behavior in PFA assessments has been improved, after a patient goes to the next page, the new page is automatically scrolled to the top of the page. The user will see the first question on the new page instead of having to manually scroll to the top.
 - WEL-6845 (WS-2292) - Form dropdown scrolling for mobile. Improved behavior for the dropdown fields in PFA assessments on mobile devices. The ability to search for values, by typing, was removed on mobile devices, because the keyboard's appearance made it difficult to see the last values in the list.
