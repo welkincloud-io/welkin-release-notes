@@ -1,3 +1,18 @@
+# Release notes: Version 2023.18.1
+
+### Release Date:  April 10, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-6865 - Allow saving valid phone numbers with a country code of any country. With this release, the ability to save a valid phone number for any country has been added. This has been added for both the patient and the user. When using communications such as SMS or calls, please note that the appropriate country-specific settings must be set. Please contact support if you want to connect communications for a new country.
+- WEL-6870 - Custom patient profile field data for Sisense export. This release adds the ability to export custom patient fields to Sisense. 
+- WEL-6877 - Displaying encounter indicator on assessment at assessments list. With this release, a new "Encounter" column has been added to the list of assessments, in which the icon of the encounter is displayed if the assessment is associated with an encounter. Also, if a user clicks on the assessment in the progress that is associated with the encounter, then in the header of the opening drawer the user can see information about the encounter. The icon and information about the encounter in the drawer are clickable, a click will take a user to the view of the encounter.
+
+
+## Improvements and bug fixes
+WEL-5263 (WS-1489) - "Territories of user and patient are not matched" error populates on Home Page if a user has an event with a mismatched patient. Fixed message display issue, now events related to a mismatched patient will not be displayed on the home page.
+
+
+
 # Release notes: Version 2023.17.1
 
 ### Release Date:  March 27, 2023 – 1:00 AM PST (tentative)
