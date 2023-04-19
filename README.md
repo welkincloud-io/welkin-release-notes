@@ -97,7 +97,7 @@ WEL-5263 (WS-1489) - "Territories of user and patient are not matched" error pop
 WEL-6712 (WS-2170) - API Create Assessment Record. An error that prevented retrieval of assessment information by ID through the client API has been fixed.
 - WEL-6767, WEL-6768 (WS-2219) - Phone number entry validation. The validation process for phone number entries has been enhanced to allow only phone numbers with valid extensions to be stored in the system. Furthermore, the validation message will now specify that the phone number must be entered in international format and include a (+) symbol when entering details in the Care portal and PFA links.
 - WEL-6771 (WS-2229) - International phone number + Automation Condition. A problem that prevented triggering of an automation when a phone number was included in the triggering condition has been resolved.
-
+ 
 
 # Release notes: Version 2023.14.1
 
