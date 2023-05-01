@@ -1,3 +1,15 @@
+# Release notes: Version 2023.20.1
+
+### Release Date:  May 8, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-5783 (WS-1476) - Ability to view images in SMS and emails in browser. The capability to view images sent via SMS and emails has been incorporated into the Communication Center, thereby eliminating the need for downloading.
+
+## Improvements and bug fixes
+- WEL-6930 (WS-2381) - Calendar event time zone jumps while editing. Fixed the problem when users with different time zones work with the same events.  When a user created an event in their timezone, and another user in a different timezone accessed the event to edit, the event time was automatically changing to the timezone of the second user.
+- WEL-7069 (WS-2503) - Not able to send chat if not in the care team. Fixed an issue with security policies for Live Chat where a user with access could not write a message in the chat.
+
+
 # Release notes: Version 2023.19.1
 
 ### Release Date:  April 26, 2023 – 1:00 AM PST (tentative)
