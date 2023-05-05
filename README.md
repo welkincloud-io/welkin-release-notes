@@ -1,6 +1,6 @@
 # Release notes: Version 2023.20.1
 
-### Release Date:  May 8, 2023 – 1:00 AM PST (tentative)
+### Release Date:  May 10, 2023 – 1:00 AM PST (tentative)
 
 ## New Functionality
 - WEL-5783 (WS-1476) - Ability to view images in SMS and emails in browser. The capability to view images sent via SMS and emails has been incorporated into the Communication Center, thereby eliminating the need for downloading.
