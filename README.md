@@ -1,3 +1,23 @@
+# Release notes: Version 2023.21.1
+
+### Release Date:  May 22, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-6412 Communication with patient representatives. This feature is designed to empower customers in facilitating communication between their users and third-party entities associated with patients, such as legal guardians, providers, and relatives. It utilizes the comm center as a means of communication.
+According to Welkin's design, these entities should be stored within profiles. To make a profile record contactable, two requirements must be met: 1) it should be linked / added as a contact to a patient, and 2) it should belong to a profile with the "contactable" switch enabled in the Designer, which is introduced as part of the current feature.
+Once these conditions are fulfilled, communication icons will appear next to phone numbers and emails on the profile record within a patient's screen. Care users have the freedom to click on these icons to initiate communication with the relevant entities. Clicking on an icon will redirect the user to the comm center, where all standard features, including making and receiving calls, sending SMS, and emails, are available. Detailed instructions will be provided shortly.
+- WEL-7102 (WS-2528) - Ability to copy the link to the assessment. In the assessment drawer, a sharing function has been added, featuring an icon located at the top right corner. By clicking on this icon, users can easily copy the link to the specific assessment. Regardless of whether the link was copied within the context of an encounter, it will consistently direct the recipient to the assessments page. It is important to note that the link to the assessment will only be accessible for viewing if the user has the necessary rights to view that particular assessment. Furthermore, the link contains an assessment ID, which helps identify and access the assessment accurately.
+- WEL-7135 - Add Mandarin language. With the release, Mandarin has been added as a language option to the user and patient profiles. 
+- CT-11 - Exporting Chat and WhatsApp Messages Using the Export API. With the latest release, users now have the ability to export chat logs through the Export API. Additionally, these exported logs can be uploaded to an S3 Bucket for further analysis and utilization in Sisense. Please keep in mind that in order to export the data, it is necessary to enable the CHAT and WHATS_APP policies in the Export Data section of the Security Policy page in the Designer.
+
+
+## Improvements and bug fixes
+- WEL-7055 (WS-2496, WS-2537) - Clicking to encounters page after using new "assign to encounter" feature filters encounter list to in-progress only. Fixed incorrect behavior of filters when assigning an assessment to an encounter.
+- WEL-7105 - To improve the readability of the label for phones, the location of the From and To fields in the SMS and Call drawers has been changed. Now the fields are located under each other so that users can see most of the phone’s label.
+- WEL-7061 -  “Select All” option for Territories field in API client configuration. An option to “Select All” has been added when editing “Accesses, Policies, Roles, Territories” for API clients in the Admin portal.
+
+
+
 # Release notes: Version 2023.20.1
 
 ### Release Date:  May 10, 2023 – 1:00 AM PST (tentative)
