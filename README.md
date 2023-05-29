@@ -1,3 +1,22 @@
+# Release notes: Version 2023.22.1
+
+### Release Date:  Jun 5, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-6646, WEL-6647 - Introduction of emoji support in Live Chat. Users can now utilize unicode emojis in their Live Chat conversations, allowing them to send and receive emoji seamlessly.
+- WEL-6897 - Enhanced chat design and readability. Notable changes include the relocation of the search field to the right side for improved accessibility. Moreover, messages from logged-in users are now displayed on the right side, while messages from patients and other care members appear on the left side. Additionally, the sender's First and Last Name are now shown for messages, with the label "Patient" assigned specifically to patient messages.
+- WEL-5741 - Open Profiles APIs for external users. Profiles in Welkin are “generic” objects that can represent individuals as well as non-person lists such as ICD-10, CPT codes, family members, doctors, and non-Welkin care staff, etc. Profiles are backed by CDT's, so it’s possible to customize them. With this release, we're enabling the ability to interact with Profiles (including actions like get, create, and update) through our API. Documentation is available in the Welkin Public collection on Postman.
+
+
+## Improvements and bug fixes
+- WEL-7129 - Scrolling when adding regions/territories. In the Admin portal, an automatic scrolling feature has been implemented to ensure that the "Add Region" button is always visible while adding regions and territories to users.
+- WEL-7032 (WS-2453) - Appointments not appearing on the Homepage. The issue has been fixed where appointments were not appearing on the Homepage for users with a large number of associated policies.
+- WEL-7070 (WS-2497) - Assessment record retrieval with disabled / deleted physicians. Empty entries will no longer occur when the profile field is deleted.
+- WEL-7240 (WS-2617) - Blank assessment drawer. Floating bug addressed in encounter assessment, preventing a blank drawer from being displayed.
+- WEL-7124 (WS-2527) - Added pagination for Program view. Program view pagination has been implemented to address the previous limitation of displaying only up to 20 programs.
+- WEL-7120 (WS-2544) - Incorrect Zoom links displayed for encounters. Resolved an issue when instead of showing the care team member's Zoom link for encounter, it displayed the viewer's own Zoom link. This problem has been fixed, and now the appropriate Zoom link associated with the encounter is shown for all users.
+
+
 # Release notes: Version 2023.21.1
 
 ### Release Date:  May 22, 2023 – 1:00 AM PST (tentative)
