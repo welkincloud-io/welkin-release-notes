@@ -1,3 +1,26 @@
+### Release Date:  Jun 19, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-6786 - Auto-assign for Unrecognized Communications: In certain cases, there may be multiple patients, patient-related contacts, or a combination of both, who share the same phone number or email in the profile. When a new SMS, email or a call arrives from such a number, it is directed to the Unrecognized Communications section. During an active text message exchange, the user needs to navigate to this section every time to assign the SMS to the appropriate patient. To streamline this process, we are introducing an auto-assign feature. This feature allows you to choose a patient or patient related contact as the default assignee when assigning a message or call to a patient. Once set, the system will automatically route incoming communications to the assigned patient's Communication Center until a different default assignee is specified or the default assignee is removed. 
+Please note that the Default assignee field will only be displayed if there are duplicate email or phone numbers in the system.
+- WEL-7247 - From Number Configuration for SMS automations: We have introduced a new feature that allows users to specify the sending phone number, thereby improving SMS-related automations and creation of draft SMS for customers who utilize multiple phone numbers. 
+A new section called Phone Names has been added in the Designer Portal, it allows you to create names for phones, which can be referenced during automation configuration. To associate names with phone numbers, you will need to indicate the correspondence between the phone and the name within the Admin Portal's Integrations tab, specifically the Communication page. If a name is specified in an automation but no phone is associated with that name, the automation will not be executed, and this can be tracked in the automation logs.
+The assigned phone names will also be displayed in the Care Portal's Communication Center, specifically in the "From" field. Additionally, you can find these phone names in the Designer Portal's Phone Trees page.
+It is possible to leave the "From" number empty in automation. In this case, the system will behave as it does currently and use the phone number marked as "Main" in the admin settings.
+Please note that the phone number selected for the automation will take precedence over a phone number set as default on a patient profile. In other words, if you have configured a default number for a patient, it will only be utilized if no specific phone number is chosen for the automation.
+At present, certain phones are already assigned names through Welkin's internal admin system, managed by our support department. However, our future plans involve phasing out these names and exclusively showcasing the phone names established within the Designer Portal. This modification will grant you, as our client, the ability to independently manage the names instead of relying on support. We kindly request you to replace the existing labels by generating your own within the upcoming two weeks, preferably before July 3rd.
+Currently, some phones already have names assigned through Welkin's internal admin system, managed by our support department. However, we plan to decomision these names in the future and display only the phone names set within the Designer Portal. This change will allow you, as our client, to manage the names yourself instead of relying on support. We kindly request that you replace existing labels by creating your own within the next two weeks, preferably by July 3rd.
+
+
+## Improvements and bug fixes
+- WEL-7034 (WS-2624): Users are unable to change phone numbers in their profiles. We have addressed the issue where some users were unable to modify their data on the Care Portal.
+- WEL-7201 (WS-2585): Required fields are not highlighted properly when empty. We have addressed the problem where required fields, which are connected to condition logic, were not appropriately highlighted in certain scenarios. This issue has been fixed, and now required fields will be correctly highlighted as intended.
+- WEL-7282 (WS-2606): Fix for Last Record CDTF Field Not Populating in Forms: We have fixed the issue related to the Last Record CDTF field not populating correctly. This problem specifically affected fields of the List type. 
+- WEL-7295 (WS-2626): Fix calling through encounter. The call drawer now opens immediately when a user clicks on a phone number in an encounter.
+- WEL-7372 (WS-2681): Unable to call Get Patients list by PDT. It was noticed that the "Get Patients List by PDT" endpoint was inaccessible, despite being documented as open and supported in the Welkin Public API. We have addressed this issue and you should now be able to access the endpoint as intended.
+
+
+
 # Release notes: Version 2023.22.1
 
 ### Release Date:  Jun 5, 2023 – 1:00 AM PST (tentative)
