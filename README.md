@@ -1,3 +1,20 @@
+# Release notes: Version 2023.24.1
+
+### Release Date:  Jul 3, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-7220 - Introducing “Contacts” endpoints for API clients. With the goal of streamlining contact management for the "Communication with Patient Representatives" feature, we have developed an API that significantly simplifies the process.This API allows clients to easily retrieve, create, and update patient related contacts. New endpoints will be added to the public collection in Postman,  along with essential details about each request.
+- WEL-6624 - Support of Media files in Live Chat. With the latest release, we have introduced support for media files within the Live Chat module. Welkin users can now send and receive PNG, PDF, and JPEG files seamlessly during live chat sessions. Additionally, files can be viewed in full-screen mode and easily downloaded and opened in a new tab. For comprehensive guidance on utilizing the API, the Postman public collection will be updated with the latest information.
+Please be aware that the successful sharing of media files relies on ensuring compatibility with the recipients' application, as it should support the specific media file formats being transmitted.
+
+
+
+## Improvements and bug fixes
+- WEL-7432 - Auto-assigning unrecognized communication. We have made enhancements to the logic of the Default assignee field. Now, when configuring the Default assignee field, it is possible to select only those patients whose email or phone number matches the incoming unrecognized communication. This improvement ensures that the assignment of default assignees is more accurate and aligned with the specific criteria of the incoming communication.
+- WEL-7472 - Resolution of WhatsApp Message Order Issue. We have implemented a fix to address an issue regarding the display order of WhatsApp messages that were sent during the AWS outage experienced last week. This fix is specifically designed to rectify the incorrect message ordering, ensuring that the messages are now displayed in the correct chronological order as intended.
+
+
+
 #Release notes: Version 2023.23.1**
 
 ### Release Date:  Jun 19, 2023 – 1:00 AM PST (tentative)
