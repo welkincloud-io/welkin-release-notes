@@ -1,3 +1,19 @@
+# Release notes: Version 2023.25.1
+
+### Release Date:  Jul 17, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-7223: Enhanced User Experience for Accessing Welkin Resources. An improvement has been made to the system's behavior when users attempt to access Welkin resources, such as opening links to assessments, without authentication. Previously, users encountered an error message stating "This page can't be found" and were redirected to the home page after logging in. However, with the latest release, the system now verifies the user's authentication status and access rights before proceeding. If the user is not authenticated, they will be presented with a login screen. After successful login, they will be directed to the intended page associated with the accessed link.
+- WEL-7385: Seeing and Copying Long Titles in List Field. In certain scenarios, long titles in list fields were being truncated due to their excessive length, making it impossible to view the complete content. Now, to access the full value, users simply hover over the field and pause for a moment. The complete name will be displayed in a tooltip, along with a copy button. This functionality applies to both the Care and Designer portals, providing an improved user experience.
+
+
+
+## Improvements and bug fixes
+- WEL-6927 (WS-2386): Handling of Null Values in the Designer Configurations. Previously, an error was displayed when working with configurations in the Designer, specifically when encountering config files containing null values. The system now accepts null values so that errors will not be displayed when one is present within the configuration. 
+- WEL-7319 (WS-2652): Improved Display of "Not Set" Option for List-Radio Type in Assessments. In the past, there was an issue where the "Not Set" option would be displayed for the list-radio type in assessments, even when it was not configured in the Designer. Now, for required fields, the "Not Set" option will no longer be displayed. However, for optional fields, the 'Not Set' option will still be available. This allows users the flexibility to choose "Not Set" in case they accidentally select an option and wish to reset it.
+- WEL-7498 (WS-2721): Inaccurate "Completed By" value for Reassigned Assessments. Previously, the "Completed By" field would inaccurately display the name of the user who reassigned an assessment to another Encounter, even though they were not the actual completer of the assessment. This behavior has been addressed. The system now accurately displays the name of the user who completed the assessment, ensuring that the "Completed By" field reflects the correct completer's name.
+- WEL-7467 (WS-2721): Fix for assessment completed day in the drawer. Previously, the assessment drawer displayed the updated date instead of the completed date. The correct assessment completion date is now displayed in the drawer.
+
 # Release notes: Version 2023.24.1
 
 ### Release Date:  Jul 3, 2023 – 1:00 AM PST (tentative)
