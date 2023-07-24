@@ -1,3 +1,24 @@
+# Release notes: Version 2023.26.1
+
+### Release Date:  Jul 31, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-7310 - With the release in Live Chat, it became possible to work with audio files. Audio tracks can be sent, received, listened to, forward and rewind, downloaded and opened in a new tab. The system supports mp3, ogg, wav audio formats
+- WEL-7522 - The function of resending a message has been added to the Live Chat. If the message was not delivered, then a "Failed" status will be displayed. The user can resend the message by clicking on the validation message.
+- WEL-6851 - With the release, a new "Chat Files Download" security policy for Live Chat has been added to Designer. This policy controls the ability to download files when working with Live Chat. This policy is disabled by default.
+- WEL-7192 - International Phone Number Handling. To improve work with Phone type fields, the ability to select a country from the list has been added. After selecting a country, the country code is displayed in the field so that the user does not have to enter it manually. For the convenience of the user, the country that is set in the locale in the user profile will be set by default (US, Singapore, Australia, UAE). PFA forms will also default to one of the 4 system countries, if the patient's locale does not match one of the 4 locales, then the US will be the default. 
+- WEL-7172 - With the release, a new Encounter condition was added under the Automation settings. When choosing the Entity Type of 'Encounter', the user must specify the Delivery Method (In-person, Call, Video), too. Also, for convenience, information about the delivery method of the encounter has been added to Actions. When choosing the "Encounter" action, an "i" icon was added to the template field, when hovering over it, the user can find out the Delivery Method of the template.
+- WEL-7152 - It is now possible to click on links in task descriptions within Care. If the cursor is in the focus of the Description field, then the link will be in edit mode. As soon as the focus is removed from the field, the link will become clickable and will launch into the links associated URL.
+
+
+## Improvements and bug fixes
+- WEL-7336 (WS-2657) - Unrecognized Australian patient SMS message. Work with phone numbers has been improved to avoid confusion with unrecognized communications. The system recognizes national and international phone numbers as being different from each other.  If the user enters the phone format in the national format (with an additional zero), then after saving the zero will be automatically deleted and the phone format will be converted to international. There will be no automatic phone conversion for the API, it will display an error related to the phone format. The public API documentation will be updated with more information about the phone format.
+- WEL-7431 - With the release “Contacts” have been renamed to “Related contacts” in the system.
+- WEL-7635 (WS-2829) - Get Patient by ID endpoint returns Patient Program information as empty. The problem with empty information has been fixed. 
+- WEL-7613 (WS-2809) - Unable to save changes to Scoring Groups. This has been resolved - changes to scoring groups can now be saved.  
+- WEL-7592 - Fixed an issue where the “Clear All” button did not clear the search box on the Patients page.
+
+
 # Release notes: Version 2023.25.1
 
 ### Release Date:  Jul 17, 2023 – 1:00 AM PST (tentative)
