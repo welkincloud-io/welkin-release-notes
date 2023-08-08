@@ -1,3 +1,17 @@
+# Release notes: Version 2023.27.1
+
+### Release Date:  Aug 14, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-7037: Enabled the deletion of patients via an API endpoint. Please note that once deleted, this action cannot be undone. For more details, refer to the API documentation.
+- WEL-7218: The Assessments drawer (viewer) can now be collapsed. Users can now collapse it, navigate to a different section within the patient layouts, and expand the drawer back when needed.
+- WEL-7497: Phone Names' source is now exclusive to Designer (previously they were managed via support). Following the recent update, Phone Names are created and edited in Designer and associated with phone numbers in Admin.
+  
+## Improvements and Bug Fixes
+- WEL-7686 (WS-2894, WS-2904): Task priority interaction issue resolved. Fixed a user interface problem where selecting values in the Priority field was difficult.
+- WEL-7705 (WS-2858): 500 Error when attempting to delete a patient.  The 500 error that sometimes occurred when deleting a patient has been resolved.
+- WEL-7512: Permissions for working with Contacts via the API.  Permissions to work with contacts via API are now tied in Designer to permissions to work with a patient.  To manage Contacts, you will need Patient read and update permissions (Patients -> General -> My Patients) in the Security Policy for your API.
+
 # Release notes: Version 2023.26.1
 
 ### Release Date:  Jul 31, 2023 – 1:00 AM PST (tentative)
