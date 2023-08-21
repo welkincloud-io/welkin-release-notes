@@ -1,3 +1,14 @@
+# Release notes: Version 2023.28.1
+
+### Release Date:  Aug 28, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- WEL-7699: Addresses the issue of error messages arising when the system logs out users. A new dialog will now appear as the session approaches its expiration, offering users the opportunity to extend it.
+
+## Improvements and Bug Fixes
+- WEL-7607(WS-2802): Resolved an issue where automations triggered by Encounters updating were erroneously firing twice in certain cases.
+- WEL-7727(WS-2916): Rectified an issue that occasionally led to the display of incorrect assessments in the patient assessment list screen when transitioning from the Encounter screen.
+
 # Release notes: Version 2023.27.1
 
 ### Release Date:  Aug 14, 2023 – 1:00 AM PST (tentative)
