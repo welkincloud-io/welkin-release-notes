@@ -1,3 +1,35 @@
+# Release notes: Version 2023.29.1
+
+### Release Date:  Sept 11, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- WEL-7606 "I am on it"
+- Introducing the "I am on it" button for notifications sent to multiple users. This feature allows users to indicate their intention to take care of a related activity themselves, improving team efficiency, and reducing distractions.
+
+**Benefits:**
+- Reduced Distraction: Users can signal their commitment to handle notifications, reducing distractions for others.
+- Improved Coordination: Minimize cases where multiple users act on the same notification simultaneously, optimizing workflow.
+- Workload Distribution: Facilitate the equitable distribution of tasks within the team, promoting teamwork.
+- Supervisor Oversight: Enable team supervisors to track which notifications are yet to be addressed by the team, ensuring comprehensive coverage.
+
+**How it works:**
+- Activation: This feature can be activated by the admin through the Notifications section.
+- Archiving Notifications: Users can click the "I am on it" button within the notification. This action archives the notification copies sent to other users, indicating that they will take responsibility for the related task.
+- Archived List: The archived notifications are accessible to other team members in a dedicated "Archived" list. The list includes labels indicating which user archived each notification.
+- Undo Functionality: Users who initially clicked "I am on it" can undo their commitment by clicking the button again. This action returns the archived notification from the "Archived" list back to the "All" notifications list, making it available for others to address.
+
+- WEL-7606 Editing Completed Assessments
+- Now, users have the ability to edit completed assessments, a functionality previously unavailable. This feature allows for the addition of extra information, correction of typos, and updates to previous selections, enhancing assessment accuracy and completeness.
+
+**How it works:**
+- Permission Control: Admins can grant the "Update completed" permission to specific users and specific forms, offering fine-grained control over who can access this feature.
+- Permission Location: The "Update completed" permission can be configured in the Security Policy -> Patients -> Forms section, ensuring secure and organized permission management.
+- Label and Timestamp: Edited assessments receive a special label with a timestamp in both the viewer (Drawer) and assessment lists, making it easy to identify and track changes.
+- Audit Log: A record of assessment edits is automatically added to the audit log, providing transparency and accountability in the editing process.
+- PDF Regeneration: After editing, the PDF version of the assessment is re-generated and appended to the assessment document, ensuring that the most up-to-date information is available in all formats.
+
+
 # Release notes: Version 2023.28.1
 
 ### Release Date:  Aug 28, 2023 – 1:00 AM PST (tentative)
