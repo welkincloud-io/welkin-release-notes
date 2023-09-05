@@ -4,7 +4,7 @@
 
 ## New Functionality
 
-- WEL-7606 "I am on it"
+**WEL-7606 "I am on it"**
 - Introducing the "I am on it" button for notifications sent to multiple users. This feature allows users to indicate their intention to take care of a related activity themselves, improving team efficiency, and reducing distractions.
 
 **Benefits:**
@@ -19,7 +19,7 @@
 - Archived List: The archived notifications are accessible to other team members in a dedicated "Archived" list. The list includes labels indicating which user archived each notification.
 - Undo Functionality: Users who initially clicked "I am on it" can undo their commitment by clicking the button again. This action returns the archived notification from the "Archived" list back to the "All" notifications list, making it available for others to address.
 
-- WEL-7606 Editing Completed Assessments
+**WEL-7606 Editing Completed Assessments**
 - Now, users have the ability to edit completed assessments, a functionality previously unavailable. This feature allows for the addition of extra information, correction of typos, and updates to previous selections, enhancing assessment accuracy and completeness.
 
 **How it works:**
