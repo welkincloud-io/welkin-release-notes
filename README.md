@@ -1,4 +1,3 @@
-
 # Release notes: Version 2023.30.1
 
 ### Release Date:  Sept 25, 2023 – 1:00 AM PST (tentative)
