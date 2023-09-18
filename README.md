@@ -1,3 +1,20 @@
+
+# Release notes: Version 2023.30.1
+
+### Release Date:  Sept 25, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- WEL-7118 - Updated the permission logics covering Assessments within Encounters. Users no longer need Encounter Update permissions to update and complete such Assessments.
+
+
+## Improvements and Bug Fixes
+
+- WEL-7827 - Renamed the Delete button, which appears in the drop-down menu behind the ellipsis icon in the Encounter list, to Cancel. This name is more relevant to its action.  
+
+- FT-36 (WS-3037) - Corrected the inaccuracies occurring in certain cases with the Started Date and Completed Date in the Assessment list within Encounters.
+
+
 # Release notes: Version 2023.29.1
 
 ### Release Date:  Sept 11, 2023 – 1:00 AM PST (tentative)
