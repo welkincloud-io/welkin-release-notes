@@ -1,3 +1,23 @@
+# Release notes: Version 2023.31.1
+
+### Release Date:  Oct 9, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+- FT-8 - Create a Task from communications: This feature allows users to create Tasks from messages, including chat, emails, and SMS, and assign the Task to themselves or other users. This functionality is especially useful when a patient requests something that cannot be fulfilled instantly, and a Task can be created as a reminder.
+
+- WEL-6649 - Files Screen in the Communications Center: Introducing the new "Files" screen within the Communication Center, which presents a table listing all files sent or received via any communication channel. Items in the table are listed in chronological order. Users can download or preview files in the full-screen viewer, and they can also open them in a separate browser tab for multitasking. For example, you can open a voice message and fill out an assessment while listening to it.
+
+- WEL-6650 - Files filters (related to WEL-6649): This feature adds filtering capabilities to the Files table, making file searches even simpler. Users can filter files by date, file type (image, text, audio), and communication channel (Email, SMS, Live Chat, WhatsApp).
+
+- WEL-6648 - Chat UI Export permission: Users can download the Live Chat history of patients through the new user interface (UI), as a file. To access this feature, users should have the "Chat UI Export" policy enabled.
+
+## Improvements and Bug Fixes
+
+- WEL-7688 (WS-2869) - This update fixes a bug that was preventing the attachment of documents when communicating with Related Contacts, which are contacts related to patients and created from their profiles.
+
+- FT-39 (WS-3047) - A minor UI issue has been fixed where a close button was erroneously appearing while choosing an option for sending a document via DocuSign.
+
+
 # Release notes: Version 2023.30.1
 
 ### Release Date:  Sept 25, 2023 – 1:00 AM PST (tentative)
