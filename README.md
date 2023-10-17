@@ -1,3 +1,11 @@
+# Release notes: Version 2023.32.0
+
+### Release Date:  Oct 23, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-43 - A new checkbox option, "Secure Email (via Paubox)," has been added to the "Email patient" automations action. This allows you to automatically send secure emails to patients via Paubox, enhancing the security of your patient communications.
+
 # Release notes: Version 2023.31.1
 
 ### Release Date:  Oct 9, 2023 – 1:00 AM PST (tentative)
