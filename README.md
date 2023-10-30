@@ -1,3 +1,24 @@
+# Release notes: Version 2023.33.0
+
+### Release Date:  Nov 8, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-25: Introducing the Email Template Builder, with a new user interface (UI) in the Message Templates section of Designer. This feature allows users to construct email templates from various built-in elements, such as buttons, text, images, columns, etc., and style them without the need to use HTML or CSS code directly. You can now effortlessly create branded emails, enhance your content for a more engaging experience, and seamlessly integrate call-to-action elements to improve the conversion rates of your campaigns.
+
+- FT-145: We are introducing a Live Chat Download Policy, which allows you to restrict users from downloading files sent or received via Live Chat. By default, this policy is checked, meaning there are no restrictions applied to any users. To prevent downloading, you should uncheck this option. 
+Note 1: If you are importing a Designer configuration that was exported before this release, it may cause the policy to become unchecked. In that case, please go to Designer and manually check it. 
+Note 2: This policy is going to be renamed as “Files Download Policy” in a future release.
+
+
+## Improvements and Bug Fixes
+
+- FT-164 (WS-3118) This update resolves a bug in the Communication Center that occurred after clicking the Refresh button.  Emails now display the correct status after selecting Refresh.
+
+- FT-162 (WS-3122) This update resolves the missing ability to edit assessments with certain required fields.  Assessment edits can now be made for all required and non required fields.
+
+
+
 # Release notes: Version 2023.32.0
 
 ### Release Date:  Oct 23, 2023 – 1:00 AM PST (tentative)
