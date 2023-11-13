@@ -1,3 +1,19 @@
+# Release notes: Version 2023.34.0
+
+### Release Date:  Nov 20, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-34 - CDT Arrays: CDT Arrays allow for the selection of multiple options within one assessment question or data view.  Previously, when creating a CDT linking a Profile with a Patient, users were limited to establishing one-to-one relationships. This restriction meant that, for example, if a Profile used ICD-10 as the answer option source for a diagnosis question in an assessment, users could only select a single option. The enhancement in this feature now allows for one-to-many relationships, enabling the selection of multiple options in scenarios similar to the one described above.
+
+- FT-44 - A new action has been added to Welkin Automations: Generate and Send Assessment PDF to Patient. This feature is compatible with the 'Assessment Completed' event as a trigger and includes the ability to securely deliver the PDF via Paubox.
+
+## Improvements and Bug Fixes
+
+- FT-238 (WS-3169) - This update resolves a bug where scheduled emails were not being delivered to patient-related contacts and remained marked as 'scheduled' in the Communication Center.
+
+
+
 # Release notes: Version 2023.33.0
 
 ### Release Date:  Nov 8, 2023 – 1:00 AM PST (tentative)
