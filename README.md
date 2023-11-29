@@ -1,3 +1,32 @@
+# Release notes: Version 2023.35.0
+
+### Release Date:  Dec 4, 2023 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-95 - Profile Integration with Encounter Disposition:
+This update allows for the integration of profiles with encounter disposition. Typically, entities such as services, procedures, diagnoses, pricing, etc., used as encounter attributes, are housed within Profiles. With this release  it is now possible to utilize profiles as a source for values in Disposition selection fields. Previously, the only method available was manual addition or update of values.
+
+- FT-96 - Encounter Disposition Fields Based on Profiles in Automation Conditions:
+This update introduces the capability to establish conditions in automations (triggered by Encounter-related events) based on specific values selected in the Encounter Disposition fields, where values are sourced from Profiles. 
+
+
+## Improvements and Bug Fixes
+
+- FT-12 (WS-3028) - Boolean Type Pre-population Fix:
+This update addresses an issue where the pre-population of boolean types (radio buttons/checkboxes) was not functioning correctly in Data Views.
+
+- FT-56 (WS-3048) - Date of Birth Format Correction:
+An issue where the Date of Birth (DOB) variable was displayed in the format YYYY-MM-DD Thh:mm:ss.000Z has been rectified. It will now be presented in the MM/DD/YYYY format as expected.
+
+- FT-265 (WS-3186) - Visibility Fix for Conditional Logic in Assessments:
+The problem where certain questions with conditional logic were not visible to users reviewing assessments completed by patients has been successfully resolved.
+
+- FT-209 - Calendar Page Table Rendering Issue Fixed:
+This update addresses and resolves a rendering issue with tables on the Calendar page.
+
+
+
 # Release notes: Version 2023.34.0
 
 ### Release Date:  Nov 20, 2023 – 1:00 AM PST (tentative)
