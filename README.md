@@ -1,3 +1,40 @@
+# Release notes: Version 2023.36.0
+
+### Release Date:  Dec 18, 2023 – 1:00 AM PST (tentative)
+## New Functionality
+
+- FT-120 - Periodical Data Synchronization for Dr. First
+We are introducing periodic 5-minute data polling in addition to the existing synchronization upon logout in Dr. First, to enhance data retrieval. Both methods of synchronization will operate concurrently, ensuring more frequent and efficient data updates. Please note that the scope of the data being polled remains the same.
+
+- FT-340 - Cross-patient Sticky Filters and Ordering
+This feature now saves filters and ordering preferences for users as they navigate from patient to patient within various lists:
+Assessments list
+Encounters list within a patient
+Tasks list within a patient
+
+- FT-137 - Addition of “Notes” Field in Patient Data View
+A new free-text field titled “Notes” has been added to the Patient Data View in Care. This field can be included in the Top Info section under “Edit Patient Data View” in Designer. If the “Notes” field is not empty, its contents will be displayed in red to draw staff attention. This feature is useful for highlighting critical information such as allergies or other important patient details.
+
+
+## Improvements and Bug Fixes
+
+- FT-163 (WS-3120) - Time Zone Issues when Creating Encounters
+This update addresses the issue of incorrect time being displayed in certain cases within the "Already scheduled" element of the Encounter creation UI.
+
+- FT-262 (WS-3184) - Misleading Notifications
+This improvement focuses on enhancing notifications related to Encounters, Assessments, Tasks, and Programs. Clicking on notifications will now navigate users to the most relevant area of the system.
+
+- FT-304 (WS-3221) - Encounter View Accuracy for Assessment Status
+In certain cases, completed Assessments were inaccurately displayed as "Not started" in the Encounter UI. This fix rectifies this behavior. 
+
+- CT-509 (WS-3034) - New Event "Task Updated" in Automations
+Previously, when a task's status was updated, the system would publish either the TASK_COMPLETED or TASK_CANCELED event, but not TASK_UPDATED event. For updates to task fields, the system would publish a TASK_UPDATED event, but automations did not trigger on this event. 
+This update introduces the following changes: 
+When a task's status is updated, the system will now publish either the TASK_COMPLETED or TASK_CANCELED event, in addition to TASK_UPDATED
+For updates to other task fields, the system will continue to publish TASK_UPDATED
+Automations can now be triggered on the TASK_UPDATED event.  Configure this in Automations in Designer
+
+
 # Release notes: Version 2023.35.0
 
 ### Release Date:  Dec 4, 2023 – 1:00 AM PST (tentative)
