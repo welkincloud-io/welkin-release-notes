@@ -5,10 +5,10 @@
 
 - FT-224 - Self-scheduling for Patients and Leads via Acuity
   - The integration with Acuity equips the Welkin platform with a self-scheduling interface, allowing patients the convenience of booking their own appointments directly. This functionality enables them to: 
-- Browse through a provider's schedule to see available time slots
-- Choose a time that fits their schedule for booking an appointment
-- Select the specific type of appointment they need
-- Find providers based on location and other criteria
+       - Browse through a provider's schedule to see available time slots
+       - Choose a time that fits their schedule for booking an appointment
+       - Select the specific type of appointment they need
+       - Find providers based on location and other criteria
    - Acuity self-scheduling can be embedded directly into your marketing website or shared as a link through email or SMS. When a patient books an appointment, they automatically receive an invitation with all the meeting details. This invitation can be customized using our new email template builder for a more personalized touch. Additionally, we can gather the required information before the appointment by incorporating an intake form into the notification template.
 Please contact your account manager to learn more.
 
