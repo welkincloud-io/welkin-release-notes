@@ -1,3 +1,40 @@
+# Release notes: Version 2023.37.0
+
+### Release Date: Jan 3, 2024 – 1:00 AM PST (tentative)
+## New Functionality
+
+- FT-224 - Self-scheduling for Patients and Leads via Acuity
+  - The integration with Acuity equips the Welkin platform with a self-scheduling interface, allowing patients the convenience of booking their own appointments directly. This functionality enables them to: 
+- Browse through a provider's schedule to see available time slots
+- Choose a time that fits their schedule for booking an appointment
+- Select the specific type of appointment they need
+- Find providers based on location and other criteria
+   - Acuity self-scheduling can be embedded directly into your marketing website or shared as a link through email or SMS. When a patient books an appointment, they automatically receive an invitation with all the meeting details. This invitation can be customized using our new email template builder for a more personalized touch. Additionally, we can gather the required information before the appointment by incorporating an intake form into the notification template.
+Please contact your account manager to learn more.
+
+
+- CT-323 - Revenue Cycle Management via Candid Health
+  - The integration between Welkin and Candid Health streamlines the insurance claim submission process, allowing for the immediate transfer of claims to Candid after an encounter is completed in Welkin. This system gathers and organizes all essential data needed for claim submission, including patient payments, and efficiently sends it to Candid. Moreover, it enables real-time tracking and monitoring of claim submissions directly within Welkin, providing up-to-date status information. 
+  - On the Candid platform, users can track claims comprehensively from start to finish, automate the correction process, access valuable insights, and scale their digital health operations effectively. Candid Health serves as a trusted resource for comprehensive revenue cycle management.
+Please contact your account manager to learn more.
+
+
+- FT-156 - Creating tasks from unrecognized communications
+New icons and buttons have been added within the Unrecognized Communications screen to initiate Task creation in the UI. This is designed for cases when users would like their colleagues to handle requests from Unrecognized Communications.
+
+
+
+## Improvements and Bug Fixes
+
+- FT-295 (WS-3208) - Incorrect Interpretation of Encounter Disposition Values by Automation
+This update addresses the issue of incorrect interpretation of certain values in Encounter Disposition fields when an automation relies on them in conditions. 
+
+- FT-351(WS-3244) - Incorrect User Name in Live Chat
+This update fixes incorrect user names displayed in the Live Chat in certain cases when there were two or more users participating in communication.
+
+
+
+
 # Release notes: Version 2023.36.0
 
 ### Release Date:  Dec 18, 2023 – 1:00 AM PST (tentative)
