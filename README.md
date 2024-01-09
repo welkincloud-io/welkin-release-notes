@@ -1,3 +1,20 @@
+# Release notes: Version 2023.38.0
+
+### Release Date: Jan 15, 2024 – 1:00 AM PST (tentative)
+
+## Improvements and Bug Fixes
+
+- FT-445 - Writing Profile-Related CDT Variables to a Template
+This update resolves the issue of displaying data in assessment templates, where certain CDTs source data from Profiles.
+
+- FT-350(WS-3243) - Assessments Forms Order in PFA Folders
+This update ensures that the order of Assessments in PFA folders aligns with the settings configured in Designer.
+
+- FT-442(WS-3299) - Blank Encounters List Screen 
+This addresses the issue of seeing a blank Encounters list screen when navigating from the Nth page of the Encounters list of a different patient.
+
+
+
 # Release notes: Version 2023.37.0
 
 ### Release Date: Jan 3, 2024 – 1:00 AM PST (tentative)
