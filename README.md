@@ -1,3 +1,20 @@
+# Release notes: Version 2023.39.0
+
+### Release Date: Jan 29, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-433: Patient Payments Collection via Stripe
+This feature enables the connection of a Stripe account, streamlining various transaction types. It empowers you to send payment links to patients via email, record cash transactions, charge cards on file within the context of Encounters, and initiate refunds directly within the Welkin platform. Furthermore, it offers users access to current Encounter balances and payment statuses, providing a comprehensive financial overview. For additional information, please reach out to your account manager.
+
+## Improvements and Bug Fixes
+
+- FT-419 (WS-3184): Notification Issue Related to Point of Contact Update
+This update resolves the issue where clicking on notifications sent by the automation, which was triggered by the "Patient Point of Contact Updated" event, did not open the patient record.
+
+
+
+
 # Release notes: Version 2023.38.0
 
 ### Release Date: Jan 15, 2024 – 1:00 AM PST (tentative)
