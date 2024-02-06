@@ -1,3 +1,17 @@
+# Release notes: Version 2023.40.0
+
+### Release Date: Feb 12, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-341, FT-342, FT-515 - Encounter location: field and variable 
+This feature introduces a new field within the Encounter to specify meeting details. Users can now include address details for in-person meetings or a video link and phone number for telehealth formats. The value of this new field is also available as a variable, which can be utilized in message templates for sending Encounter invites and reminders.  
+Users also have the flexibility to set the field value when creating an Encounter, or they can pre-configure it at the template level in Designer. It's possible to link the field to a Profile that hosts addresses (such as company offices, clinics, meeting areas, etc.). This connection allows users to conveniently select the desired location from a dropdown menu when creating an Encounter, eliminating the need for manual entry of event details.
+
+- FT-495 - Hide canceled events in calendar - saving preference
+With this update, the state of the "Hide canceled events" checkbox in the calendar is now saved on a user-specific level. This enhancement ensures that users' preferences regarding hiding canceled events are retained, offering a more personalized and efficient calendar experience.
+
+
 # Release notes: Version 2023.39.0
 
 ### Release Date: Jan 29, 2024 – 1:00 AM PST (tentative)
