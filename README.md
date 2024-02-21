@@ -1,3 +1,21 @@
+# Release notes: Version 2023.41.0
+
+### Release Date: Feb 26, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-485 -  Calendar UI improvements: Patient names in calendar events 
+This update enhances the Calendar by adding patient names to be displayed on Encounters, as well as participants' names on Events. Additionally, the UI within the Calendar has been updated, streamlining the color logic to make it more straightforward and easier to understand.
+
+- FT-500 -  Predefined user attributes to variables: License, NPI
+This update enables the values of License and NPI User Attributes to be utilized as variables within Message Templates, Assessments, and other areas of Designer.
+
+## Improvements and Bug Fixes
+
+- FT-594 (WS-3455) - Encounter start date / time variable
+This fix addresses the logic of populating the ENCOUNTER.*.startDateTime variable, ensuring accuracy. 
+
+
 # Release notes: Version 2023.40.0
 
 ### Release Date: Feb 12, 2024 – 1:00 AM PST (tentative)
