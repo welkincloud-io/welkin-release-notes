@@ -1,3 +1,34 @@
+# Release notes: Version 2024.42.0
+
+### Release Date: Mar 11, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-678 -  Enhancement of text area in table data view
+This update enhances Textarea CDTF field values displayed in Data Views.  Data Views now allow the display of multiple lines of text in Care, 3 lines by default. It also allows you to see the full text box by selecting "Show more". Column width is now also auto-adjusted.
+
+- FT-619 -  Predefined user attribute variable: Title
+This update enables the User Attribute value “Title” to be utilized as a variable within Message Templates, Assessments, and other areas of Designer.
+
+
+## Improvements and Bug Fixes
+
+- FT-469 (WS-3324) - Notification does not lead to email on click
+This fix addresses the issue with certain notifications not leading to the related email when clicked.
+
+- FT-543 (WS-3387) - Hidden fields preventing completing assessments 
+This update fixes the issue occurring sometimes where assessments were not available to be completed due to fields hidden by conditional logic.  
+
+- FT-584 (WS-3441) - Unable to delete certain calendar events
+This fix rectifies behavior of the system preventing deletion of certain events created via API.
+
+- FT-481 (WS-3332) - Assessment pre-populates wrong values
+This update addresses the issue when assessments pre-populate answers with option labels instead of option values.
+
+- FT-511 (WS-3362) - Assignee filter behavior issue on the Tasks list screen
+This item fixes the behavior of the Task filter for assignee that sometimes did not display the correct list on the Tasks screen. 
+
+
 # Release notes: Version 2023.41.0
 
 ### Release Date: Feb 26, 2024 – 1:00 AM PST (tentative)
