@@ -1,3 +1,20 @@
+# Release notes: Version 2024.43.0
+
+### Release Date: Mar 25, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-620, FT-621 - Calendar: Time Zones switching and display functionality
+This feature allows users a control for updating their own time zone within the Calendar, to mimic the view of other users.  Viewing other time zones is useful for customers with patients or a presence in two or more time zones. 
+Users involved in scheduling for other care team members can now view time zones in the calendar as seen by users in a different time zone.  This capability is also convenient when arranging Encounter times with a patient on the phone. 
+Time Zone switching is optional, and can be enabled at the individual level in the User Profile view in Care.
+
+## Improvements and Bug Fixes
+
+- FT-714 (WS-3514) - Notification load optimization
+This improvement focuses on optimizing the logic for loading notifications lists, resulting in enhanced loading speed.
+
+
 # Release notes: Version 2024.42.0
 
 ### Release Date: Mar 11, 2024 – 1:00 AM PST (tentative)
