@@ -12,7 +12,7 @@ A new section has been introduced under the security policy titled ‘Billing & 
 
 ## Improvements and Bug Fixes
 
-FT-714 (WS-3514) - Notification load optimization
+- FT-714 (WS-3514) - Notification load optimization
 This improvement focuses on optimizing the logic for loading notifications lists, resulting in enhanced loading speed.
 
 
