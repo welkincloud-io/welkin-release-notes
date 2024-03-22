@@ -1,3 +1,36 @@
+# Release notes: Version 2024.1.0
+
+### Maintenance dates: Saturday Mar 23, 2024 – 12:01 AM EST through Monday March 25, 2024 - 6:00 AM EST
+
+##Customer Benefits/Highlights
+
+#Dashboard Designer Benefits
+- Additional dashboard & widget layout presentation options provide dashboard designers additional tools to deliver stunning professional dashboards.
+  
+- Perspectives a more streamlined, business-focused interface for dashboard designers to interact with the data tables & fields while developing dashboards.
+  
+- The filter relationship editor allows dashboard designers to express filters in more advanced ways when required, such as nested OR conditions.
+  
+- The ability to customize the layout Of email-embedded scheduled dashboards significantly improves the viability of scheduling KPI dashboards to email. With this feature, dashboard designers can better control the presentation and layout of the resulting embedded dashboard.
+  
+- Improved formula and export functions, such as numbers formatting for CSV downloads & DateDiff support for Now(), and more...
+
+#Dashboard Viewer Benefits
+- New dashboard filter bookmarks allows users to save their series of filters for quick access, improving productivity and efficiency.
+
+- Improved performance & formatting when exporting To Excel
+  
+- High Resolution widget image downloads
+  
+#Data Cube Designer Benefits
+- Direct relations support enables joining data tables in a significantly more streamlined way, lightening data models, making them easier to maintain, and producing query results in a more predictable manner.
+  
+- Perspectives empower data designers to organize their data model into smaller, more business-focused sub-models, improving building and maintaining dashboards for dashboard designers.
+  
+- The data model list view allows data designers to see quick stats for their data model at a glance, such as the number of columns and rows per table.
+
+
+
 # Release notes: Version 2024.43.0
 
 ### Release Date: Mar 25, 2024 – 1:00 AM PST (tentative)
