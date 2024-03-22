@@ -1,4 +1,4 @@
-# Release notes: Version 2024.1.0
+# Sisense Release notes: Version 2024.1.0
 
 ### Maintenance dates: Saturday Mar 23, 2024 – 12:01 AM EST through Monday March 25, 2024 - 6:00 AM EST
 
