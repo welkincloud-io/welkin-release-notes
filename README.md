@@ -2,9 +2,9 @@
 
 ### Maintenance dates: Saturday Mar 23, 2024 – 12:01 AM EST through Monday March 25, 2024 - 6:00 AM EST
 
-##Customer Benefits/Highlights
+###Customer Benefits/Highlights
 
-#Dashboard Designer Benefits
+###Dashboard Designer Benefits
 - Additional dashboard & widget layout presentation options provide dashboard designers additional tools to deliver stunning professional dashboards.
   
 - Perspectives a more streamlined, business-focused interface for dashboard designers to interact with the data tables & fields while developing dashboards.
@@ -15,14 +15,14 @@
   
 - Improved formula and export functions, such as numbers formatting for CSV downloads & DateDiff support for Now(), and more...
 
-#Dashboard Viewer Benefits
+###Dashboard Viewer Benefits
 - New dashboard filter bookmarks allows users to save their series of filters for quick access, improving productivity and efficiency.
 
 - Improved performance & formatting when exporting To Excel
   
 - High Resolution widget image downloads
   
-#Data Cube Designer Benefits
+###Data Cube Designer Benefits
 - Direct relations support enables joining data tables in a significantly more streamlined way, lightening data models, making them easier to maintain, and producing query results in a more predictable manner.
   
 - Perspectives empower data designers to organize their data model into smaller, more business-focused sub-models, improving building and maintaining dashboards for dashboard designers.
