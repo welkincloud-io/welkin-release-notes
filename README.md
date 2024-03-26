@@ -33,7 +33,7 @@ Data Cube Designer Benefits
 
 # Release notes: Version 2024.43.0
 
-### Release Date: Mar 25, 2024 – 1:00 AM PST (tentative)
+### Release Date: Mar 26, 2024 – 1:00 AM PST (tentative)
 
 ## New Functionality
 
@@ -47,6 +47,9 @@ A new section has been introduced under the security policy titled ‘Billing & 
 
 - FT-714 (WS-3514) - Notification load optimization
 This improvement focuses on optimizing the logic for loading notifications lists, resulting in enhanced loading speed.
+
+- FT-773 (WS-3327) - Source_id and source_type fields in assessments export
+This update ensures that assessments export now includes the source_id and source_type fields. 
 
 
 # Release notes: Version 2024.42.0
