@@ -1,3 +1,19 @@
+# Release notes: Version 2024.44.0
+
+### Release Date: Apr 8, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-620, FT-621 - Calendar: Time Zones switching and display functionality
+This feature allows users to control updating their own time zone within the Calendar to impersonate the view of other users. Viewing other time zones is useful for customers with patients or a presence in two or more time zones. 
+Users involved in scheduling for other care team members can now view time zones in the calendar as seen by users in different time zones. This capability is also convenient when arranging Encounter times with a patient on the phone. 
+Time Zone switching is optional, and can be enabled at the individual level in the User Profile view in Care.
+
+- FT-739 - Update UI of clickable area in profile records in Data Views
+This update enhances the behavior of the web links displayed in data views, letting links navigate to the web page the links point to. The behavior when clicking on the other values remains unchanged, navigating to the profile screen.
+
+
+
 # Sisense Release notes: Version 2024.1.0
 
 ### Maintenance dates: Saturday Mar 23, 2024 – 12:01 AM EST through Monday March 25, 2024 - 6:00 AM EST
