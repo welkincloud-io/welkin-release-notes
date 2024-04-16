@@ -1,3 +1,40 @@
+# Release notes: Version 2024.45.0
+
+### Release Date: Apr 22, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- CT-575 - E-Signing consent forms by patients
+This functionality enhances the management of consent forms for patients by introducing a new entity, "Consent," into the Forms section of the Designer portal. This allows for the uploading of a Consent Form template, which can then be sent to patients for e-signature. Patients are required to review the document, create a signature, and e-sign the document, which will subsequently be added to the patient's Document Center. 
+A second phase where users in the Care portal can add e-signatures to assessments, enabling them to lock and sign assessment notes, is currently being developed by the engineering team. 
+
+- FT-685 -  External profiles: Medi-Span
+A new attribute called "Type" has been added to the Profiles entity in Welkin. Profile types include “Internal” and “External.”  All existing Profiles will be classified as Internal because they are managed, added, or modified in the Care Portal. External-type Profiles will be utilized when the source of Profile values is external or involves large data volumes such as data dictionaries.
+The first dictionary connected to Welkin is Medi-Span. Please note that a license with Medi-Span is required to use this feature in Welkin. If you need Medi-Span or other dictionaries added to Welkin, please contact the Welkin Account Management team or enter a Work Request ticket.
+
+- FT-691 - Connected Stripe accounts
+If a customer uses Stripe for collecting patient payments and has separate Stripe accounts for different legal entities, Welkin can now support this scenario by linking connected Stripe accounts to a Master account. This is achievable in the Admin Portal by entering credentials from the Stripe account. Stripe accounts will be linked to a specific billing NPI, which will be incorporated into the attributes of the rendering provider in users' profiles to ensure payments are processed through the correct Stripe account.
+
+- FT-808 -  Replace "NA" with "-" in PDF templates
+This task modifies how variables with empty values are displayed in the PDF template output, changing from "NA" (not answered) to "-", to improve the patient experience.
+
+
+
+## Improvements and Bug Fixes
+
+- FT-790 - Variable fonts from docx templates in assessments PDFs
+This update corrects the interpretation of DOCX templates and improves the rendering of text styles(in particular bold, italics) in Assessment PDFs.
+
+- FT-791 -  Running title syntax specifics in DOCX templates and related PDF markup issues
+This update enhances the interpretation of running titles in DOCX templates. Due to inconsistencies in the XML structure produced by different versions of MS Word, special guidelines will be issued on how to structure running titles to avoid layout issues in the PDF output. 
+
+- FT-796 (WS-3592) - UX improvement for Data Views "Add Form" with linked Profile record field
+This update enhances the behavior of the "Add Form" in Data Views, particularly when containing CDT fields linked with Profile records. Previously, when adding a new Profile record within the "Add Form," the data entered into the fields would not be preserved. With this improvement, the data entered into the fields prior to adding a new Profile record is now preserved, ensuring a smoother and more user-friendly experience.
+
+
+
+
+
 # Release notes: Version 2024.44.0
 
 ### Release Date: Apr 8, 2024 – 1:00 AM PST (tentative)
