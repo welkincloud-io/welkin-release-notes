@@ -1,3 +1,16 @@
+# Release notes: Version 2024.46.0
+
+### Release Date: May 8, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-622 - Calendar: working/availability hours per Encounter template
+This feature caters to scenarios where users maintain varying availability for different Encounter types. For instance, users may take certain types of appointments only on specific days; or provide services onsite during designated hours. With this enhancement, users can now reflect their availability based on the type of Encounter.
+When used, the New Encounter form in the Care Team Member drop down list will have a label appearing next to the users that are not available for a selected template, date, and time. This is similar to the one that currently appears in the case of non-working hours.  
+
+- FT-691 - Connected Stripe accounts
+If a customer uses Stripe for collecting patient payments and has separate Stripe accounts for different legal entities, Welkin can now support this scenario by linking connected Stripe accounts to a Master account. This is achievable in the Admin Portal by entering credentials from the Stripe account. Stripe accounts will be linked to a specific billing NPI, which will be incorporated into the attributes of the rendering provider in users' profiles to ensure payments are processed through the correct Stripe account.
+
 # Release notes: Version 2024.45.0
 
 ### Release Date: Apr 23, 2024 – 1:00 AM PST (tentative)
