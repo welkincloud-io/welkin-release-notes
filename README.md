@@ -1,3 +1,16 @@
+# Release notes: Version 2024.47.0
+
+### Release Date: May 20, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- CT-764: Provider Signature Capability in Care Portal 
+Building on the recently introduced feature for patient e-sign consents, we are now expanding the functionality to allow providers to sign Assessment notes within the Care Portal. Users can now include new document types that require either one or two signatures - from a care team member and a supervisor, respectively - when creating forms in Designer. These forms will incorporate either one or both of the following variables into the Assessment template document: {{care_member_signature}}, {{supervisor_signature}}.  Security Policies will need to be updated to ensure that users can sign notes. 
+To use, open the assessment PDF in Care, click on "Sign," add the signature, and then click "Save" to complete the process.
+In an upcoming release, we will introduce a feature to visually indicate the status of pending signatures on the assessments list.
+
+
+
 # Release notes: Version 2024.46.0
 
 ### Release Date: May 8, 2024 – 1:00 AM PST (tentative)
