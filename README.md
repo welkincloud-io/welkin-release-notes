@@ -1,3 +1,21 @@
+# Release notes: Version 2024.48.0
+
+### Release Date: June 3, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-835: Indication of Availability While Scheduling Encounters in Calendar
+We have introduced an enhanced feature for scheduling Encounters that displays the availability of care team members in the calendar. When scheduling an Encounter, users can now see when specific users are available according to the selected Encounter template. This makes it easier to suggest suitable time slots to patients for different Encounter types, such as specific appointment types that are only available on certain days of the week. Available time slots for care team members will be displayed in green. This visibility enhancement is available in Day, Week, and Workday views.
+In the next release, we will add synchronization of configured availability with Acuity for customers who hold an enterprise account or are maintained as a sub-account under Welkin's enterprise account in Acuity.
+
+- FT-878: Patient Type field in Patient Profile
+A new field has been added to the Patient Profile called "patient type," allowing to specify whether the patient record belongs to an adult, minor, or couple. This field can be added to the Top Info section, used as a variable within templates, and is exportable via API.
+
+- FT-928: Change of Sisense domain to https://analytics.welkinhealth.com 
+The Sisense domain will be updated from https://sisense.live.welkinhealth.com to https://analytics.welkinhealth.com as Welkin aims to better reflect our enhanced integration of analytics into the Welkin Health platform.
+
+
+
 # Release notes: Version 2024.47.0
 
 ### Release Date: May 22, 2024 – 1:00 AM PST (tentative)
