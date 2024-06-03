@@ -14,6 +14,8 @@ A new field has been added to the Patient Profile called "patient type," allowin
 - FT-928: Change of Sisense domain to https://analytics.welkinhealth.com 
 The Sisense domain will be updated from https://sisense.live.welkinhealth.com to https://analytics.welkinhealth.com as Welkin aims to better reflect our enhanced integration of analytics into the Welkin Health platform.
 
+- FT-910 (WS-3759): Saving Phone Without Capabilities
+With the new release, users can save primary and secondary phone numbers for patients without assigning any capabilities to them. Previously, saving a phone number required either Voice Call or SMS capabilities to be enabled. This enhancement now allows users to remove both Voice Call and SMS capabilities from a patient’s phone number and save the changes without the system automatically re-enabling these features. This update provides greater flexibility and accuracy in managing patient contact permissions.
 
 
 # Release notes: Version 2024.47.0
