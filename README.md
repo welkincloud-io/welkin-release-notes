@@ -1,3 +1,22 @@
+# Release notes: Version 2024.49.0
+
+### Release Date: June 17, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-912 (WS-3806): Display of Patient-related Contacts Completing Assessments
+With this release, when Assessments are completed by patient-related contacts, the Assessment in Care will show the name of the patient-related contact instead of the patient’s name. Additionally, a “Contact” label will be displayed next to the name.
+
+- FT-792: Synchronization of Users’ Availability With Acuity 
+For customers with an enterprise plan in Acuity or those created under a Welkin parent account, the availability set for the Encounter templates will be synchronized with the corresponding appointment type in Acuity. This ensures that patients will see accurate availability for various Encounter types when self-scheduling.
+
+- CT-852 (WS-3833): Sourcing NPI Field from CDTs (Candid Integration)
+Prior to this release, the NPI field passed to Candid was taken from the user profile of the care member assigned to an Encounter. If the user did not have an NPI (e.g., RN, etc.), they had to enter the supervising provider’s NPI. With this release, the system will first check for the NPI field value in a CDT, and if it does not exist, it will then take the value from the user’s attribute.
+
+- FT-795: Changes to the Font Used for Generating Assessment PDFs
+With this release, we will change the default font used to generate Assessment PDFs. The reasoning behind this change is that the current font does not support the necessary styling for some documents, including handling Unicode symbols like checkboxes in different states, and more.
+
+
 # Release notes: Version 2024.48.0
 
 ### Release Date: June 3, 2024 – 1:00 AM PST (tentative)
