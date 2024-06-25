@@ -1,3 +1,25 @@
+# Release notes: Version 2024.50.0
+
+### Release Date: July 3, 2024 – 1:00 AM PST (tentative)
+
+## New Functionality
+
+- FT-936 (WS-3601): Sorting for Data Views based on CDTs where Profiles are used
+The sorting capabilities within Data Views has been improved to include CDTs that are connected to Profiles. An additional field ‘Profile Data Type Field’ is added in the Designer to allow this.
+
+- FT-936 (WS-3391): Rich Text Editor for Text Area
+A simple rich text editor can now be activated in Designer for Textarea CDTs. Text styling options such as bold, italic, bold italic, and checkbox styles will be available in the Care Portal when text is selected for CDTs with the rich text editor enabled. The added styles will be preserved in the assessment PDF.
+
+- FT-720 (WS-3519): Encounter Variables Added to Assessment Templates
+Support for new Encounter-related variables has been added to the Assessment Templates and will be available in the Assessment PDFs:
+{{ENCOUNTER_START_DATETIME}}
+{{ENCOUNTER_END_DATETIME}}
+{{ENCOUNTER_LOCATION}} 
+Please note that in the next release, this support will be extended to Assessments/Forms themselves, allowing this information to be viewed as read-only.
+
+
+
+
 # Release notes: Version 2024.49.0
 
 ### Release Date: June 17, 2024 – 1:00 AM PST (tentative)
