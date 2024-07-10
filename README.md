@@ -1,3 +1,24 @@
+# Release notes: Version 2024.51.0
+
+### Release Date: July 15, 2024 – 1:00 AM PST
+
+## New Functionality
+
+- FT-832 (WS-3655): Improved Viewability of Encounter Titles
+With this release, we’ve enhanced the readability of long Encounter titles on the list-drawer that appears when a user is creating an Encounter.
+
+- FT-934 (WS-3391): Task Creation for Supervisor Co-Signature
+Users can now create a Task from the signature interface to inform supervisors about Assessments pending their signatures.
+
+## Improvements and Bug Fixes
+
+- FT-932 (WS-3923): Default Value 0 Not Saved for Numeric Fields in Data Views
+We fixed an issue where the value 0 was not being saved as the default for numeric fields in Data Views in Designer.
+
+- FT-974 (WS-3916): Editing Usernames with Capital Letters
+We resolved an issue where it was not possible to edit a user’s first and last name in the admin panel if the username contained capital letters.
+
+
 # Release notes: Version 2024.50.0
 
 ### Release Date: July 3, 2024 – 1:00 AM PST (tentative)
