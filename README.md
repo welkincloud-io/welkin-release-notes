@@ -1,3 +1,34 @@
+# Release notes: Version 2024.52.0
+
+### Release Date: July 30, 2024 – 1:00 AM PST
+
+## New Functionality
+
+
+- CT-805: Billing section
+With the new release, Welkin is enhancing billing functionality. A Billing page can now be activated in the main layout in Care to provide a cross-patient view. It will include sub-pages for Invoices and Claims (for accounts with Candid Health integration activated). Sub-pages for Payments and Subscriptions will be added in the future. Additionally, a Billing page has been added to the patient layout, allowing similar information to be managed at the patient level.
+
+- CT-813: Invoices 
+We are introducing a new entity - Invoices. These can be used as a payment intent for a patient or as a receipt. In Designer, it is possible to upload a combination of templates for different patient and billing types to generate the appropriate Invoice PDFs. Invoices can be generated for Encounters and predefined services within the Encounter, or from the Billing page without reference to an Encounter, for services like paperwork. Future releases will automatically add Invoices to the patient Document Center.
+
+- FT-900: Superbills
+We are introducing Superbills, which can be sent to patients for reimbursement. A new section called “Superbill Template” has been added to Designer, allowing templates to be uploaded for generating Superbills. Superbills can be generated from the Encounter page and list all paid services within the Encounter. Future updates will include an automation for sending Superbills.
+
+- FT-885 (WS-3764, WS-3682): PII Information is Hidden in Tasks and Calendar
+With this release, when a user views a Provider’s calendar who has patients to whom the user does not have access (due to Territories, Region, or Care Team restrictions), they will see “*****” instead of the first and last name, age, and gender in the calendar event blocks. Tasks for patients to whom users do not have access and for whom they are not the assignee will also be hidden. If the user is the assignee but does not have access to the patient, they will see “*****” instead of the first and last name.
+
+- FT-482 (WS-366): Variable Builder for Tables in Assessment PDF
+We are adding new capabilities to build variables that will produce tables as outputs in assessment PDFs. This can be used to create documents requiring a table structure, such as listing medications. Variables can be configured to pull information from certain CDTs, filtering and sorting as needed.
+
+- FT-919: External Profiles (e.g., MediSpan) Usable in Assessments
+Previously, when a field attached to an external profile, such as our MediSpan medications, was used in an assessment, it could not search the external profile. It behaved like an internal profile, allowing selection only from items added via a data view. We have improved this functionality, and it will now enable searches within the external database.
+
+## Improvements and Bug Fixes
+
+- FT-990: Move Configuration of Acuity UserID to Admin Panel
+For customers using Acuity Enterprise integration, we have moved the configuration of the Acuity User ID field from user attributes to the Admin panel. This change simplifies the configuration process.
+
+
 # Release notes: Version 2024.51.0
 
 ### Release Date: July 15, 2024 – 1:00 AM PST
