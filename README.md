@@ -1,3 +1,43 @@
+# Release notes: Version 2024.53.0
+
+### Release Date: Aug 12, 2024 – 1:00 AM PST
+
+## New Functionality
+
+- CT-675: Pre-authorization of Payments Instead of Charge
+For customers needing pre-authorization of payments, we have introduced configurable parameters in the admin panel at the environment or account level. This allows for the following behaviors: If an Encounter is booked more than e.g. 48 hours before the appointment, the credit card is pre-authorized 48 hours before the appointment. If an Encounter is booked less than 48 hours before the appointment, pre-authorization occurs immediately. If an Encounter is canceled more than 48 hours before the appointment, no action is needed. If an Encounter is canceled less than 48 hours before the appointment, the patient is charged a fee, and the remaining amount is released. If an Encounter is marked as finalized, the pre-authorized amount is charged. 
+These actions are managed via automation. If an Encounter is rescheduled, the rules apply to the new appointment time.
+
+- FT-833: Dataviews Labeling Simplification
+To simplify the labeling process for Data Views, labels are pre-filled at Add Form and Edit Form once they are set at View (Fields). This applies if Add Form and Edit Form are “On” and the labels are blank.  They can still be manually changed in each area as needed.
+
+- FT-1016 (WS-4002): Patient - Searchable by Middle Name
+As a Care portal user, you can now search for patients using their middle name to quickly and accurately find the correct patient record. The system allows users to search for patients by entering Middle Name only, or combined with First Name/Last Name.
+
+- FT-994 (WS-2762): API - Adding Profile Export
+We have added the ability to bulk export Profile data via the API, which is available under the /export/PDT_RECORD route. For more details, please refer to the Welkin public collection in Postman.
+
+## Improvements and Bug Fixes
+
+- FT-990: Move Configuration of Acuity UserID to Admin Panel
+For customers using Acuity Enterprise integration, we have moved the configuration of the Acuity User ID field from User Attributes to the Admin panel. This change simplifies the configuration process.
+
+- FT-504: Completed Assessments Sometimes Showing Blank Fields When Viewed
+Fixed an issue where completed Assessments sometimes showed blank fields when Profiles were used.
+
+- FT-701 (WS-3503): Save and Add Another in Profiles Get Stuck
+Fixed an issue where the interface gets stuck when adding two or more answers to a question linked to Profiles.  Previously, after adding and saving multiple answers, the third addition would retain old information, requiring manual clearing before adding.
+
+- FT-890: Availability Blocks UI Improvement
+Added display of Encounter type icons and color coding of Encounter templates to make it easier to differentiate between different Encounter template availabilities.
+
+- FT-975: Encounter Variables in Forms
+Added support for new variables {{ENCOUNTER..startDateTime}}, {{ENCOUNTER..endDateTime}}, {{ENCOUNTER.*.location}} to Forms/Assessments. Previously, support for these variables was added to assessment PDFs.
+
+- FT-1013 (WS-3985): Message in Dialog Box Is Off Frame for Messages with Long Links
+Fixed the issue where messages in the dialog box would be off-frame if they contained long links.
+
+
 # Release notes: Version 2024.52.0
 
 ### Release Date: July 31, 2024 – 1:00 AM PST
