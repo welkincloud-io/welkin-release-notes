@@ -4,10 +4,6 @@
 
 ## New Functionality
 
-- CT-675: Pre-authorization of Payments Instead of Charge
-For customers needing pre-authorization of payments, we have introduced configurable parameters in the admin panel at the environment or account level. This allows for the following behaviors: If an Encounter is booked more than e.g. 48 hours before the appointment, the credit card is pre-authorized 48 hours before the appointment. If an Encounter is booked less than 48 hours before the appointment, pre-authorization occurs immediately. If an Encounter is canceled more than 48 hours before the appointment, no action is needed. If an Encounter is canceled less than 48 hours before the appointment, the patient is charged a fee, and the remaining amount is released. If an Encounter is marked as finalized, the pre-authorized amount is charged. 
-These actions are managed via automation. If an Encounter is rescheduled, the rules apply to the new appointment time.
-
 - FT-833: Dataviews Labeling Simplification
 To simplify the labeling process for Data Views, labels are pre-filled at Add Form and Edit Form once they are set at View (Fields). This applies if Add Form and Edit Form are “On” and the labels are blank.  They can still be manually changed in each area as needed.
 
