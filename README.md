@@ -1,3 +1,14 @@
+# Release notes: Version 2024.53.1
+
+### Release Date: Aug 20, 2024 – 1:00 AM PST
+
+## New Functionality
+
+- CT-675: Pre-authorization of Payments Instead of Charge
+For customers needing pre-authorization of payments, we have introduced configurable parameters in the admin panel at the environment or account level. This allows for the following behaviors: If an Encounter is booked more than e.g. 48 hours before the appointment, the credit card is pre-authorized 48 hours before the appointment. If an Encounter is booked less than 48 hours before the appointment, pre-authorization occurs immediately. If an Encounter is canceled more than 48 hours before the appointment, no action is needed. If an Encounter is canceled less than 48 hours before the appointment, the patient is charged a fee, and the remaining amount is released. If an Encounter is marked as finalized, the pre-authorized amount is charged. 
+These actions are managed via automation. If an Encounter is rescheduled, the rules apply to the new appointment time.
+
+
 # Release notes: Version 2024.53.0
 
 ### Release Date: Aug 14, 2024 – 1:00 AM PST
