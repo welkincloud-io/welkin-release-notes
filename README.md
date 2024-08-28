@@ -4,6 +4,7 @@
 
 ## New Functionality
 
+
 - FT-995: API - Bulk Export of Document Summary Data 
 To streamline the process of exporting document summary data, we have introduced a new API endpoint that allows bulk export of this data.  With the new endpoint, you can retrieve all document summary records that have been updated recently, in a single request. This enhancement significantly reduces the number of API calls required, improving efficiency and reducing the time needed to access document summary data across multiple patients. For more details, please refer to the Welkin public collection in Postman.
 
@@ -13,22 +14,11 @@ We have introduced a new feature that allows the automation, generation, and del
 - FT-1078: Custom Logo Display in Care Portal
 We have introduced a feature that allows you to customize the Care portal UI by displaying your own logo instead of the Welkin logo. This enhancement enables you to personalize the portal, aligning it with your branding and creating a more cohesive experience for users.
 
-- FT-1066: Generated Invoices and Superbills Added to Patient Document Center
-We have implemented a feature that automatically adds generated invoices and superbills to the patient’s Document Center under new predefined document types. You can now easily access these billing documents directly from the Document Center as soon as they are generated, streamlining the process of providing patients with necessary billing information.
-
-- FT-1094 (WS-4039): Customizable Authorization Page for Patient Login Screen
-You may now customize the Authorization page on the patient-facing login screen for questionnaires, assessments, and surveys: enabling or disabling the Authorization page or modifying the header text of the authorization form directly within the Care portal. This new functionality provides greater flexibility in tailoring the login experience to better meet your needs.
 
 ## Improvements and Bug Fixes
 
-- FT-996: Email Export API eto Include Attachments
-We’ve modified the Email export endpoint to ensure all email attachments are now included in exports. 
-
 - FT-925: Improved Rich Text Handling for Variables with Quotes
 We’ve enhanced the rich text editor in message templates to better support variables containing quotes. The editor accurately processes and displays these variables, ensuring consistent performance between plain text and rich text formats. 
-
-- FT-1072: Improved PDF Naming Convention for Invoices and Superbills
-We have improved the document management experience by standardizing the naming convention for PDFs of invoices and superbills. Invoices are now named as “Invoice_Number_ClientName_Date.pdf.” Superbills use the format “Superbill_Number_ClientName_Date.pdf.” This improvement makes it easier for users to identify and locate downloaded documents by the document name.
 
 - FT-1062: Enhanced Language Options in Designer, Care Portal, and Admin
 We have expanded the language options to include German and Italian, along with French and Albanian. These languages are now available for selection in the primary and secondary language lists across the Designer, Admin, and Care portals.
@@ -45,21 +35,10 @@ We have resolved an issue that prevented users from deleting patients in the San
 - FT-1028: Bugfix for Missing Data in Admin Data Log
 We have implemented a fix to ensure that events related to CDT updates are correctly recorded in the Data Audit log.
 
-- FT-1051: Bugfix for Incorrect "Edited" Status on Assessments After Adding Medispan Record
-We have resolved an issue where Assessments were incorrectly marked as "edited" after adding a Medispan record. Now, once an Assessment is completed, it will no longer display as edited if only Medispan records are added, ensuring accurate status reporting.
-
-- FT-1052 Bugfix for 404 Error When Editing Medispan Answers
-We have resolved an issue that caused a 404 error when editing Medispan answers in an Assessment. Previously, this error prevented answers from being updated correctly. With this fix, edits to Medispan answers will now be processed successfully, ensuring that updates are saved as expected.
-
-- FT-1068: Access Issue Resolved for Insights with 403 Error
-We have addressed an issue where users with access to the Insights section were receiving a 403 error. This error occurred when users had the appropriate role but lacked additional policies required for access. With this fix, users with the correct role will now be able to access Insights without encountering permission errors.
-
-- FT-1095 Bugfix for Unrecognized Communications Link
-We have resolved an issue where the link to the unrecognized communications page was missing from emails. The link is now correctly included, allowing users to forward and access the unrecognized communications page as expected.
-
 - CT-853: Expanded Automation Flexibility for Webhook Actions
 We’ve enhanced the automation system to allow the creation of automations with webhook-only actions, even if the trigger might overlap with another automation. Previously, such configurations were blocked to prevent infinite loops, but this restriction has been lifted for webhook actions since they don’t create internal loops.
 This update simplifies automation workflows and reduces the need for complex workarounds, giving users more flexibility while maintaining system integrity. 
+
 
 
 
