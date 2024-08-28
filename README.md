@@ -1,6 +1,6 @@
 # Release notes: Version 2024.54.0
 
-### Release Date: Aug 26, 2024 – 1:00 AM PST
+### Release Date: Aug 28, 2024 – 1:00 AM PST
 
 ## New Functionality
 
