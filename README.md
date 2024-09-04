@@ -14,6 +14,9 @@ We have introduced a new feature that allows the automation, generation, and del
 - FT-1078: Custom Logo Display in Care Portal
 We have introduced a feature that allows you to customize the Care portal UI by displaying your own logo instead of the Welkin logo. This enhancement enables you to personalize the portal, aligning it with your branding and creating a more cohesive experience for users.
 
+- FT-1073: Add Custom Fields to Patient's Top Info Section
+You can now create custom patient profile fields and add them to the Top Info section in the Designer.
+
 
 ## Improvements and Bug Fixes
 
