@@ -1,3 +1,14 @@
+# Release notes: Version 2024.54.1
+
+### Release Date: Sep 23, 2024 – 1:00 AM PST
+
+## Improvements and Bug Fixes
+
+- FT-1150: Bugfix for Security Policy page in the Designer
+We have resolved the issue that caused a blank page to appear when viewing the security policy. Additionally, we have optimized the handling of large data sets on this page to ensure that this problem will not occur in the future.
+
+
+
 # Release notes: Version 2024.54.0
 
 ### Release Date: Aug 28, 2024 – 1:00 AM PST
