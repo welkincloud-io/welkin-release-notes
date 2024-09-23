@@ -1,4 +1,4 @@
-# Release notes: Version 2024.55
+# Release notes: Version 2024.55.0
 
 ### Release Date: Sep 23, 2024 – 1:00 AM PST
 
