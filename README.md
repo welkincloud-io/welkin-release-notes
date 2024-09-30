@@ -6,7 +6,6 @@
 
 - CT-1043: Support for new variables in Invoice and Superbill templates
 We have added support for Encounter Disposition variables in both the Invoice and Superbill templates. This new feature enables users to populate information from the Encounter Disposition section into the Invoice and Superbill. 
-Example of a variable: {{ENCOUNTER.*.disposition.notes}}.
 
 
 
