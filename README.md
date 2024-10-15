@@ -1,3 +1,20 @@
+# Release notes: Version 2024.56.0
+
+### Release Date: Oct 21, 2024 – 1:00 AM PST
+
+## New Functionality
+
+- CT-915: Patient Subscriptions.
+We have implemented a feature that allows you to configure one or more subscriptions for patient services, with customizable billing frequencies and amounts. This new capability enables seamless subscription management, ensuring patients are charged automatically based on the plan you set up.
+Powered by Stripe for payment processing, this integration helps streamline billing operations while boosting revenue and enhancing the overall patient experience. Please note that the Billing module needs to be enabled by the Welkin team for this feature to be available.
+
+## Improvements and Bug Fixes
+
+- FT-965: Receiving Complex Sig Data (Tapers / Titrations) from Dr. First.
+It is now possible to receive complex sig data (tapers/titrations) from Dr. First and display it in Welkin. To enable this functionality, it is necessary to request activation from the Welkin account manager within Dr. First. Additionally, a new CDT and Data View must be created in Welkin to capture and display complex medication instructions.
+
+
+
 # Release notes: Version 2024.55.1
 
 ### Release Date: Sep 30, 2024 – 1:00 AM PST
