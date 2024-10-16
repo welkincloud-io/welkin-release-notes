@@ -13,6 +13,10 @@ Powered by Stripe for payment processing, this integration helps streamline bill
 - FT-965: Receiving Complex Sig Data (Tapers / Titrations) from Dr. First.
 It is now possible to receive complex sig data (tapers/titrations) from Dr. First and display it in Welkin. To enable this functionality, it is necessary to request activation from the Welkin account manager within Dr. First. Additionally, a new CDT and Data View must be created in Welkin to capture and display complex medication instructions.
 
+- FT-996: Email Export API: missing attachments.
+A problem with the incomplete export of attached files via the Export API has been resolved, ensuring consistent and reliable file export.
+
+
 
 
 # Release notes: Version 2024.55.1
