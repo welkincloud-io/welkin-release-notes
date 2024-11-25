@@ -4,7 +4,7 @@
 
 ## Improvements 
 
-CT-1042: Performance stabilization release.
+- CT-1042: Performance stabilization release.
 Performance optimization - a backend optimization process will be initiated to enhance system synchronization and data flow efficiency. This update will ensure a seamless user experience and reduce latency across key services.
 
 
