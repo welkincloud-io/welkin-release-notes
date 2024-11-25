@@ -1,3 +1,13 @@
+# Release notes: Version 2024.57.0
+
+### Release Date: Nov 29, 2024 – 1:00 AM PST
+
+## Improvements 
+
+CT-1042: Performance stabilization release.
+Performance optimization - a backend optimization process will be initiated to enhance system synchronization and data flow efficiency. This update will ensure a seamless user experience and reduce latency across key services.
+
+
 # Release notes: Version 2024.56.0
 
 ### Release Date: Oct 21, 2024 – 1:00 AM PST
