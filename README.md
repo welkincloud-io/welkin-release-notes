@@ -1,3 +1,33 @@
+# Release notes: Version 2024.58.0
+
+### Release Date: Dec 18, 2024 – 1:00 AM PST
+
+
+## New Functionality
+
+- FT-1253: Subscriptions - Trial Period.
+With this release, we have introduced the ability to set a trial period for subscriptions. In the Designer Portal, a new block has been added to the subscription template creation process, enabling users to define the number of days for the trial subscription period. In the Care Portal, the number of trial days can now be edited when creating a subscription.
+
+- FT-1254: Data Audit - Subscriptions. 
+New functionality has been added to log actions performed on subscriptions. Events categorized as "Subscription" will now appear in the Data Audit log. Actions such as creation, update, cancellation, etc. will be recorded for enhanced traceability.
+
+- FT-1414: Data Audit: Discarded Assessment.
+We have enhanced auditing capabilities for assessment management. A new Object Type "сdt: assessment(name of the assessment)" will be added with the event "cdt_deleted", which will show which cdts were deleted when discarding an assessment, providing greater transparency.
+
+- FT-1221: Display the patient’s timezone during encounter scheduling.
+We would like to present an improvement in the encounter creation drawer. This update improves the encounter scheduling process by displaying the patient’s time and time zone. The Patient field in the encounter creation drawer will show the patient’s local time and time zone. When the encounter time zone is changed, the patient’s time will automatically adjust accordingly. If the patient’s time zone is not specified, UTC will be displayed by default.
+
+- FT-1222: Displaying a time zone for encounter start and end times.
+This release will include an update for the encounter variables in Message Templates: startDateTime and endDateTime. The variables will display the time zone in addition to the date and time in the format “12-11-2024 9:00 am US/Pacific”. Notifications sent to patients will indicate the meeting time zone, minimizing misunderstandings. If a patient’s time zone is not specified, the encounter time will default to UTC.
+
+
+## Improvements and Bug Fixes
+
+- FT-1167: Improved focus for unfilled required fields in the patient’s profile.
+User experience improvements when creating or editing a patient record. If a required field is left unfilled, clicking the Save button will automatically scroll to the 1st unfilled field, ensuring efficient data entry.
+
+
+
 # Release notes: Version 2024.57.0
 
 ### Release Date: Nov 29, 2024 – 1:00 AM PST
