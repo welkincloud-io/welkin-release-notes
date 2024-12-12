@@ -8,9 +8,6 @@
 - FT-1253: Subscriptions - Trial Period.
 With this release, we have introduced the ability to set a trial period for subscriptions. In the Designer Portal, a new block has been added to the subscription template creation process, enabling users to define the number of days for the trial subscription period. In the Care Portal, the number of trial days can now be edited when creating a subscription.
 
-- FT-1254: Data Audit - Subscriptions. 
-New functionality has been added to log actions performed on subscriptions. Events categorized as "Subscription" will now appear in the Data Audit log. Actions such as creation, update, cancellation, etc. will be recorded for enhanced traceability.
-
 - FT-1414: Data Audit: Discarded Assessment.
 We have enhanced auditing capabilities for assessment management. A new Object Type "сdt: assessment(name of the assessment)" will be added with the event "cdt_deleted", which will show which cdts were deleted when discarding an assessment, providing greater transparency.
 
