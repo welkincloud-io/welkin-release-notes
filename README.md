@@ -8,9 +8,9 @@
 - FT-1206: Pre-authorize payments.
 Pre-authorization allows funds to be held on a patient’s account prior to an Encounter, ensuring sufficient coverage for the expected costs. The pre-authorized amount is determined by the billing type and services added to the Encounter before the process is triggered. 
 
-An automation can be configured to handle specific actions upon the completion or cancellation of an Encounter - either charging the blocked funds or releasing them based on predefined settings. This ensures seamless financial workflows tailored to each Encounter’s outcome. More details found in Knowledge Base Content (https://welkinhealth.com/kb/pre-authorization/)
+- An automation can be configured to handle specific actions upon the completion or cancellation of an Encounter - either charging the blocked funds or releasing them based on predefined settings. This ensures seamless financial workflows tailored to each Encounter’s outcome. More details found in Knowledge Base Content (https://welkinhealth.com/kb/pre-authorization/)
 
-Users also have advanced options at the Encounter level to manage pre-authorizations manually. This includes adjusting the pre-authorized amount, rescheduling or retrying a failed pre-authorization, canceling it, and either releasing or charging the held funds as needed.  This combined approach provides flexible, seamless financial workflows tailored to each Encounter’s outcome.
+- Users also have advanced options at the Encounter level to manage pre-authorizations manually. This includes adjusting the pre-authorized amount, rescheduling or retrying a failed pre-authorization, canceling it, and either releasing or charging the held funds as needed.  This combined approach provides flexible, seamless financial workflows tailored to each Encounter’s outcome.
 
 - FT-1191: Encounter: Amount Due.
 We have replaced the “Outstanding Balance” value for Encounters with a new Amount Due value, precisely reflecting what the patient currently owes for that specific Encounter. This value factors in all prior payments, adjustments, and charges. 
