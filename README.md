@@ -1,3 +1,54 @@
+# Release notes: Version 2025.59.0
+
+### Release Date: Feb 27, 2025 – 1:00 AM PST
+
+
+## New Functionality
+
+- FT-1206: Pre-authorize payments.
+Pre-authorization allows funds to be held on a patient’s account prior to an Encounter, ensuring sufficient coverage for the expected costs. The pre-authorized amount is determined by the billing type and services added to the Encounter before the process is triggered. 
+
+An automation can be configured to handle specific actions upon the completion or cancellation of an Encounter - either charging the blocked funds or releasing them based on predefined settings. This ensures seamless financial workflows tailored to each Encounter’s outcome. More details found in Knowledge Base Content (https://welkinhealth.com/kb/pre-authorization/)
+
+Users also have advanced options at the Encounter level to manage pre-authorizations manually. This includes adjusting the pre-authorized amount, rescheduling or retrying a failed pre-authorization, canceling it, and either releasing or charging the held funds as needed.  This combined approach provides flexible, seamless financial workflows tailored to each Encounter’s outcome.
+
+- FT-1191: Encounter: Amount Due.
+We have replaced the “Outstanding Balance” value for Encounters with a new Amount Due value, precisely reflecting what the patient currently owes for that specific Encounter. This value factors in all prior payments, adjustments, and charges. 
+
+- FT-1193: Encounter: Billing Statuses and Grid changes.
+We have updated the Encounter grid (on the Encounters page) to help billing managers easily view and manage essential billing details in one place. New Encounter Billing Statuses were introduced to accurately reflect the patient’s current payment situation. These enhancements provide a comprehensive view of each Encounter’s billing information, streamlining the workflow for billing managers and enabling more effective payment tracking and management.
+
+- FT-1195: Encounter: Renaming “Encounter Balance” to “Patient Payments”.
+We have renamed the “Encounter Balance” field to “Patient Payments” to provide a clearer view of how much the patient has already paid toward the Encounter. The old Encounter Balance value has been deprecated, and all payment amounts made by the patient are now reflected under this updated Patient Payments value. This change ensures billing managers can quickly assess the patient’s contributions and track remaining financial responsibilities.
+
+- FT-1316: Expanded Payment Method Support for Subscriptions.
+We have introduced additional payment methods - Google Pay, Apple Pay, Link by Stripe, and Cash App - for subscription services in Welkin. When a Stripe payment link is sent to a patient, they choose their preferred method, pay, and are automatically charged according to the billing schedule. Once a payment method is used, it appears as the “Current Payment Method,” and any invoices generated for the subscription are tied to that method.
+
+## Improvements and Bug Fixes
+
+- FT-1594: Automation Audit Export API.
+We have introduced a new security policy in the Designer under Data Export → Automation Audit, allowing you to export and monitor automation audits. A status filter (failure, success, conditions_check_failed) has been added exclusively to this new export endpoint, providing enhanced monitoring and alerting capabilities for automated workflows, including those that fail.
+
+- FT-1595: API Access - Invoices endpoints.
+The invoice API endpoints are now open, allowing read-only access to invoice data. For reference, visit the Postman Collection of Open Endpoints https://www.postman.com/welikan/public-welkinhealth-api/folder/9413ql0/invoices 
+
+- FT-1662: Open API for downloading recognized calls.
+Requests to view call information, as well as to download a recording of a recognized call are now open to the API client. To work with these requests, the client must have the “Voice Calls None Care Team” policy. For reference, visit the Postman Collection of Open Endpoints https://www.postman.com/welikan/public-welkinhealth-api/folder/dkc1vgh/calls
+
+- FT-1695: Open API for downloading email and sms attachments.
+Added ability to retrieve email and sms attachments via API. For reference, visit the Postman Collection of Open Endpoints for emails and sms.
+
+- FT-1254: Data Audit: Subscriptions.
+New functionality has been added to log actions performed on subscriptions. Events categorized as "Subscription" will now appear in the Data Audit log. Actions such as creation, update, cancellation, etc. will be recorded for enhanced traceability.
+
+- FT-1194: Enhanced Transaction View for Payment History in Invoices.
+We have improved the payment history to provide a concise, expandable view of all transactions related to each payment. These grouped transactions - covering refunds, pre-authorizations, and cancellation fees - show their respective amounts, timestamps, and statuses in one place. 
+
+- FT-1491 - Preview in Documents Center Increased to 100 Documents.
+Removed the system limitation on the number of documents displayed in the pop-up when sending files.
+
+
+
 # Release notes: Version 2024.58.0
 
 ### Release Date: Dec 18, 2024 – 1:00 AM PST
