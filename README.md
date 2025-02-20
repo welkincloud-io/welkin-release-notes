@@ -25,6 +25,7 @@ We have renamed the “Encounter Balance” field to “Patient Payments” to p
 We have introduced additional payment methods - Google Pay, Apple Pay, Link by Stripe, and Cash App - for subscription services in Welkin. When a Stripe payment link is sent to a patient, they choose their preferred method, pay, and are automatically charged according to the billing schedule. Once a payment method is used, it appears as the “Current Payment Method,” and any invoices generated for the subscription are tied to that method.
 
 ## Improvements and Bug Fixes
+Additional items which have been released for customers due to specified improvements or bug fixes
 
 - FT-1594: Automation Audit Export API.
 We have introduced a new security policy in the Designer under Data Export → Automation Audit, allowing you to export and monitor automation audits. A status filter (failure, success, conditions_check_failed) has been added exclusively to this new export endpoint, providing enhanced monitoring and alerting capabilities for automated workflows, including those that fail.
