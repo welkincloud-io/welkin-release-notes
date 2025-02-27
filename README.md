@@ -27,6 +27,9 @@ We have introduced additional payment methods - Google Pay, Apple Pay, Link by S
 ## Improvements and Bug Fixes
 Additional items which have been released for customers due to specified improvements or bug fixes
 
+- FT-1669: Changed the logic of selecting NPI for the Rendering Provider.
+When creating claims in Candid, the user's NPI from user attributes will always be taken as the NPI for the Rendering Provider, regardless of the Billing Type (responsible party).
+
 - FT-1594: Automation Audit Export API.
 We have introduced a new security policy in the Designer under Data Export → Automation Audit, allowing you to export and monitor automation audits. A status filter (failure, success, conditions_check_failed) has been added exclusively to this new export endpoint, providing enhanced monitoring and alerting capabilities for automated workflows, including those that fail.
 
@@ -37,7 +40,7 @@ The invoice API endpoints are now open, allowing read-only access to invoice dat
 Requests to view call information, as well as to download a recording of a recognized call are now open to the API client. To work with these requests, the client must have the “Voice Calls None Care Team” policy. For reference, visit the Postman Collection of Open Endpoints https://www.postman.com/welikan/public-welkinhealth-api/folder/dkc1vgh/calls
 
 - FT-1695: Open API for downloading email and sms attachments.
-Added ability to retrieve email and sms attachments via API. For reference, visit the Postman Collection of Open Endpoints for emails and sms.
+Added ability to retrieve email and sms attachments via API. For reference, visit the Postman Collection of Open Endpoints for [emails](https://www.postman.com/welikan/public-welkinhealth-api/request/r87050q/download-email-attachment) and [sms](https://www.postman.com/welikan/public-welkinhealth-api/request/fwi9pbv/download-sms-attachment).
 
 - FT-1254: Data Audit: Subscriptions.
 New functionality has been added to log actions performed on subscriptions. Events categorized as "Subscription" will now appear in the Data Audit log. Actions such as creation, update, cancellation, etc. will be recorded for enhanced traceability.
