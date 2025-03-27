@@ -1,3 +1,49 @@
+# Release notes: Version 2025.60.0
+
+### Release Date: Apr 4, 2025 – 1:00 AM PST
+
+
+## New Functionality
+
+- FT-1553: The New Homepage (Beta).
+The New Homepage elevates daily workflows by serving as a personalized command center that turns patient data into actionable insights. It features configurable Widgets grouped into role-based Dashboards, enabling each user to focus on what matters most. 
+Powered by the analytics engine, the Homepage supports flexible, real-time querying to keep information current and relevant. 
+Note: An expression builder is available in Designer to help business users construct custom queries. Users should be familiar with Welkin entities, their relationships, and XOR logic to build effective queries. Customers are responsible for building, testing, and maintaining their own Widgets. Support is available through Welkin Professional Services (PSE) if needed. 
+As this feature is currently in Beta, please contact your Customer Success representative or Account Manager to enable it.
+
+- FT-1439: Link to Documents.
+A “Copy Link” button has been added to the document drawer, making it easier to reference documents in tasks or messages. Copied links include the document ID for sharing or bookmarking. If a user follows a link while not logged in, they will be redirected to the correct document after login.
+
+## Improvements and Bug Fixes
+Additional items which have been released for customers due to specified improvements or bug fixes
+
+- FT-1735: Email Drafts Scheduled via API.
+Scheduled email drafts created via the API will now be sent as expected. The system automatically uses the patient’s point of contact as the sender if not manually specified. If the sender is missing and no contact point exists, an error is returned through the API and in the Automations log. Additional metadata fields (created_by, updated_by, etc.) are now recorded for better logging and traceability.
+
+
+- CT-1145: Enhanced Webhook Payload with Initial Trigger Event Context.
+Webhook payloads now include additional fields to provide context about the initial event that triggered a sequence of events. This helps track the origin of chained events more effectively.
+New fields added:
+initiatedBy (ID)
+initiatedByName
+initiatedByObjectId
+initiatedByObjectType
+initiatedTime
+These fields capture details from the original triggering event in the initiatedBy object.
+
+- FT-1743: Patient Deletion No Longer Fails with CDT Pre-Populated Values.
+Resolved an issue where attempting to delete a patient caused an “Unknown error” if a CDT text field value was used as a pre-populated value in an assessment. The deletion process now correctly handles these references, ensuring the patient record can be removed without error.
+
+- FT-578: “Assessment Field is Required” Error When Using Saved Addresses.
+Resolved an issue where using a browser-saved full address to auto-fill assessment fields caused a false “Assessment field is required” error during submission. The form now correctly recognizes auto-filled values across multiple fields, eliminating the need for incognito mode or manual re-entry.
+
+- FT-578: Rich Text Formatting Now Preserved in Email Drafts.
+Fixed an issue where HTML-formatted email templates appeared distorted or difficult to edit when loaded into the message draft sidebar. The draft view now accurately reflects the original template formatting, so users can confidently review and edit content before sending.
+
+- FT-1717: Environment Access Scope Now Respected in Data Audit API.
+The Data Audit API now correctly enforces environment restrictions set on API clients. Clients will only receive audit records for environments they are explicitly granted access to.
+
+
 # Release notes: Version 2025.59.0
 
 ### Release Date: Feb 27, 2025 – 1:00 AM PST
