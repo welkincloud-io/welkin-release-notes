@@ -37,11 +37,15 @@ Resolved an issue where attempting to delete a patient caused an “Unknown erro
 - FT-578: “Assessment Field is Required” Error When Using Saved Addresses.
 Resolved an issue where using a browser-saved full address to auto-fill assessment fields caused a false “Assessment field is required” error during submission. The form now correctly recognizes auto-filled values across multiple fields, eliminating the need for incognito mode or manual re-entry.
 
-- FT-578: Rich Text Formatting Now Preserved in Email Drafts.
+- FT-1152: Rich Text Formatting Now Preserved in Email Drafts.
 Fixed an issue where HTML-formatted email templates appeared distorted or difficult to edit when loaded into the message draft sidebar. The draft view now accurately reflects the original template formatting, so users can confidently review and edit content before sending.
 
 - FT-1717: Environment Access Scope Now Respected in Data Audit API.
 The Data Audit API now correctly enforces environment restrictions set on API clients. Clients will only receive audit records for environments they are explicitly granted access to.
+
+- FT-1719: Multiple Prescription IDs for Same Medication ID.
+Welkin now lists multiple Prescription IDs separated by commas when more than one Prescription ID is received for the same Rcopia Medication ID. Previously, only the latest Prescription ID was shown.
+
 
 
 # Release notes: Version 2025.59.0
