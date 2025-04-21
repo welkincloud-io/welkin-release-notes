@@ -1,3 +1,57 @@
+# Release notes: Version 2025.61.0
+
+### Release Date: Apr 25, 2025 – 1:00 AM PST
+
+## New Functionality
+
+- FT-1003: Automation to Update and Create CDT records.
+In this release, we’re excited to introduce a new type of automation — the creation and updating of CDTs. This functionality currently supports a limited set of CDT categories, including Data Types and Custom Field Types, with field types such as Float, Integer, Text, TextArea, Boolean, and List.
+A few important details: for a single record CDT, only updating is supported, and for Multiple record CDTs, only creation is available.
+We look forward to your feedback on this new functionality, as well as your suggestions for future enhancements!
+
+-  FT-1801: “Pre-authorize Payment” automation.
+We’ve introduced a new automation — Pre-authorize Payment, which allows to define the settings that determine for which encounters a payment will be pre-authorized.
+This automation supports two event types: “Encounter Created” and “Encounter Disposition Updated”.
+Please note, if this automation is not configured, pre-authorization will not be triggered automatically.
+
+- FT-1696: Default secure email settings.
+A new Secure Email setting has been added to the Admin Portal under the Integrations, Communication section. This allows system administrators to define the default state (enabled or disabled) of the Secure toggle for all outgoing emails at the environment level.
+It’s important to note that while this sets the default, Care Portal users can still manually change the Secure toggle when composing individual messages.
+
+- FT-1812: Support for Task Entity in Widgets on the New Homepage (Beta).
+The Task entity is now available as a Core Entity in the widget creation dropdown on the New Homepage. This enables users to build widgets based on their tasks and associated attributes.
+
+
+
+## Improvements and Bug Fixes
+
+- CT-1147: Google Calendar Synchronization.
+We’ve enhanced the behavior when enabling Google Calendar synchronization. Now, upon activation, the system will automatically synchronize calendar events from 30 days before the current date and up to 365 days into the future.
+This synchronization occurs immediately at the moment the feature is enabled.
+
+- FT-1779: Welkin encounter updates do not sync to Google Calendar.
+We’ve resolved an issue affecting calendar synchronization when two users work on the same event. Now, changes made by multiple users are correctly synchronized.
+
+- FT-1832: Call misrouted despite recognized number.
+We’ve fixed an issue where, in some cases, calls from known clients were incorrectly routed to the Unrecognized communications.
+
+- FT-1289: Call recording stability.
+We’ve improved overall system performance to help prevent the potential loss of call recordings, ensuring more reliable data capture and call history integrity.
+
+- FT-1485: Assessment order in PFA.
+Resolved an issue where the order of assessments in the PFA did not match the sequence set in Designer.
+
+- FT-1747: Calendar navigation in month view.
+We’ve fixed an issue that prevented users from navigating to the next month when the Month View was selected in the calendar.
+
+- FT-1778: Document info display in the Communication Center.
+Resolved an issue where incorrect information about attached documents was shown in the Communication Center.
+
+- FT-1841: MRN Formatting on Homepage (Beta).
+Fixed an issue where the Medical Record Number (MRN) was displayed in an incorrect format on the Homepage.
+
+
+
 # Release notes: Version 2025.60.0
 
 ### Release Date: Apr 4, 2025 – 1:00 AM PST
