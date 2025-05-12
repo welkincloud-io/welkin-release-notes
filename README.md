@@ -1,3 +1,36 @@
+# Release notes: Version 2025.62.0
+
+### Release Date: May 16, 2025 – 1:00 AM PDT
+
+## New Functionality
+
+FT-1771: Automation Support for Tracking Candid Claim Failures. 
+As part of this release, a new automation trigger, “Candid Claims Failed,” has been introduced. This trigger is designed to work exclusively with the “Webhook” action. It enables users to monitor failed claim submissions and take timely corrective action.
+In addition, when a claim fails to be created, a detailed error message will now be displayed in the upper right corner of the Care Portal, providing the maximum available information about the issue to facilitate quick troubleshooting.
+All executions of this automation are now logged and can be reviewed in the Automation Audit of Admin.
+
+FT-1814: Widget Preview Option in the Designer Portal.
+To enhance the user experience when configuring Homepage Widgets, a Preview option has been added to the Designer Portal. This functionality allows users to view a visual representation of the widget before publishing, ensuring accuracy in layout and content presentation.
+To maintain data privacy, any inaccessible or sensitive information within the preview will be obscured with star symbols.
+
+
+## Improvements and Bug Fixes
+
+FT-1784: Enhanced Readability of Profile-Type Fields in Reports and Templates.
+The display of information from Profile-type fields has been improved in both Superbill and Invoice reports. This enhancement ensures that the data is now presented in a more readable and structured format.
+The same improvement has also been applied to message templates where the Context Type is set to "Encounter".
+
+FT-1850: Improved API Response for “Get Available Schedules”. 
+A fix has been made to the “Get Available Schedules” API request to ensure accurate data retrieval. With this update, the API now returns information for all participants associated with the event, providing a complete and reliable schedule view.
+
+FT-1855: Corrected Event Order in Month View.
+An issue has been resolved in the Month View of the Calendar, where day events were displayed based on their creation order rather than their scheduled start time. The events will now be ordered by their start time ensuring a more intuitive and accurate chronological display.
+
+FT-1862: Updated Behavior for Numeric Fields.
+The system behavior for fields with numeric types has been updated. These fields will now remain empty by default, unless a specific default value is configured in the Designer Portal.
+
+
+
 # Release notes: Version 2025.61.0
 
 ### Release Date: Apr 25, 2025 – 1:00 AM PST
