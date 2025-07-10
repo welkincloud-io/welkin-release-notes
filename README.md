@@ -42,16 +42,16 @@ Resolved an issue where uploading files with the same name caused the preview of
 
 ## New Functionality
 
-FT-1885: Video Uploads in Document Center:
+- FT-1885: Video Uploads in Document Center:
 We’ve added the ability to upload video files directly to the Document Center, making it easier to share and store rich media content as part of internal patient documentation. This feature supports the .mp4 format, with a maximum file size of 200 MB per video, and allows users to upload up to 10 video files per document, totaling up to 2GB.
 Whether it's a recorded consultation, a rehabilitation exercise demo, or a clinical reference clip, this feature enhances collaboration and documentation accuracy among care team members.
 
 ## Improvements and Bug Fixes
 
-FT-1937: Improved Look & Feel of PFAs:
+- FT-1937: Improved Look & Feel of PFAs:
 We’ve updated the design of PFAs to improve clarity and alignment across all assessment elements. These changes enhance the overall experience for users on both mobile and desktop.
 
-FT-1974: Improved Error Messaging on the HomePage:
+- FT-1974: Improved Error Messaging on the HomePage:
 We’ve added more clear and readable error messages in the HomePage to better inform users when data is unavailable.
 
 
