@@ -1,3 +1,41 @@
+# Release notes: Version 2025.64.0
+
+### Release Date: July 17, 2025 – 1:30 AM PDT
+
+## New Functionality
+
+FT-1942: Enhanced “Bulk Update for Patients” Endpoint. 
+With this release, the “Bulk Update for Patients” API endpoint has been expanded. It now supports partial updates to the care team, allowing the addition, removal, or replacement of specific care team members, rather than modifying the entire team. The API can perform these updates even if the user and patients have a region or territory mismatch.  
+The Postman public collection will be refreshed after the release to include documentation on these new capabilities.
+
+FT-1941: Task Commenting via API on Behalf of a Patient.
+This release introduces the ability to add comments to tasks on behalf of a patient through the API. If patient information is not provided, the comment will be attributed to the API client by default. The Postman public collection will be updated after the release. The "Add comment to Task" request will include support for commenting on behalf of a patient.
+
+FT-1943: New Automation Event: Task Comment Added.
+The automation system now includes a new event: Task Comment Added. This enables automations to be triggered when a comment is posted to a task, supporting more dynamic workflows and enhancing task management.
+
+FT-1656: ‘Is Completed’ Condition for Assessment Entity Type.
+A new condition, ‘Is Completed,’ has been added for the Assessment entity type in automations. This condition verifies whether the most recent assessment with a specific name has been completed. If the latest assessment is not completed (e.g., it has an In Progress status), the condition will not be satisfied.
+
+FT-1962: Compact View Setting in Widget Columns.
+This release introduces a Compact View setting in the Columns section of Widgets. When enabled, CDT data is consolidated into a single row per patient. Multiple text, datetime, and integer values from different CDTs are displayed as comma-separated entries. This improves the data display, making it easier to review patients with multiple CDT records.
+
+
+## Improvements and Bug Fixes
+
+FT-1936: User-Friendly Labels for System-Generated Actions.
+In the Care Portal, system-generated actions now feature user-friendly labels such as System, Automation, and API Client, making activity logs easier to understand. An information icon has also been added, hovering over it reveals which internal service performed the action.
+
+FT-1768: Date of Birth Field in Patient Profile.
+Resolved an issue affecting the Date of Birth field when editing patient information in the profile. The field now functions correctly during updates.
+
+FT-1752: Variable Display in Assessments.
+Fixed an issue where variables were not displaying correctly within assessments. All variables now appear as expected during form completion and review.
+
+FT-1843: File Preview for Duplicate File Names.
+Resolved an issue where uploading files with the same name caused the preview of one file to appear for both. Each file now displays its correct individual preview, even if filenames are identical.
+
+
 # Release notes: Version 2025.63.0
 
 ### Release Date: June 20, 2025 – 1:00 AM PDT
