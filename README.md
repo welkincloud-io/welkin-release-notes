@@ -35,6 +35,9 @@ Fixed an issue where variables were not displaying correctly within assessments.
 - FT-1843: File Preview for Duplicate File Names.
 Resolved an issue where uploading files with the same name caused the preview of one file to appear for both. Each file now displays its correct individual preview, even if filenames are identical.
 
+- FT-2036: Resolved Delay When Viewing Incoming Notifications.
+Resolved an issue that caused a delay when clicking the notification bell to view incoming alerts. Notifications now load promptly, improving the responsiveness of the alert system.
+
 
 # Release notes: Version 2025.63.0
 
