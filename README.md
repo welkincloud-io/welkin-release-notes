@@ -20,6 +20,8 @@ A new condition, ‘Is Completed,’ has been added for the Assessment entity ty
 - FT-1962: Compact View Setting in Widget Columns.
 This release introduces a Compact View setting in the Columns section of Widgets. When enabled, CDT data is consolidated into a single row per patient. Multiple text, datetime, and integer values from different CDTs are displayed as comma-separated entries. This improves the data display, making it easier to review patients with multiple CDT records.
 
+- FT-1942: Resolve Message Templates via API.
+With this release, a new endpoint called "Resolve Template" has been added. It allows the API client to resolve message templates, including those that contain PFA variables or other supported variables. This enables more dynamic and personalized content generation through the API.
 
 ## Improvements and Bug Fixes
 
