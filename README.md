@@ -4,30 +4,30 @@
 
 ## New Functionality
 
-FT-1807: Use Patient Profile Fields in Assessments 
+FT-1807: Use Patient Profile Fields in Assessments.
 This release introduces the ability to include Patient Profile fields directly within assessments. These fields can be pre-filled with existing profile data, giving respondents the opportunity to confirm, update, or complete missing information during the assessment process. Use this feature to improve data accuracy, reduce duplication, and streamline patient information management by integrating profile verification seamlessly into your assessment workflow.
 
-FT-1760: Create Encounter Automation - “Today”
+FT-1760: Create Encounter Automation - “Today”.
 Previously, encounter creation via automation was only possible for future dates. With this release, automations can now be set to create an encounter on the same day by specifying 0 in the Days field. This improvement is especially useful for handling urgent cases or same-day scheduling without manual intervention. If the specified time is in the past, the automation will not run, and details will be recorded in the Automation Audit for review.
 
-FT-1966: Enhanced Data Views Settings
+FT-1966: Enhanced Data Views Settings.
 As part of this release, the Data Views settings have been expanded to provide more control and flexibility. HTML field settings now support variables, enabling the display of additional dynamic information for more convenient and informative Data View usage. In addition, new Required and Read-only options have been added to field settings, helping ensure data is filled out accurately and consistently according to your workflow requirements.
 
 ## Improvements and Bug Fixes
 
-FT-2012: Patient List Display Issue Fixed
+FT-2012: Patient List Display Issue Fixed.
 Resolved an issue where the full list of patients was not displayed when reassigning communications, ensuring all eligible patients are now visible for selection. 
 
-FT-2103: Fixed Time Selection in Assessments
+FT-2103: Fixed Time Selection in Assessments.
 Resolved an issue where the time picker in assessments was not functioning correctly, ensuring it is now fully usable for selecting time values.
 
-FT-2124: Fixed Formatting Issues in PFA Templates
+FT-2124: Fixed Formatting Issues in PFA Templates.
 Resolved several formatting problems in Patient-Facing Assessment (PFA) templates to improve readability and overall user experience.
 
-FT-2131: Fixed Variable Resolution in Assessments Within Encounters
+FT-2131: Fixed Variable Resolution in Assessments Within Encounters.
 Fixed an issue where variables in assessments were not being resolved when the assessment was initiated within an encounter. 
 
-FT-2120: Improved Acuity Integration
+FT-2120: Improved Acuity Integration.
 Enhanced integration with Acuity and fixed an issue where a patient might not be created in Welkin when scheduling an event through Acuity.
 
 
