@@ -1,3 +1,32 @@
+# Release notes: Version 2025.66.0
+
+### Release Date: Oct 2, 2025 – 1:00 AM PDT
+
+## New Functionality
+
+FT-2118: HIN Secure Email Integration 
+We’re excited to announce a new integration with HIN (Health Info Net), Switzerland’s trusted healthcare communication network. This feature enables secure, compliant email communication directly through the Welkin Care Portal, ensuring that all sensitive communications meet Swiss healthcare data protection standards (DSG & GDPR).
+
+FT-2037: Google Calendar Synchronization Enhancements
+We’ve improved our Google Calendar integration to now allow for one-way or two-way synchronization.
+With two-way sync, updates in Google Calendar automatically appear in Welkin, and changes in Welkin are reflected in Google Calendar — helping you save time and keep schedules aligned.
+This optional feature is enabled separately. To request activation, please contact your Account Manager.
+
+FT-2104: Improved Task Comments via API
+We’ve enhanced how comments work when creating tasks through the API. In addition to comments from the API client, you can now add a comment on behalf of the patient when the task is created. This provides better context for customers adding patient comments from their apps to Tasks via API.
+
+## Improvements and Bug Fixes
+
+FT-1861: Improved Call Notifications
+We’ve enhanced the reliability and timing of call notifications, ensuring they arrive more promptly so users can stay informed and respond without delays. 
+
+FT-2156: Task Comments Ordering Fix
+We’ve resolved an issue where task comments were not always displayed in the correct order. Comments are now consistently sorted, with the most recent ones shown at the top for easier visibility.
+
+FT-2171: Improved File Upload Notifications
+We’ve updated toast notifications in the Document Center for a smoother experience. When uploading files, notifications now disappear automatically and no longer require an extra click to dismiss.
+
+
 # Release notes: Version 2025.65.0
 
 ### Release Date: Aug 21, 2025 – 1:00 AM PDT
