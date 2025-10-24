@@ -1,3 +1,18 @@
+# Release notes: Version 2025.67.0
+
+### Release Date: Oct 30, 2025 – 1:00 AM PDT
+
+## New Functionality
+
+FT-1504: Smart Inbox (BETA) – Unified Communication Center for Patient-Centered Care.
+This release introduces the Welkin Smart Inbox (Beta) – a foundational step toward a fully unified communication experience and the first feature built with Welkin’s new design language system, showcasing a modern, intuitive interface that improves usability and consistency across the platform. 
+The Smart Inbox centralizes all patient conversations across Secure Email, SMS, In-App Chat, Unrecognized messages, and WhatsApp in a single workspace, empowering care teams to collaborate seamlessly, respond faster, and reduce unanswered or delayed communications. 
+The Smart Inbox includes role-based views (My Inbox, Team Inbox, All Patients Inbox), real-time collaboration, and patient context displayed alongside each conversation to reduce tab-switching and improve response accuracy. The handling of unrecognized communications has also been reworked for greater efficiency to improve triage and routing of inbound messages. 
+The new Communication Center is fully compatible with the previous version and should not disrupt any existing workflows or automations. 
+This release establishes the foundation for future capabilities like internal provider chat, @tag mentions, advanced routing, analytics, and expanded channel support – all designed to enhance communication, accountability, and care coordination.
+If you’d like early access or assistance with enabling Smart Inbox and migrating existing communication data, please reach out to your Welkin account manager.
+
+
 # Release notes: Version 2025.66.0
 
 ### Release Date: Oct 2, 2025 – 1:00 AM PDT
