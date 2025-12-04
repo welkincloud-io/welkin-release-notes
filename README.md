@@ -1,3 +1,43 @@
+# Release notes: Version 2025.68.0
+
+### Release Date: December 11, 2025 – 1:00 AM PST
+
+## New Functionality
+
+FT-2396: Smart Inbox: Added Search Functionality.
+This release introduces a new search feature in the Smart Inbox. Users can now quickly find communications by phone number (to/from), email address (to/from), patient or contact name, as well as by any text contained within the communication.
+This enhancement adds convenience and makes it easier to locate the needed information without manual scrolling.
+
+FT-2039: Outlook Calendar Integration.
+Outlook Calendar Integration is now available, providing both one-way and two-way synchronization options. One-way sync allows Welkin events to be pulled into Outlook, while two-way sync keeps updates aligned in both systems.
+This feature is optional and can be enabled individually. To request activation, please reach out to your Account Manager.
+
+FT-2163: Support for Not Applicable and New Scaled Average Formula. 
+For Scored Assessments, we’ve added the ability to mark individual assessment items as Not Applicable (N/A) so they are excluded from both the calculated score and the total possible points, ensuring results reflect only relevant inputs.
+Additionally, a new Scaled Average formula option is now available for groups. This allows the average score to be multiplied by a configurable λ (lambda) factor, providing greater flexibility in score calculations.
+
+FT-2299: New Encounter Date-Only Variable for Message Templates.
+A new variable, {{ENCOUNTER.*.startDate}}, has been added to the Message Template section of the Designer when the context type is set to Encounter.
+This variable allows templates to reference the encounter date only, without including the time, providing more flexibility for communication formatting.
+
+FT-2318: New “Not Contains” and “Not Contains All” Conditions for Automations.
+This release adds two new condition options — Not Contains and Not Contains All — for automations that use the Data Type entity. These options allow automations to run when specific values are absent from a list.
+Not Contains checks whether at least one of the specified values is not present in the field. If any value is missing, the condition is satisfied, and the automation can run.
+Not Contains All requires all specified values to be missing. If even one of them is present, the condition is not met.
+These new options offer greater flexibility when building logic based on values that should not appear in a Data Type field.
+
+## Improvements and Bug Fixes
+
+FT-1936: PDF Title Display Issue Resolved.
+Fixed an issue where PDF titles in patient records could display the wrong patient name, often showing the name of the first patient whose form was opened. This incorrect caching display behavior has been corrected, and PDFs now consistently show the proper title for each patient.
+
+FT-2230: Fixed Issue With Completed Tasks on the New Homepage.
+Resolved a problem where completed tasks continued to appear in the widget on the new homepage. Tasks now fall off the list correctly based on the widget’s configuration.
+
+FT-2368: Improved Encounter Creation During Time Changes.
+Enhanced the handling of encounter creation during both the transition into and out of daylight saving time. The system now prevents unintended one-hour shifts, ensuring consistent and predictable appointment times throughout seasonal time changes.
+
+
 # Release notes: Version 2025.67.0
 
 ### Release Date: Oct 30, 2025 – 1:00 AM PDT
