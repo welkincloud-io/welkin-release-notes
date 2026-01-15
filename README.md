@@ -1,3 +1,30 @@
+# Release notes: Version 2026.69.0
+
+### Release Date: January 22, 2026 – 1:00 AM PST
+
+## New Functionality
+
+FT-2397: Open Communications Counter in My Inbox.
+A new counter has been added to the My Inbox section to display the number of open communications. This provides instant visibility into items that still require attention, helping users prioritize responses and manage their workload more efficiently.
+
+FT-2429: Support for Secure Emails via HIN in Automations.
+Added the ability to send secure emails via HIN in automations, in addition to Paubox. Secure emails are now sent using the provider configured in the system settings.
+
+FT-1961: All-Region Access Configuration. 
+Added the ability to grant access to all regions from the Admin Portal for both users and API clients. This removes the need to manually configure access per region, while still preserving the option for granular, region-specific access. Support for full territory access will be expanded further in future updates.
+
+FT-2143: Increased PDF Upload Size Limit in Documents.
+The maximum allowed size for uploading PDF files in the Documents center has been increased to 200 MB, making it easier to work with larger files.
+
+
+## Improvements and Bug Fixes
+
+FT-2481: Assessment Save Issue When Using Tab Key Fixed.
+Resolved an issue where assessments could fail to save when a numeric value was entered, and the Tab key was used to move to the next field. The assessment now saves correctly, ensuring smoother data entry.
+
+FT-2143: Improved File Upload Validation in Document Center.
+Enhanced the usability of file upload validation in the Document Center. Error messages now clearly indicate which file has an issue, making it easier to identify and resolve upload problems.
+
 # Release notes: Version 2025.68.0
 
 ### Release Date: December 11, 2025 – 1:00 AM PST
