@@ -1,3 +1,32 @@
+# Release notes: Version 2026.70.0
+
+### Release Date: February 26, 2026 – 1:00 AM PST
+
+## New Functionality
+
+FT-2393: Calendar Experience Redesign.
+This release extends the Welkin Look & Feel vision introduced with the Inbox, applying the same design principles and interaction patterns to the Calendar. 
+The Calendar experience has been refreshed with a cleaner layout, improved visual hierarchy, and smoother navigation to make managing Encounters and Events more intuitive and efficient, while preserving familiar workflows. In addition to the visual update, existing functionality has been refined and enhanced. Timezone handling has been redesigned to better support scheduler, patient, and care team contexts, creating a more reliable foundation for future extensions. Encounter status is now clearly visible within Calendar and can be updated directly, while user preferences for visual information are preserved. Accessibility has also been improved through better contrast and clearer visual cues. 
+This update establishes a strong foundation for continued improvements, with additional enhancements and new Calendar features planned for upcoming releases.
+
+## Improvements and Bug Fixes
+
+FT-1462: Improved Handling of Unresolved Variables in Documents.
+The system now generates documents even if some variables cannot be resolved during doc creation. Instead of failing, the document will be produced, and a warning will be displayed listing the unresolved variable names. 
+This enhancement helps users quickly identify and troubleshoot problematic variables, improving transparency and reducing time spent investigating template issues.
+
+FT-2533: Improved JSON Viewer in Audit Logs.
+Enhanced the JSON display format in Audit Logs for better readability and usability. The updated viewer presents JSON in a clearer structure and allows users to quickly copy specific values or sections directly from the text using a dedicated copy icon.
+
+FT-2538: Fixed SMS Image Receiving Issue.
+Resolved an issue where the system did not reliably receive patient photos sent via SMS on the first attempt. In some cases, attachments failed to appear correctly, requiring patients to resend them. Image attachments are now processed and displayed properly upon initial receipt.
+
+FT-2595: Fixed Patient Deletion Issue.
+Resolved an issue where attempting to delete a patient could result in an “assessment name not found” error if the referenced assessment had been removed in the configuration. Patient deletion now works correctly even if related assessments no longer exist.
+
+FT-2615: Fixed Float Field Reset Issue.
+Resolved an issue where clearing a value in a float-type field did not properly save as empty. In some cases, after deleting the number and saving the form, the previous value would reappear upon refresh. The field now correctly supports reverting to an empty state.
+
 # Release notes: Version 2026.69.0
 
 ### Release Date: January 22, 2026 – 1:00 AM PST
