@@ -1,3 +1,20 @@
+# Release notes: Version 2026.71.0
+
+### Release Date: March 19, 2026 – 1:00 AM PDT
+
+## New Functionality
+
+FT-2575: Question Groups in Assessments.
+This release introduces Question Groups in assessments, providing a flexible way to organize and capture related information. Question Groups allow multiple instances of the same group of questions to be added during assessment completion, making it easier to collect repeating data without duplicating individual questions.
+For example, a Question Group can be used to capture a patient’s medication list through a series of identical fields. The group can include fields such as medication name, dosage, frequency, and route of administration. When completing the assessment, the user can simply click to add another instance of the group to record an additional entry. The same structure can be applied to things like family or social history, where details need to be recorded for multiple relatives, for instance, entering a family member’s relationship to the patient, relevant information, etc. This allows assessments to collect structured information for multiple entries in a clear and organized way.
+
+Each Question Group stores its responses in a CDT, with every instance saved as a separate record. This keeps the collected data structured and easier to work with. Conditions can also be applied to control when a group is shown or hidden based on responses, allowing assessments to adapt dynamically. The design experience has also been improved with drag-and-drop functionality inside the group, making it easier to arrange and manage questions when building assessments.
+
+## Improvements and Bug Fixes
+
+FT-2565: Improved Scoring Handling in Assessments.
+With the release, the behavior of scoring in assessments has been improved. Previously, an error could occur if a new value was added to a field that was already used for scoring but did not have scoring configured. Now, such values are automatically ignored and are not included in the scoring calculation, preventing errors and ensuring smoother assessment completion.
+
 # Release notes: Version 2026.70.0
 
 ### Release Date: February 26, 2026 – 1:00 AM PST
