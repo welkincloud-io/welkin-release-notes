@@ -4,78 +4,76 @@ All product updates, new features, and improvements to the Welkin Health platfor
 
 ---
 
-## March 19, 2026 · Version 2026.71.0
+## Version 2026.71.0 — March 5, 2026
 
-### 🆕 Care Plan Goal Tracking
-Care plans now include structured goal-tracking with milestone dates, completion status, and progress notes — giving care teams and patients a shared view of treatment objectives and outcomes.
+**Release Date:** March 5, 2026 — 1:00 AM PST
 
-### 🆕 Automated Prior Authorization Alerts
-Welkin surfaces prior authorization requirements based on patient insurance and ordered services, prompting care teams to initiate PA workflows before scheduling to reduce claim denials.
+### New Functionality
 
-### ✨ Improved Notification Preferences
-Users can now configure granular notification preferences by event type and delivery channel (in-app, email, or SMS), reducing alert fatigue and ensuring updates reach the right people.
+**FT-2580: Question Groups in Assessments.** Assessment builders can now organize questions into named groups with collapsible sections, making long assessments easier to navigate for both clinicians and patients.
 
-### ✨ Performance Improvements to Patient Search
-Patient search results load significantly faster for large populations, with improved indexing and relevance ranking for partial name and MRN lookups.
+### Enhancements
+
+**FT-2583: Bulk Export of Patient Records.** Care team administrators can now export multiple patient records simultaneously in CSV or PDF format, streamlining reporting and data migration workflows.
 
 ---
 
-## March 5, 2026 · Version 2026.71.0
+## Version 2026.70.0 — February 19, 2026
 
-### 🆕 Question Groups in Assessments
-Assessments now support grouped question sections with collapsible headers, allowing clinicians to organize complex assessments into logical categories and improve readability for long-form clinical evaluations.
+**Release Date:** February 19, 2026 — 1:00 AM PST
 
-### ✨ Bulk Export of Patient Records
-Administrators can initiate bulk exports of patient records in CSV or PDF format with configurable field selection and date range filters.
+### New Functionality
 
----
+**FT-2571: Role-Based Dashboard Configuration.** Administrators can now configure default dashboard layouts per role, ensuring each care team member sees the most relevant widgets and data panels when they log in.
 
-## February 19, 2026 · Version 2026.70.0
+**FT-2573: Automated Outreach Campaigns.** Care teams can create scheduled outreach sequences that automatically send messages to patient cohorts based on program enrollment, assessment scores, or custom criteria.
 
-### 🆕 Role-Based Dashboard Configuration
-Administrators can define default dashboard layouts per user role — ensuring care coordinators, nurses, and physicians each see the most relevant widgets and metrics when they log in.
+### Enhancements
 
-### 🆕 Automated Outreach Campaigns
-Configure multi-step outreach sequences triggered by patient events — enrollment, missed appointments, assessment completion — to automatically send reminders via SMS or email.
+**FT-2576: Assessment Scoring Improvements.** Assessment scoring now supports weighted question groups and conditional scoring rules, giving clinical teams more flexibility in how outcomes are calculated and displayed.
 
-### ✨ Assessment Scoring Improvements
-Scored assessments now support weighted questions and configurable thresholds, with color-coded risk indicators displayed on the patient chart for faster clinical triage.
-
-### ✨ Worklist Filter Persistence
-Filter and sort preferences on worklists are now saved per user, so care team members no longer need to reapply their preferred view each session.
+**FT-2578: Worklist Filter Persistence.** Worklist filters are now saved per user and persist across sessions, reducing repetitive setup when returning to routine workflows.
 
 ---
 
-## February 5, 2026 · Version 2026.68.0
+## Version 2026.68.0 — February 5, 2026
 
-### 🆕 Encounter Workflow Templates
-Create reusable encounter templates that pre-populate assessment forms, task lists, and documentation prompts for common visit types — reducing setup time and ensuring consistency.
+**Release Date:** February 5, 2026 — 1:00 AM PST
 
-### 🆕 Patient Communication History View
-A unified communication timeline now displays all SMS, email, and in-app messages to or from a patient in a single chronological view.
+### New Functionality
 
-### ✨ Improved Calendar Conflict Detection
-Scheduling now surfaces conflicts in real time — overlapping encounters and unavailable provider slots — before the appointment is saved.
+**FT-2562: Encounter Workflow Templates.** Administrators can define reusable encounter templates that pre-populate documentation fields, task checklists, and assessments based on encounter type, reducing time spent on repetitive charting.
 
----
+**FT-2564: Patient Communication History View.** A unified communication timeline now displays all outbound and inbound messages, calls, and emails for a patient in a single chronological view within the patient chart.
 
-## January 22, 2026 · Version 2026.67.0
+### Enhancements
 
-### 🆕 Program Enrollment Automation Rules
-Configure rule-based triggers to automatically enroll or dis-enroll patients from care programs based on changes to assessments, diagnoses, or profile fields.
-
-### 🆕 Enhanced SMS Message Templates
-SMS templates now support dynamic patient and provider variables, enabling more personalized outreach directly from Welkin.
-
-### ✨ Task Due Date Sorting
-Task lists across patient charts and the worklist now sort by due date by default, helping care team members prioritize time-sensitive work.
+**FT-2567: Improved Calendar Conflict Detection.** The scheduling calendar now surfaces real-time warnings when a proposed appointment conflicts with an existing booking for the same provider or patient, preventing double-scheduling.
 
 ---
 
-## January 8, 2026 · Version 2026.65.0
+## Version 2026.67.0 — January 22, 2026
 
-### 🆕 Bulk Reassignment of Care Team Tasks
-Care team managers can now reassign multiple tasks at once across patients — reducing administrative overhead during team transitions or coverage changes.
+**Release Date:** January 22, 2026 — 1:00 AM PST
 
-### 🆕 Patient Profile Custom Fields
-Administrators can define and display custom data fields on patient profiles, enabling organizations to capture data specific to their care model without custom development.
+### New Functionality
+
+**FT-2551: Program Enrollment Automation Rules.** Organizations can configure rule-based triggers to automatically enroll or dis-enroll patients from care programs based on changes to assessments, diagnoses, or profile fields.
+
+**FT-2553: Enhanced SMS Message Templates.** SMS templates now support dynamic patient and provider variables, allowing more personalized outreach messages directly from Welkin without manual customization.
+
+### Enhancements
+
+**FT-2556: Task Due Date Sorting.** Task lists across patient charts and the worklist now sort by due date by default, helping care team members prioritize time-sensitive work more easily.
+
+---
+
+## Version 2026.65.0 — January 8, 2026
+
+**Release Date:** January 8, 2026 — 1:00 AM PST
+
+### New Functionality
+
+**FT-2540: Bulk Reassignment of Care Team Tasks.** Care team managers can now reassign multiple tasks at once across patients, reducing administrative overhead during team transitions or coverage changes.
+
+**FT-2543: Patient Profile Custom Fields.** Administrators can define and display custom data fields on patient profiles, enabling organizations to capture and surface data specific to their care model without custom development.
