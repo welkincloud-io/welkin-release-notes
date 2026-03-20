@@ -1,3 +1,23 @@
+# Release notes: Version 2026.72.0
+
+### Release Date: March 26, 2026 – 1:00 AM PDT
+
+## New Functionality
+
+FT-2660: Scheduled Automation Based on Data Type event.
+This release expands automation scheduling by introducing a new Data Type trigger within the Scheduled option. This allows automations to run based on values stored in CDTs, such as a specific date or a numeric field.
+With this enhancement, automations can be configured to trigger before or after a value captured during data entry, enabling more dynamic and personalized workflows. For example, during an assessment, a user can enter a follow-up date or specify a number of days for the next check-in. Based on this value, the system can automatically schedule actions such as sending reminders, creating tasks, or initiating communications at a set time before or after the specified date or interval. This removes the need for manual tracking and ensures timely follow-ups tailored to each patient’s data.
+If the calculated trigger time has already passed, the automation will not run, and details will be available in the Automation Audit for review.
+
+## Improvements and Bug Fixes
+
+FT-2691: Question Group Variables in Document Templates.
+Improved support for Question Group variables in the Template tab under the Form Variables category. These variables now function correctly, allowing data from Question Groups to be reliably included in generated documents.
+For example, when a Question Group is used to capture a patient’s medications, documents can now be populated with all entered entries, such as medication name, dosage, and frequency. The same applies to other repeating data, like family history, ensuring multiple records are accurately reflected in documents without manual input.
+
+FT-2684: Fixed Automation Issue with Pre-Filled Data.
+Resolved an issue where automations could fail to trigger when Patient Profile fields contained pre-filled data. Automations now execute correctly regardless of existing values in these fields.
+
 # Release notes: Version 2026.71.0
 
 ### Release Date: March 19, 2026 – 1:00 AM PDT
