@@ -1,3 +1,18 @@
+# Release notes: Version 2026.73.0
+
+### Release Date: April 16, 2026 – 1:00 AM PDT
+
+## New Functionality
+
+FT-2482: Electronic Fax – Beta
+This release introduces eFax functionality in Welkin, enabling care teams to send and receive faxes securely without leaving the platform. A dedicated Fax section can be added to the Inbox upon request, integrating fax communications alongside existing messaging channels. This marks the first iteration of eFax in Welkin – the feature has been intentionally scoped to core workflows and will continue to evolve based on customer feedback.
+Key additions include:
+Inbound fax management – received faxes land in a Needs Review queue, where they must be linked to a related patient and assigned a document type before being considered processed.
+Outbound faxes – care team members can compose and send faxes directly from the Inbox, with support for attaching files and associating the fax with a patient record.
+Fax templates – templates can now be configured in the Designer and used for standardized documents such as cover sheets, with patient data automatically populated.
+Security policies – new eFax permissions have been added, covering view, create, update, and delete access for fax communications.
+Note: Welkin's eFax integration is powered by Notifyre. Organizations will need an active Notifyre account to send and receive faxes. Please contact your Welkin administrator to set up your account before enabling this feature.
+
 # Release notes: Version 2026.72.0
 
 ### Release Date: March 26, 2026 – 1:00 AM PDT
