@@ -4,7 +4,7 @@
 
 ## New Functionality
 
-FT-2482: Electronic Fax – Beta
+FT-2482: Electronic Fax – Beta.
 This release introduces eFax functionality in Welkin, enabling care teams to send and receive faxes securely without leaving the platform. A dedicated Fax section can be added to the Inbox upon request, integrating fax communications alongside existing messaging channels. This marks the first iteration of eFax in Welkin – the feature has been intentionally scoped to core workflows and will continue to evolve based on customer feedback.
 Key additions include:
 - Inbound fax management – received faxes land in a Needs Review queue, where they must be linked to a related patient and assigned a document type before being considered processed.
