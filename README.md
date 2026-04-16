@@ -14,6 +14,9 @@ Key additions include:
 
 Note: Welkin's eFax integration is powered by Notifyre. Organizations will need an active Notifyre account to send and receive faxes. Please contact your Welkin administrator to set up your account before enabling this feature.
 
+FT-2740: Support Adding User Comments to Tasks via API.
+The API now supports adding comments to tasks on behalf of a user. This allows API clients to pass user-originated input directly into the system with proper attribution, improving data accuracy and context. This is especially useful for integrations that capture user or patient input externally and need to reflect it within existing records.
+
 # Release notes: Version 2026.72.0
 
 ### Release Date: March 26, 2026 – 1:00 AM PDT
