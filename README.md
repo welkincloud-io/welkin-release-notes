@@ -1,3 +1,21 @@
+# Release notes: Version 2026.74.0
+
+### Release Date: April 30, 2026 – 1:00 AM PDT
+
+## New Functionality
+
+FT-2770: Fax Notifications via Automation.
+This release introduces the ability to configure automations for fax-related notifications, helping ensure important information is not missed. Automations can be triggered by key fax events, including when a fax is received, fails, is reviewed, or is assigned to a patient (both inbound and outbound).
+Notifications can be configured for specific roles, allowing teams to stay informed and respond promptly based on their responsibilities. 
+
+FT-2534: Fax API Endpoints for External Integration.
+This release also introduces new API endpoints for fax integration, enabling API clients to work with faxes. It is now possible to create faxes, attach files, and send them via API, supporting more flexible and automated fax workflows.
+
+## Improvements and Bug Fixes
+
+FT-2759: Fixed Time Field Display in Homepage Widgets.
+Resolved an issue where time-type fields in homepage widgets were displayed as “Invalid Date” instead of the correct time value. Time values are now shown accurately.
+
 # Release notes: Version 2026.73.0
 
 ### Release Date: April 16, 2026 – 1:00 AM PDT
